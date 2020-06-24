@@ -1,0 +1,19 @@
+main {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-gap: 5px;
+}
+
+app-square {
+    // border: 1px gray solid;
+    height: 100px;
+    // background-color: red;
+}
+
+*:focus {
+    outline: 0 !important;
+}
+
+// app-square .app-squre{
+//     background-color: red;
+// }
