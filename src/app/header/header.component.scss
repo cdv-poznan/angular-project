@@ -1,0 +1,15 @@
+@import "../_variables";
+
+header {
+  padding: 10px 30px;
+  border-radius: 3px;
+  background-color: $purple;
+  .logo {
+    font-family: "Satisfy", cursive;
+    font-size: 30px;
+    color: $gold;
+    &:hover {
+      color: $orange;
+    }
+  }
+}
