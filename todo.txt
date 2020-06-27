@@ -1,8 +1,4 @@
-To do as for 22.06:
-- rps 
-= 3rd game (https://itnext.io/angular-9-snake-web-component-96f61e63b158)
-- tic tac toe- finish game automatically, remove this outline, change the color
-  on start
-- make account (firebase) & keep last score?
-- menu (later with icons maybe?)
-- responsiveness!
+To do as for 26.06:
+- menu
+- finish simon
+- log in [repair]

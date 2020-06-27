@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "game-platform-df8a3"
+  },
+  "targets": {
+    "game-platform-df8a3": {
+      "hosting": {
+        "angular-project": [
+          "game-platform-df8a3"
+        ]
+      }
+    }
+  }
+}

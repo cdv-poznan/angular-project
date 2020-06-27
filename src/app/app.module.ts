@@ -1,4 +1,4 @@
-import { NgModule, DoBootstrap, Injector } from '@angular/core';
+import { NgModule, DoBootstrap, Injector, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -7,10 +7,19 @@ import { BoardComponent } from './board/board.component';
 import { SquareComponent } from './square/square.component';
 import { RpsComponent } from './rps/rps.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NbThemeModule, NbLayoutModule, NbButtonModule, NbIconModule } from '@nebular/theme';
+import { NbThemeModule, NbLayoutModule, NbButtonModule, NbIconModule, NbSidebarModule, NbMenuComponent } from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { SnakeComponent } from './snake/snake.component';
-import {createCustomElement} from '@angular/elements';
+import { createCustomElement} from '@angular/elements';
+import { SnakeGameComponent } from './snake-game/snake-game.component';
+
+import { AngularFireModule } from '@angular/fire';
+import { environment } from 'src/environments/environment';
+// import { MenuComponent } from './menu/menu.component';
+
+
+
+
 
 @NgModule({
   declarations: [
@@ -19,7 +28,7 @@ import {createCustomElement} from '@angular/elements';
     BoardComponent, 
     SquareComponent, 
     RpsComponent, 
-    SnakeComponent
+    SnakeComponent, SnakeGameComponent,
   ],
   imports: [
     BrowserModule, 
@@ -29,10 +38,14 @@ import {createCustomElement} from '@angular/elements';
     NbLayoutModule, 
     NbEvaIconsModule,
     NbButtonModule,
-    NbIconModule
+    NbIconModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    NbSidebarModule.forRoot(),
+    NbSidebarModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 
 export class AppModule implements DoBootstrap{
