@@ -22,9 +22,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RpsComponent implements OnInit {
   rps = {
-    rock: "Kamień",
-    paper: "Papier",
-    scissors: "Nożyce"
+    rock: "ROCK",
+    paper: "PAPER",
+    scissors: "SCISSORS"
   }
 
   msgs = {

@@ -9,12 +9,11 @@ import { RpsComponent } from './rps/rps.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NbThemeModule, NbLayoutModule, NbButtonModule, NbIconModule, NbSidebarModule, NbMenuComponent } from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
-import { SnakeComponent } from './snake/snake.component';
 import { createCustomElement} from '@angular/elements';
-import { SnakeGameComponent } from './snake-game/snake-game.component';
 
 import { AngularFireModule } from '@angular/fire';
 import { environment } from 'src/environments/environment';
+import { SimonComponent } from './simon/simon.component';
 // import { MenuComponent } from './menu/menu.component';
 
 
@@ -28,7 +27,7 @@ import { environment } from 'src/environments/environment';
     BoardComponent, 
     SquareComponent, 
     RpsComponent, 
-    SnakeComponent, SnakeGameComponent,
+    SimonComponent,
   ],
   imports: [
     BrowserModule, 
@@ -50,9 +49,8 @@ import { environment } from 'src/environments/environment';
 
 export class AppModule implements DoBootstrap{
   constructor(injector: Injector){
-    const snakeComponent = createCustomElement(SnakeComponent, {injector});
-    customElements.define('ng-snake', snakeComponent);
   }
+
   ngDoBootstrap(appRef: import("@angular/core").ApplicationRef): void { }
   
 }

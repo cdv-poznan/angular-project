@@ -1,4 +1,0 @@
-To do as for 26.06:
-- menu
-- finish simon
-- log in [repair]

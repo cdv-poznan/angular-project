@@ -3,9 +3,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { BoardComponent } from './board/board.component';
 import { RpsComponent } from './rps/rps.component';
-import { SnakeGameComponent } from './snake-game/snake-game.component';
 import { AngularFireAuthGuard } from '@angular/fire/auth-guard';
-import { NbMenuComponent } from '@nebular/theme';
+import { SimonComponent } from './simon/simon.component';
+// import { NbMenuComponent } from '@nebular/theme';
 
 const routes: Routes = [
   {
@@ -23,10 +23,11 @@ const routes: Routes = [
     canActivate: [AngularFireAuthGuard],
   },
   {
-    path: 'snake-game',
-    component: SnakeGameComponent,
+    path: 'simon',
+    component: SimonComponent,
     canActivate: [AngularFireAuthGuard],
   },
+
 ];
 
 @NgModule({

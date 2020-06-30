@@ -3,22 +3,26 @@
   <nb-layout-header fixed>
     <!-- Insert header here -->
 
-      <div>
+    <div>
+      <h1>
         <a routerLink="">Home</a>
+      </h1>
+    </div>
+
+    <div [className]="'right'">
+      <div *ngIf="user$ | async as user; else showLogin">
+        <button nbButton outline status="warning" (click)="logout()">
+          Log out {{ user.email }}
+        </button>
       </div>
-      
-        <div [className]="'right'">
-        <div *ngIf="user$ | async as user; else showLogin">
-          <button (click)="logout()">
-            Log out {{ user.email }}
-          </button>
-        </div>
-        
-          <ng-template #showLogin>
-            <button (click)="login()" >Sign in with Google</button>
-          </ng-template>
-        
-        </div>
+
+      <ng-template #showLogin>
+        <button nbButton outline status="info" (click)="login()">
+          Sign in with Google
+        </button>
+      </ng-template>
+
+    </div>
   </nb-layout-header>
 
   <!-- <ng-snake></ng-snake>
@@ -26,23 +30,22 @@
     type="module">
   </script> -->
   <nb-sidebar tag="left">
-    <div>
-      <a routerLink="board">Tic tac toe</a>
-    </div>
-    <div>
-      <a routerLink="rps">Rock, paper, scissors</a>
-    </div>
-    <div>
-      <a routerLink="snake-game">Snake</a>
-    </div>
+    <a routerLink="board">TIC TAC TOE</a>
+    <br>
+    <br>
+    <a routerLink="rps">ROCK PAPER SCISSORS</a>
+    <br>
+    <br>
+    <a routerLink="simon">SIMON</a>
   </nb-sidebar>
-  <nb-layout-column>
-    Lets play!
 
+  <nb-layout-column>
     <router-outlet></router-outlet>
   </nb-layout-column>
 
   <!-- <nb-layout-footer fixed>
   </nb-layout-footer> -->
+
+
 
 </nb-layout>
