@@ -1,0 +1,36 @@
+<div *ngIf="movie$ | async as movie">
+    <div class="jumbotron jumbotron-fluid movie__header" [ngStyle]="getBackground(movie.backdrop_path)">
+
+        <div class=" container movie__header__heading ">
+            <div class=" row">
+                <div class="col-12 col-md-5 col-lg-3 px-5 px-md-0 text-center">
+                    <img src="{{'https://image.tmdb.org/t/p/w500' + movie.poster_path}}"
+                        class="card-img-top movie__header__poster" alt="{{movie.title}} poster">
+                </div>
+                <div class="col-12 col-md mt-3 mt-md-0 px-3 px-sm-5 ">
+                    <h1 class="display-4 movie__header__heading__title">
+                        {{movie.title}}
+                    </h1>
+                    <p class="mb-3">
+                        {{movie.runtime}} min |
+                    </p>
+                    <p class="lead">
+                        {{movie.overview}}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="movie container mx-auto">
+        <div class="row">
+            <div class="col-12 col-lg-3">
+                <h2 class="my-2 ">Details</h2>
+                <p><b>Budget:</b> ${{movie.budget}}</p>
+                <p><b>Revenue:</b> ${{movie.revenue}}</p>
+                <p><b>Users rating:</b> {{movie.vote_average}}/10</p>
+            </div>
+
+        </div>
+
+    </div>
+</div>
