@@ -73,7 +73,7 @@ export class SimonComponent implements OnInit {
     this.message = "";
     this.generateSequence();
     this.playSequence(0);
-    this.message = "Your turn";
+    // this.message = "Your turn";
     //odegranie nowej sekwencji
     this.gameState.userTurn = true;
     this.gameState.sequencePtr = 0;
@@ -100,11 +100,11 @@ export class SimonComponent implements OnInit {
   }
 
   generateSequence() {
-    console.log("Generowanie nowej sekwencji");
+    // console.log("Generowanie nowej sekwencji");
     const randomSound = Object.keys(this.fields)[Math.floor(Math.random() * Object.keys(this.fields).length)];
-    console.log(randomSound);
+    // console.log(randomSound);
     this.gameState.currentSequence.push(randomSound);
-    console.log(this.gameState.currentSequence);
+    // console.log(this.gameState.currentSequence);
   }
 
   // displayGameState() {
@@ -112,16 +112,16 @@ export class SimonComponent implements OnInit {
   // }
 
   success() {
-    this.message = "Success";
+    this.message = "Good job! You're on 🔥";
     this.gameState.userTurn = false;
     //this.displayGameState();
     this.gameState.round++;
-    setTimeout(() => this.startRound(false), 3000);
+    setTimeout(() => this.startRound(false), 2000);
     //startRound();
   }
 
   fail() {
-    this.message = "You failed. Please press START button";
+    this.message = '"Oh nooo you failed!" </br> "Press START to play agin"';
     console.log("fail");
     this.gameState.userTurn = false;
     // displayGameState();

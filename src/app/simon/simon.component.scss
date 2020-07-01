@@ -1,3 +1,7 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .simonBtn {
     border-radius: 20px;
     height: 100px;
@@ -6,6 +10,21 @@
     padding: 60px;
     display: inline-block;
     cursor: pointer;
+    outline: none;
+    border-width: 0px;
+    margin: 5px;
+}
+
+.controlBoard{
+    display: inline-block;
+}
+
+.left{
+    display: block;
+}
+
+.right{
+    display: block;
 }
 
 #green {
@@ -25,5 +44,6 @@
 }
 
 .blinked{
-    opacity: .3;
+    opacity: .5;
+    
 }
