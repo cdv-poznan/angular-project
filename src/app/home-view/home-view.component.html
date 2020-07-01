@@ -1,17 +1,5 @@
 <div class="container">
-    <owl-carousel-o [options]="customOptions" #owlCar>
-
-        <ng-container *ngFor="let movie of movies">
-            <ng-template carouselSlide [id]="movie.id">
-                <div>
-                    <a href="">
-                        <img class="carousel__image" src="{{'https://image.tmdb.org/t/p/w342' + movie.poster_path}}">
-                        <p class="carousel__title mt-2">
-                            {{movie.title}}
-                        </p>
-                    </a> </div>
-            </ng-template>
-        </ng-container>
-
-    </owl-carousel-o>
+    <app-carousel [carouselContext]="nowPlayingMovies" mediaType="movie"></app-carousel>
+    <app-carousel [carouselContext]="popularMovies" mediaType="movie"></app-carousel>
+    <app-carousel [carouselContext]="topRatedMovies" mediaType="movie"></app-carousel>
 </div>

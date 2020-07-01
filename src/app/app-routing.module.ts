@@ -4,7 +4,7 @@ import { HomeViewComponent } from './home-view/home-view.component';
 import { MovieViewComponent } from './movie-view/movie-view.component';
 
 const routes: Routes = [
-  { path: '', component: HomeViewComponent },
+  { path: '', component: HomeViewComponent, pathMatch: 'full' },
   { path: 'movie/:id', component: MovieViewComponent },
 ];
 

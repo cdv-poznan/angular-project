@@ -12,6 +12,8 @@ import { Observable } from 'rxjs';
 })
 export class MovieViewComponent implements OnInit {
   movie$: Observable<any>;
+  similarMovies$: Observable<any>;
+
   constructor(
     private route: ActivatedRoute,
     private router: Router,
@@ -24,12 +26,21 @@ export class MovieViewComponent implements OnInit {
         this.apiService.getMovie(params.get('id')),
       ),
     );
+    this.similarMovies$ = this.route.paramMap.pipe(
+      switchMap((params: ParamMap) =>
+        this.apiService.getSimilarMovies(params.get('id')),
+      ),
+    );
   }
+
   public getBackground(url) {
     const style = {
       'background-image': `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://image.tmdb.org/t/p//original/${url})`,
     };
-    console.log(style);
     return style;
+  }
+  public getGenres(genres) {
+    const genresList = genres.map((e) => e.name).join(', ');
+    return genresList;
   }
 }

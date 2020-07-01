@@ -9,11 +9,19 @@ import { apiKey } from 'src/environments/apiConfig';
 const apiUrl: string = 'https://api.themoviedb.org/3';
 const queryNowPlayingMovies: string = 'movie/now_playing';
 
+export enum moviesQueryTypes {
+  nowPlaying = 'now_playing',
+  popular = 'popular',
+  topRated = 'top_rated',
+}
+
 @Injectable({
   providedIn: 'root',
 })
 export class ApiServiceService {
-  heroesUrl = `${apiUrl}/${queryNowPlayingMovies}/?api_key=${apiKey}&language=en-US`; // URL to web api
+  private urlCreator = (path: string) =>
+    `${apiUrl}/${path}?api_key=${apiKey}&language=en-US`;
+
   private handleError: HandleError;
 
   constructor(private http: HttpClient, httpErrorHandler: HttpErrorHandler) {
@@ -21,17 +29,20 @@ export class ApiServiceService {
   }
 
   /** GET heroes from the server */
-  getHeroes() {
+  getMovies(query: moviesQueryTypes) {
     return this.http
-      .get(this.heroesUrl)
-      .pipe(catchError(this.handleError('getHeroes', [])));
+      .get(this.urlCreator(`movie/${query}`))
+      .pipe(catchError(this.handleError('getMovies', [])));
   }
   /** GET movie from the server */
   getMovie(id: string) {
-    const movieUrl: string = `${apiUrl}/movie/${id}?api_key=${apiKey}&language=en-US`; // URL to web api
-    console.log(movieUrl);
     return this.http
-      .get(movieUrl)
+      .get(this.urlCreator(`movie/${id}`))
       .pipe(catchError(this.handleError('getMovie', [])));
+  }
+  getSimilarMovies(id: string) {
+    return this.http
+      .get(this.urlCreator(`movie/${id}/similar`))
+      .pipe(catchError(this.handleError('getSimilarMovies', [])));
   }
 }

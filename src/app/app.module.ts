@@ -10,9 +10,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { HomeViewComponent } from './home-view/home-view.component';
 import { MovieViewComponent } from './movie-view/movie-view.component';
+import { CarouselComponent } from './carousel/carousel.component';
+import { NgxGlideModule } from 'ngx-glide';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, HomeViewComponent, MovieViewComponent],
+  declarations: [
+    AppComponent,
+    NavbarComponent,
+    HomeViewComponent,
+    MovieViewComponent,
+    CarouselComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -20,6 +28,7 @@ import { MovieViewComponent } from './movie-view/movie-view.component';
     HttpClientModule,
     BrowserAnimationsModule,
     CarouselModule,
+    NgxGlideModule,
   ],
   providers: [HttpErrorHandler],
   bootstrap: [AppComponent],

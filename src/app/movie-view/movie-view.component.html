@@ -12,7 +12,8 @@
                         {{movie.title}}
                     </h1>
                     <p class="mb-3">
-                        {{movie.runtime}} min |
+                        {{movie.runtime}} min | {{getGenres(movie.genres)}}
+
                     </p>
                     <p class="lead">
                         {{movie.overview}}
@@ -29,8 +30,13 @@
                 <p><b>Revenue:</b> ${{movie.revenue}}</p>
                 <p><b>Users rating:</b> {{movie.vote_average}}/10</p>
             </div>
+            <div class="col mt-4" *ngIf="similarMovies$ | async as similarMovies">
+                <app-carousel [carouselContext]="similarMovies.results" mediaType="movie"></app-carousel>
+
+            </div>
 
         </div>
 
     </div>
 </div>
+<div></div>
