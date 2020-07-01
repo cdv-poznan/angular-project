@@ -121,7 +121,7 @@ export class SimonComponent implements OnInit {
   }
 
   fail() {
-    this.message = '"Oh nooo you failed!" </br> "Press START to play agin"';
+    this.message = "Oh nooo you failed! Press START to play agin";
     console.log("fail");
     this.gameState.userTurn = false;
     // displayGameState();
