@@ -1,5 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+$primary: #ffc200;
 
+// Automates responsive resizing
+// https://github.com/twbs/rfs
+$enable-responsive-font-sizes: true;
 /* Importing Bootstrap SCSS file. */
 @import "~bootstrap/scss/bootstrap";
 

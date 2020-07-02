@@ -1,0 +1,8 @@
+@import "../../variables.scss";
+
+.nav-pills .nav-link {
+  border: solid 1px $primary;
+  border-radius: 0;
+  margin-left: -1px;
+  margin-top: -1px;
+}

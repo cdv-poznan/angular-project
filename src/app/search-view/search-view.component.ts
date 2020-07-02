@@ -23,21 +23,18 @@ export class SearchViewComponent implements OnInit {
     private route: ActivatedRoute,
     private router: Router,
     private apiService: ApiServiceService,
-  ) {
-    this.category = this.route.snapshot.params.category;
-  }
+  ) {}
 
   ngOnInit(): void {
     this.route.queryParams.subscribe((params) => {
-      console.log(params);
       this.query = params.query;
+      this.category = params.category;
       this.page = params.page ? parseInt(params.page, 10) : 1;
       this.isPrev = this.page !== 1;
       this.searchResults.total_pages = parseInt(
         this.searchResults.total_pages,
         10,
       );
-
       this.getSearchResults();
     });
   }

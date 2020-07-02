@@ -7,7 +7,7 @@ import { SearchViewComponent } from './search-view/search-view.component';
 const routes: Routes = [
   { path: '', component: HomeViewComponent, pathMatch: 'full' },
   { path: 'movie/:id', component: MovieViewComponent },
-  { path: 'search/:category', component: SearchViewComponent },
+  { path: 'search', component: SearchViewComponent },
 ];
 
 @NgModule({

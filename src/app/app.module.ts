@@ -13,6 +13,7 @@ import { MovieViewComponent } from './movie-view/movie-view.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { NgxGlideModule } from 'ngx-glide';
 import { SearchViewComponent } from './search-view/search-view.component';
+import { SearchResultComponent } from './search-view/search-result/search-result.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { SearchViewComponent } from './search-view/search-view.component';
     MovieViewComponent,
     CarouselComponent,
     SearchViewComponent,
+    SearchResultComponent,
   ],
   imports: [
     BrowserModule,
