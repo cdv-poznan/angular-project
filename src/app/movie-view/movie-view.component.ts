@@ -3,6 +3,7 @@ import { ApiServiceService } from '../api-service.service';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 import { switchMap } from 'rxjs/operators';
 import { Observable } from 'rxjs';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-movie-view',
@@ -13,11 +14,13 @@ import { Observable } from 'rxjs';
 export class MovieViewComponent implements OnInit {
   movie$: Observable<any>;
   similarMovies$: Observable<any>;
+  title;
 
   constructor(
     private route: ActivatedRoute,
     private router: Router,
     private apiService: ApiServiceService,
+    private titleService: Title,
   ) {}
 
   ngOnInit() {
@@ -31,6 +34,9 @@ export class MovieViewComponent implements OnInit {
         this.apiService.getSimilarMovies(params.get('id')),
       ),
     );
+    this.movie$.subscribe((data) => {
+      this.titleService.setTitle(`${data.title} - Filmeo`);
+    });
   }
 
   public getBackground(url) {

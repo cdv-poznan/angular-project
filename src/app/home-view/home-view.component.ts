@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiServiceService, moviesQueryTypes } from '../api-service.service';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-home-view',
@@ -11,12 +12,16 @@ export class HomeViewComponent implements OnInit {
   nowPlayingMovies: any[] = [];
   popularMovies: any[] = [];
   topRatedMovies: any[] = [];
-  constructor(private apiService: ApiServiceService) {}
+  constructor(
+    private apiService: ApiServiceService,
+    private titleService: Title,
+  ) {}
 
   ngOnInit() {
     this.getNowPlayingMovies();
     this.getPopularMovies();
     this.getTopRatedMovies();
+    this.titleService.setTitle(`Filmeo - the movie database`);
   }
 
   getNowPlayingMovies(): void {

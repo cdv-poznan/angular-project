@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, Title } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -14,6 +14,7 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { NgxGlideModule } from 'ngx-glide';
 import { SearchViewComponent } from './search-view/search-view.component';
 import { SearchResultComponent } from './search-view/search-result/search-result.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -33,8 +34,10 @@ import { SearchResultComponent } from './search-view/search-result/search-result
     BrowserAnimationsModule,
     CarouselModule,
     NgxGlideModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
-  providers: [HttpErrorHandler],
+  providers: [HttpErrorHandler, Title],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

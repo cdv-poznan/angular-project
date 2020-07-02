@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiServiceService } from '../api-service.service';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
-import { switchMap } from 'rxjs/operators';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-search-view',
@@ -21,8 +21,9 @@ export class SearchViewComponent implements OnInit {
   pagination;
   constructor(
     private route: ActivatedRoute,
-    private router: Router,
     private apiService: ApiServiceService,
+    private titleService: Title,
+    private router: Router,
   ) {}
 
   ngOnInit(): void {
@@ -35,6 +36,7 @@ export class SearchViewComponent implements OnInit {
         this.searchResults.total_pages,
         10,
       );
+      this.titleService.setTitle(`${this.query} - Filmeo`);
       this.getSearchResults();
     });
   }
