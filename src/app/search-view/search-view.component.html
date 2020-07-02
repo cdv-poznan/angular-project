@@ -1,0 +1,60 @@
+<div class="container mt-5">
+    <h1>Search results - {{query}}</h1>
+
+    <div>
+        <div>
+            <p>Total results: {{searchResults.total_results}}</p>
+
+            <div class="card mb-3 mt-4" *ngFor="let result of searchResults.results">
+                <div class=" row no-gutters">
+                    <div class="col-4 col-sm-auto">
+                        <a>
+                            <img src="{{'https://image.tmdb.org/t/p/w185' + result?.poster_path }}" class="card-img-top"
+                                alt="{{result?.name}}{{result?.title}}">
+                        </a>
+                    </div>
+                    <div class="col d-flex flex-column">
+                        <div class=" px-2 px-sm-4 py-2 py-sm-3 d-flex flex-column ">
+                            <a>
+                                <h5 class="card-title">
+                                    {{result.title}}{{result.name}}
+                                </h5>
+                            </a>
+
+                            <small>
+                                <p class="card-text text-left search__overview">
+                                    {{result.overview}}
+                                </p>
+                            </small>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="text-right mb-2">Page {{page}} of {{searchResults.total_pages}}</p>
+            <nav aria-label="search pagination d-flex">
+                <ul class="pagination flex-wrap justify-content-end">
+
+
+                    <li *ngIf="page !== 1" class="page-item">
+                        <a class="page-link link" [routerLink]="['/search/' + category]"
+                            [queryParams]="{page: page -1, query: query}" routerLinkActive="active">Previous</a>
+                    </li>
+
+
+
+                    <li *ngIf="page < searchResults.total_pages" class="page-item">
+                        <a class="page-link link" [routerLink]="['/search/' + category]"
+                            [queryParams]="{page: page + 1, query: query}" routerLinkActive="active">Next</a>
+                    </li>
+
+                </ul>
+            </nav>
+
+        </div>
+
+
+    </div>
+
+</div>

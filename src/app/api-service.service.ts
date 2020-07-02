@@ -19,8 +19,8 @@ export enum moviesQueryTypes {
   providedIn: 'root',
 })
 export class ApiServiceService {
-  private urlCreator = (path: string) =>
-    `${apiUrl}/${path}?api_key=${apiKey}&language=en-US`;
+  private urlCreator = (path: string, page: number = 1, query = '') =>
+    `${apiUrl}/${path}?api_key=${apiKey}&language=en-US&page=${page}&query=${query}`;
 
   private handleError: HandleError;
 
@@ -44,5 +44,11 @@ export class ApiServiceService {
     return this.http
       .get(this.urlCreator(`movie/${id}/similar`))
       .pipe(catchError(this.handleError('getSimilarMovies', [])));
+  }
+  getSearchResuts(category, query, page) {
+    console.log(this.urlCreator(`search/${category}`, page, query));
+    return this.http
+      .get(this.urlCreator(`search/${category}`, page, query))
+      .pipe(catchError(this.handleError('getSearchResults', [])));
   }
 }

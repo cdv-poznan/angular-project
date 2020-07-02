@@ -12,6 +12,7 @@ import { HomeViewComponent } from './home-view/home-view.component';
 import { MovieViewComponent } from './movie-view/movie-view.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { NgxGlideModule } from 'ngx-glide';
+import { SearchViewComponent } from './search-view/search-view.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { NgxGlideModule } from 'ngx-glide';
     HomeViewComponent,
     MovieViewComponent,
     CarouselComponent,
+    SearchViewComponent,
   ],
   imports: [
     BrowserModule,
