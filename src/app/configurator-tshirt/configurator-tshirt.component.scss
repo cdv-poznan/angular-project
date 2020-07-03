@@ -7,15 +7,30 @@
   margin-top: 40px;
 }
 
-.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle{
-  border-color:rgb(66, 134, 244);
+.tshirt-wrapper {
+  width: 450px;
 }
 
-.mat-radio-button.mat-accent .mat-radio-inner-circle{
-  color:rgb(66, 134, 244);
-  background-color:rgb(66, 134, 244) ;
+.add-to-basket-form {
+  border: 1px solid lightgray;
+  padding: 0;
 }
 
-.mat-radio-button.mat-accent .mat-radio-ripple .mat-ripple-element {
-    background-color:rgb(255, 37, 37,.26);
+form.list-group .list-group-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.zeroAdded::after {
+  content: '0';
+}
+
+.item-info {
+  font-size: 1.5em;
+  padding-bottom: 1em;
+  margin-top: auto;
+  > div {
+    // width: 50%;
+    // margin: auto;
+  }
 }
