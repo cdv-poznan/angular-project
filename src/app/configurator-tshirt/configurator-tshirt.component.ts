@@ -22,6 +22,8 @@ export class ConfiguratorTshirtComponent implements OnInit {
     this.price = this.randomPrice();
     this.checkIfAddZero();
   }
+
+  //  this method generates a random t-shirt price, because why not 🤷 🤷‍♂️
   randomPrice() {
     const random: number = Math.floor(Math.random() * 10000) / 100;
     return random;
@@ -39,12 +41,23 @@ export class ConfiguratorTshirtComponent implements OnInit {
 
   onFileChanged(event) {
     const file = event.target.files[0];
-    // console.log(file);
     const reader = new FileReader();
-    reader.onload = (e: any) => {
-      const data = e.target.result;
-      console.log(data);
-    }
+    reader.onload = (loadEvent: any) => {
+      const imgObj = new Image();
+      imgObj.src = loadEvent.target.result as string;
+      const userImage = new fabric.Image(imgObj, {
+        left: 130,
+        top: 100,
+      });
+      userImage.scaleToWidth(this.canvas.getWidth() - 240);
+      this.canvas.add(userImage);
+      this.canvas.renderAll();
+    };
+    reader.readAsDataURL(file);
+    // (e: any) => {
+    //   const data = e.target.result;
+    //   console.log(data);
+    // }
     // ((imageEvent) => {
     //   const imgObj = new Image();
     //   imgObj.src = imageEvent.target.result as string;
