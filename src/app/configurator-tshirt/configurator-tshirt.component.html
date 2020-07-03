@@ -34,6 +34,15 @@
         <!-- <input hidden (change)="onFileChanged($event)" #fileInput type="file" id="file"> -->
       </div>
     </div>
+    <li class="list-group-item" data-toggle="collapse" href="#chooseText" role="button" aria-expanded="false"
+      aria-controls="chooseText">
+      Choose text <span class="triangle">&#9660;</span>
+    </li>
+    <div class="form-group colors collapse px-3 pt-2" id="chooseText">
+      <div>
+        <input [(ngModel)]="tshirtText" (input)="onTextChanged($event)" type="text" name="tshirtText" id="">
+      </div>
+    </div>
     <li class="list-group-item" data-toggle="collapse" href="#size" role="button" aria-expanded="false"
       aria-controls="size">
       Choose T-shirt size <span class="triangle">&#9660;</span>

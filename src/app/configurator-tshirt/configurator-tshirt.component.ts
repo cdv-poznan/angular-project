@@ -10,15 +10,19 @@ import { MatRadioModule } from '@angular/material/radio';
 })
 export class ConfiguratorTshirtComponent implements OnInit {
   canvas: any;
+  backgroundUrl = '../assets/img/tshirt.png';
   selectedColor = 'white';
+  tshirtText = '';
   selectedSize = 'l';
   price: number;
   shouldAddZero = false;
   constructor() { }
 
   ngOnInit(): void {
-    this.canvas = new fabric.Canvas('tshirtCanvas');
-    fabric.Image.fromURL('../assets/img/tshirt.png', img => { this.canvas.add(img)});
+    this.canvas = new fabric.Canvas('tshirtCanvas', {
+      selectionBorderColor: '#441c55'
+    });
+    this.canvas.setBackgroundImage(this.backgroundUrl, this.canvas.renderAll.bind(this.canvas));
     this.price = this.randomPrice();
     this.checkIfAddZero();
   }
@@ -54,20 +58,30 @@ export class ConfiguratorTshirtComponent implements OnInit {
       this.canvas.renderAll();
     };
     reader.readAsDataURL(file);
-    // (e: any) => {
-    //   const data = e.target.result;
-    //   console.log(data);
-    // }
-    // ((imageEvent) => {
-    //   const imgObj = new Image();
-    //   imgObj.src = imageEvent.target.result as string;
-    //   const userImage = new fabric.Image(imgObj);
-    //   console.log(userImage);
-    //   this.canvas.add(userImage);
-    //   this.canvas.renderAll();
-    //   console.log(this.canvas);
-    // })
-    // new fabric.Image(file, img => { this.canvas.add(img); });
+  }
+
+  checkIfElementAdded(typeOfElement) {
+    const arr = this.canvas.getObjects();
+    return arr.some(elem => typeOfElement === elem.type);
+  }
+
+  onTextChanged(event) {
+    if (this.checkIfElementAdded('i-text')) {
+      this.canvas.getObjects().forEach( (item) => {
+        console.log(item);
+        if (item.type === 'i-text') {
+          item.text = this.tshirtText;
+          this.canvas.renderAll();
+        }
+      });
+    } else {
+      const userText = new fabric.IText(this.tshirtText, {
+        fontFamily: 'arial black',
+        left: 100,
+        top: 200
+      });
+      this.canvas.add(userText);
+    }
   }
 
 
