@@ -1,0 +1,23 @@
+<ngb-carousel *ngIf="slideImages">
+  <ng-template ngbSlide>
+    <div class="picsum-img-wrapper">
+        <a routerLink="{{ slideLinks[0] }}">
+            <img [src]="slideImages[0]" [alt]="slideAlts[0]">
+        </a>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div class="picsum-img-wrapper">
+        <a routerLink="{{ slideLinks[1] }}">
+            <img [src]="slideImages[1]" [alt]="slideAlts[1]">
+        </a>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div class="picsum-img-wrapper">
+        <a routerLink="{{ slideLinks[2] }}">
+            <img [src]="slideImages[2]" [alt]="slideAlts[2]">
+        </a>
+    </div>
+  </ng-template>
+</ngb-carousel>

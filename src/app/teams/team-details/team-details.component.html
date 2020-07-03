@@ -1,1 +1,15 @@
-<p>team-details works!</p>
+<div *ngIf="team">
+    <h2>{{ team.full_name }}</h2>
+    <p>
+        ID: {{ team.full_name }}<br>
+        abbreviation: {{ team.abbreviation }}<br>
+        city: {{ team.city }}<br>
+        conference: {{ team.conference }}<br>
+        division: {{ team.division }}<br>
+        name: {{ team.name }}<br>
+      </p>
+</div>
+
+<div *ngIf="errorMessage">
+  <p>{{ errorMessage }}</p>
+</div>

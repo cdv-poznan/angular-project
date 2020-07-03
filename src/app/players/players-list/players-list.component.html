@@ -1,1 +1,31 @@
-<p>players-list works!</p>
+<div class="container">
+    <div class="row">
+      <div class="col-12">
+        <ul *ngIf="players?.length; else emptyBlock">
+          <ng-container *ngFor="let player of players">
+
+            <div class="playerBoxShort align-items-center row">
+                <div class="col-12 col-md-4">
+                <!-- <a routerLink="/players/{{ player.id }}"><img src="/assets/players-img/small/{{ player.id }}-{{ player.first_name }}-{{ player.last_name }}.png" class="img-responsive" /></a> -->
+                <!-- <a routerLink="/players/{{ player.id }}"><img src="/assets/players-img/small/{{ player.id }}-{{ player.first_name }}-{{ player.last_name }}.png" class="img-responsive" /></a> -->
+                  
+                </div>          
+                <div class="col-10 col-md-6 text-left">
+                <a routerLink="/players/{{ player.id }}">
+                          <h2>{{ player.first_name }} {{ player.last_name }}</h2>
+                          </a>
+                          <hr>
+                Drużyna: {{ player.team.full_name }}<br>Pozycja: {{ player.position }}</div>
+                <div class="col-2 col-md-2"><a routerLink="/players/{{ player.id }}"><i class="far fa-address-card fa-3x"></i></a></div>
+                 </div>
+
+          </ng-container>
+        </ul>
+        
+        <ng-template #emptyBlock>
+          The list is empty.
+        </ng-template>
+      </div>
+    </div>
+  </div>
+  

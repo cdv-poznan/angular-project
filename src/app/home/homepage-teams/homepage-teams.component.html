@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="row">
+        <h2>Teams</h2>
+      <div class="col-12">
+        <div *ngIf="teams?.length; else emptyBlock" class="row">
+          <ng-container *ngFor="let team of teams">
+            <div class="teamBox col-4">
+                    <a routerLink="/teams/{{ team.id }}"><img src="/assets/teams-logo/png/{{ team.abbreviation }}.png" alt="{{ team.name }}"></a>
+            </div>
+          </ng-container>
+        </div>        
+        <ng-template #emptyBlock>
+          The list is empty.
+        </ng-template>
+      </div>
+    </div>
+  </div>
+  
