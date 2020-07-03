@@ -9,6 +9,9 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 export class CarouselComponent implements OnInit {
   @Input() carouselContext;
   @Input() mediaType;
+  link: string;
+  imagePath: string;
+  imageFullPath: string;
   customOptions: OwlOptions = {
     loop: true,
     mouseDrag: false,
@@ -41,5 +44,26 @@ export class CarouselComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    console.log(this.carouselContext);
+  }
+  public getImage(result) {
+    let imagePath;
+    switch (this.mediaType) {
+      case 'tv':
+        imagePath = result.poster_path;
+        break;
+      case 'movie':
+        imagePath = result.poster_path;
+        break;
+      case 'person':
+        imagePath = result.profile_path;
+        break;
+      default:
+        break;
+    }
+    return imagePath
+      ? `https://image.tmdb.org/t/p/w342${imagePath}`
+      : 'https://fakeimg.pl/342x513/?text=No%20image';
+  }
 }

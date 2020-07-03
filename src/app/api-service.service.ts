@@ -36,14 +36,26 @@ export class ApiServiceService {
   }
   /** GET movie from the server */
   getMovie(id: string) {
+    console.log(this.urlCreator(`movie/${id}`));
     return this.http
       .get(this.urlCreator(`movie/${id}`))
       .pipe(catchError(this.handleError('getMovie', [])));
+  }
+  /** GET movie from the server */
+  getPerson(id: string) {
+    return this.http
+      .get(this.urlCreator(`person/${id}`))
+      .pipe(catchError(this.handleError('getPerson', [])));
   }
   getSimilarMovies(id: string) {
     return this.http
       .get(this.urlCreator(`movie/${id}/similar`))
       .pipe(catchError(this.handleError('getSimilarMovies', [])));
+  }
+  getPersonFilmography(id: string) {
+    return this.http
+      .get(this.urlCreator(`person/${id}/movie_credits`))
+      .pipe(catchError(this.handleError('getPersonFilmography', [])));
   }
   getSearchResuts(category, query, page) {
     console.log(this.urlCreator(`search/${category}`, page, query));

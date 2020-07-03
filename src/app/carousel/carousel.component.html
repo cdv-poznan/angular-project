@@ -1,17 +1,19 @@
-<owl-carousel-o [options]="customOptions" class="carousel-wrap" #owlCar>
+<div class="mt-3">
+    <owl-carousel-o [options]="customOptions" class="carousel-wrap" #owlCar>
 
-    <ng-container *ngFor="let movie of carouselContext.slice(0,7)">
-        <ng-template carouselSlide [id]="movie.id">
-            <div>
-                <a routerLink="{{'/' + mediaType +'/' + movie.id}}" routerLinkActive="active">
-                    <img class="carousel__image" src="{{'https://image.tmdb.org/t/p/w342' + movie.poster_path}}">
-                    <p class="carousel__title mt-2">
-                        {{movie.title}}
+        <ng-container *ngFor="let result of carouselContext.slice(0,7)">
+            <ng-template carouselSlide [id]="result.id">
+                <div>
+                    <a routerLink="{{'/' + mediaType +'/' + result.id}}">
+                        <img class="carousel__image" [src]="getImage(result)">
+                        <p class="carousel__title mt-2">
+                            {{result.title}}{{result.name}}
 
-                    </p>
-                </a>
-            </div>
-        </ng-template>
-    </ng-container>
+                        </p>
+                    </a>
+                </div>
+            </ng-template>
+        </ng-container>
 
-</owl-carousel-o>
+    </owl-carousel-o>
+</div>

@@ -15,6 +15,7 @@ import { NgxGlideModule } from 'ngx-glide';
 import { SearchViewComponent } from './search-view/search-view.component';
 import { SearchResultComponent } from './search-view/search-result/search-result.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { PersonViewComponent } from './person-view/person-view.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     CarouselComponent,
     SearchViewComponent,
     SearchResultComponent,
+    PersonViewComponent,
   ],
   imports: [
     BrowserModule,

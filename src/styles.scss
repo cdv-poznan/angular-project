@@ -1,12 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
-$primary: #ffc200;
+@import "././variables.scss";
 
 // Automates responsive resizing
 // https://github.com/twbs/rfs
 $enable-responsive-font-sizes: true;
 /* Importing Bootstrap SCSS file. */
 @import "~bootstrap/scss/bootstrap";
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
 @import "~ngx-owl-carousel-o/lib/styles/scss/owl.carousel";
 @import "~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default";
 
