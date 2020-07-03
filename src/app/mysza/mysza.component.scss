@@ -1,0 +1,15 @@
+:host {
+    display: flex;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 600px;
+}
+
+app-mysza-text {
+    width: 40%;
+}
+
+app-mysza-avatar {
+    width: 60%;
+}
