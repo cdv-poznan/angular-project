@@ -77,10 +77,12 @@ export class ConfiguratorTshirtComponent implements OnInit {
     } else {
       const userText = new fabric.IText(this.tshirtText, {
         fontFamily: 'arial black',
+        fill: 'blue',
         left: 100,
         top: 200
       });
       this.canvas.add(userText);
+      this.canvas.moveTo(userText, 10);
     }
   }
 

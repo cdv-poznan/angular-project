@@ -36,11 +36,12 @@
     </div>
     <li class="list-group-item" data-toggle="collapse" href="#chooseText" role="button" aria-expanded="false"
       aria-controls="chooseText">
-      Choose text <span class="triangle">&#9660;</span>
+      Add text <span class="triangle">&#9660;</span>
     </li>
     <div class="form-group colors collapse px-3 pt-2" id="chooseText">
-      <div>
-        <input [(ngModel)]="tshirtText" (input)="onTextChanged($event)" type="text" name="tshirtText" id="">
+      <div class="d-flex justify-content-between">
+        <textarea [(ngModel)]="tshirtText" (input)="onTextChanged($event)" name="tshirtText" id=""></textarea>
+        <button class="btn btn-primary" id="color-picker">Change text color</button>
       </div>
     </div>
     <li class="list-group-item" data-toggle="collapse" href="#size" role="button" aria-expanded="false"
