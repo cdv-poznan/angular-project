@@ -28,29 +28,38 @@ export class ApiServiceService {
     this.handleError = httpErrorHandler.createHandleError('HeroesService');
   }
 
-  /** GET heroes from the server */
   getMovies(query: moviesQueryTypes) {
     return this.http
       .get(this.urlCreator(`movie/${query}`))
       .pipe(catchError(this.handleError('getMovies', [])));
   }
-  /** GET movie from the server */
-  getMovie(id: string) {
-    console.log(this.urlCreator(`movie/${id}`));
+
+  getShows(query: string) {
     return this.http
-      .get(this.urlCreator(`movie/${id}`))
+      .get(this.urlCreator(`tv/${query}`))
+      .pipe(catchError(this.handleError('getShows', [])));
+  }
+
+  getMedia(id: string, mediaType: string) {
+    return this.http
+      .get(this.urlCreator(`${mediaType}/${id}`))
       .pipe(catchError(this.handleError('getMovie', [])));
   }
-  /** GET movie from the server */
+
   getPerson(id: string) {
     return this.http
       .get(this.urlCreator(`person/${id}`))
       .pipe(catchError(this.handleError('getPerson', [])));
   }
-  getSimilarMovies(id: string) {
+  getSimilar(id: string, mediaType: string) {
     return this.http
-      .get(this.urlCreator(`movie/${id}/similar`))
-      .pipe(catchError(this.handleError('getSimilarMovies', [])));
+      .get(this.urlCreator(`${mediaType}/${id}/similar`))
+      .pipe(catchError(this.handleError('getSimilar', [])));
+  }
+  getCast(id: string, mediaType: string) {
+    return this.http
+      .get(this.urlCreator(`${mediaType}/${id}/credits`))
+      .pipe(catchError(this.handleError('getCast', [])));
   }
   getPersonFilmography(id: string) {
     return this.http
@@ -58,7 +67,6 @@ export class ApiServiceService {
       .pipe(catchError(this.handleError('getPersonFilmography', [])));
   }
   getSearchResuts(category, query, page) {
-    console.log(this.urlCreator(`search/${category}`, page, query));
     return this.http
       .get(this.urlCreator(`search/${category}`, page, query))
       .pipe(catchError(this.handleError('getSearchResults', [])));

@@ -7,14 +7,14 @@ import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-movie-view',
-  templateUrl: './movie-view.component.html',
+  templateUrl: './tv-show-view.component.html',
   providers: [ApiServiceService],
-  styleUrls: ['./movie-view.component.scss'],
+  styleUrls: ['./tv-show-view.component.scss'],
 })
-export class MovieViewComponent implements OnInit {
-  movie$: Observable<any>;
-  similarMovies$: Observable<any>;
-  movieCast$: Observable<any>;
+export class TvShowViewComponent implements OnInit {
+  show$: Observable<any>;
+  similarShows$: Observable<any>;
+  showCast$: Observable<any>;
   title;
 
   constructor(
@@ -25,23 +25,23 @@ export class MovieViewComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.movie$ = this.route.paramMap.pipe(
+    this.show$ = this.route.paramMap.pipe(
       switchMap((params: ParamMap) =>
-        this.apiService.getMedia(params.get('id'), 'movie'),
+        this.apiService.getMedia(params.get('id'), 'tv'),
       ),
     );
-    this.similarMovies$ = this.route.paramMap.pipe(
+    this.similarShows$ = this.route.paramMap.pipe(
       switchMap((params: ParamMap) =>
-        this.apiService.getSimilar(params.get('id'), 'movie'),
+        this.apiService.getSimilar(params.get('id'), 'tv'),
       ),
     );
-    this.movieCast$ = this.route.paramMap.pipe(
+    this.showCast$ = this.route.paramMap.pipe(
       switchMap((params: ParamMap) =>
-        this.apiService.getCast(params.get('id'), 'movie'),
+        this.apiService.getCast(params.get('id'), 'tv'),
       ),
     );
-    this.movie$.subscribe((data) => {
-      this.titleService.setTitle(`${data.title} - Filmeo`);
+    this.show$.subscribe((data) => {
+      this.titleService.setTitle(`${data.name} - Filmeo`);
     });
   }
 

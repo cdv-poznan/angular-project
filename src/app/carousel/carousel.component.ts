@@ -9,9 +9,11 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 export class CarouselComponent implements OnInit {
   @Input() carouselContext;
   @Input() mediaType;
+
   link: string;
   imagePath: string;
   imageFullPath: string;
+
   customOptions: OwlOptions = {
     loop: true,
     mouseDrag: false,
@@ -29,13 +31,13 @@ export class CarouselComponent implements OnInit {
       '0': {
         items: 2,
       },
-      '576': {
+      '376': {
         items: 3,
       },
-      '992': {
+      '792': {
         items: 4,
       },
-      '1200': {
+      '1000': {
         items: 5,
       },
     },
@@ -44,9 +46,7 @@ export class CarouselComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit(): void {
-    console.log(this.carouselContext);
-  }
+  ngOnInit(): void {}
   public getImage(result) {
     let imagePath;
     switch (this.mediaType) {

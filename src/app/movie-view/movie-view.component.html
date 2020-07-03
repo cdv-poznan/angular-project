@@ -30,8 +30,14 @@
                 <p><b>Revenue:</b> ${{movie.revenue}}</p>
                 <p><b>Users rating:</b> {{movie.vote_average}}/10</p>
             </div>
-            <div class="col mt-4" *ngIf="similarMovies$ | async as similarMovies">
-                <app-carousel [carouselContext]="similarMovies.results" mediaType="movie"></app-carousel>
+            <div class="col mt-4">
+                <h2>Cast</h2>
+                <app-carousel *ngIf="movieCast$ | async as movieCast" [carouselContext]="movieCast.cast"
+                    mediaType="person"></app-carousel>
+                <h2 clacc="mt-4">Cast</h2>
+                <app-carousel *ngIf="similarMovies$ | async as similarMovies" [carouselContext]="similarMovies.results"
+                    mediaType="movie"></app-carousel>
+
 
             </div>
 

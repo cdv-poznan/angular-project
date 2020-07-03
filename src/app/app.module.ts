@@ -8,7 +8,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { HttpErrorHandler } from './http-error-handler.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselModule } from 'ngx-owl-carousel-o';
-import { HomeViewComponent } from './home-view/home-view.component';
 import { MovieViewComponent } from './movie-view/movie-view.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { NgxGlideModule } from 'ngx-glide';
@@ -16,17 +15,22 @@ import { SearchViewComponent } from './search-view/search-view.component';
 import { SearchResultComponent } from './search-view/search-result/search-result.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PersonViewComponent } from './person-view/person-view.component';
+import { TvShowViewComponent } from './tv-show-view/tv-show-view.component';
+import { MoviesViewComponent } from './movies-view/movies-view.component';
+import { TvShowsViewComponent } from './tv-shows-view/tv-shows-view.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    HomeViewComponent,
     MovieViewComponent,
+    MoviesViewComponent,
     CarouselComponent,
     SearchViewComponent,
     SearchResultComponent,
     PersonViewComponent,
+    TvShowViewComponent,
+    TvShowsViewComponent,
   ],
   imports: [
     BrowserModule,

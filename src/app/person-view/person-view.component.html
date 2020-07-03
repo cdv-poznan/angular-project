@@ -11,6 +11,7 @@
     </div>
     <h2 class="mt-5">Filmography</h2>
     <div *ngIf="personFilmography$ | async as personFilmography">
-        <app-carousel [carouselContext]="personFilmography.cast" mediaType="movie"></app-carousel>
+        <app-carousel [carouselContext]="personFilmography.cast" mediaType="movie">
+        </app-carousel>
     </div>
 </div>

@@ -4,11 +4,11 @@ import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-home-view',
-  templateUrl: './home-view.component.html',
+  templateUrl: './movies-view.component.html',
   providers: [ApiServiceService],
-  styleUrls: ['./home-view.component.scss'],
+  styleUrls: ['./movies-view.component.scss'],
 })
-export class HomeViewComponent implements OnInit {
+export class MoviesViewComponent implements OnInit {
   nowPlayingMovies: any[] = [];
   popularMovies: any[] = [];
   topRatedMovies: any[] = [];
