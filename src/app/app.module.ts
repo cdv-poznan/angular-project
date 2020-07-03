@@ -12,9 +12,10 @@ import { PlayersListComponent } from './players/players-list/players-list.compon
 import { PlayerDetailsComponent } from './players/player-details/player-details.component';
 import { GamesListComponent } from './games/games-list/games-list.component';
 import { GameDetailsComponent } from './games/game-details/game-details.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
-  declarations: [AppComponent, TeamsComponent, PlayersComponent, GamesComponent, SharedComponent, TeamsListComponent, TeamDetailsComponent, PlayersListComponent, PlayerDetailsComponent, GamesListComponent, GameDetailsComponent],
+  declarations: [AppComponent, TeamsComponent, PlayersComponent, GamesComponent, SharedComponent, TeamsListComponent, TeamDetailsComponent, PlayersListComponent, PlayerDetailsComponent, GamesListComponent, GameDetailsComponent, HomeComponent],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
