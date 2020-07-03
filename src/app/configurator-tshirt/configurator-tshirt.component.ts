@@ -14,6 +14,8 @@ export class ConfiguratorTshirtComponent implements OnInit {
   selectedColor = 'white';
   tshirtText = '';
   selectedSize = 'l';
+  textColor = 'black';
+  selectedFont = 'Lato';
   price: number;
   shouldAddZero = false;
   constructor() { }
@@ -68,16 +70,16 @@ export class ConfiguratorTshirtComponent implements OnInit {
   onTextChanged(event) {
     if (this.checkIfElementAdded('i-text')) {
       this.canvas.getObjects().forEach( (item) => {
-        console.log(item);
         if (item.type === 'i-text') {
           item.text = this.tshirtText;
           this.canvas.renderAll();
+          item.fill = this.textColor;
         }
       });
     } else {
       const userText = new fabric.IText(this.tshirtText, {
-        fontFamily: 'arial black',
-        fill: 'blue',
+        fontFamily: this.selectedFont,
+        fill: this.textColor,
         left: 100,
         top: 200
       });
@@ -86,5 +88,32 @@ export class ConfiguratorTshirtComponent implements OnInit {
     }
   }
 
+  onTextColorChange() {
+    this.canvas.getObjects().forEach( (item) => {
+      if (item.type === 'i-text') {
+        item.set('fill', this.textColor);
+      }
+      this.canvas.renderAll();
+    });
+  }
+
+  onFontChange() {
+    console.log(this.selectedFont);
+    let fontToApply: string;
+    switch(this.selectedFont) {
+      case 'lato':
+        fontToApply = '\'Lato\', sans-serif;';
+        break;
+      case 'bangers':
+        fontToApply = '\'Bangers\', cursive;';
+        break;
+    }
+    this.canvas.getObjects().forEach( (item) => {
+      if (item.type === 'i-text') {
+        item.set('fontFamily', this.selectedFont);
+      }
+      this.canvas.renderAll();
+    });
+  }
 
 }

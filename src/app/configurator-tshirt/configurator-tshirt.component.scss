@@ -22,6 +22,10 @@ form.list-group .list-group-item {
   justify-content: space-between;
 }
 
+#chooseText textarea {
+  width: inherit;
+}
+
 .zeroAdded::after {
   content: '0';
 }
@@ -30,8 +34,4 @@ form.list-group .list-group-item {
   font-size: 1.5em;
   padding-bottom: 1em;
   margin-top: auto;
-  > div {
-    // width: 50%;
-    // margin: auto;
-  }
 }

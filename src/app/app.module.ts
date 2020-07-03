@@ -10,10 +10,11 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { Form, FormsModule } from '@angular/forms';
 import { MatRadioModule, MAT_RADIO_DEFAULT_OPTIONS } from '@angular/material/radio';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ColorPickerModule } from 'ngx-color-picker';
 
 @NgModule({
   declarations: [AppComponent, HeaderComponent, LandingPageComponent, ConfiguratorTshirtComponent],
-  imports: [BrowserModule, AppRoutingModule, NgbModule, FormsModule, BrowserAnimationsModule, MatRadioModule],
+  imports: [BrowserModule, AppRoutingModule, NgbModule, FormsModule, BrowserAnimationsModule, MatRadioModule, ColorPickerModule],
   providers: [
     {
       provide: MAT_RADIO_DEFAULT_OPTIONS,
