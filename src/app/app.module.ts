@@ -14,10 +14,24 @@ import { GamesListComponent } from './games/games-list/games-list.component';
 import { GameDetailsComponent } from './games/game-details/game-details.component';
 import { HomeComponent } from './home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
-  declarations: [AppComponent, TeamsComponent, PlayersComponent, GamesComponent, SharedComponent, TeamsListComponent, TeamDetailsComponent, PlayersListComponent, PlayerDetailsComponent, GamesListComponent, GameDetailsComponent, HomeComponent],
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
+  declarations: [
+    AppComponent,
+    TeamsComponent,
+    PlayersComponent,
+    GamesComponent,
+    SharedComponent,
+    TeamsListComponent,
+    TeamDetailsComponent,
+    PlayersListComponent,
+    PlayerDetailsComponent,
+    GamesListComponent,
+    GameDetailsComponent,
+    HomeComponent,
+  ],
+  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, NgbModule],
   providers: [],
   bootstrap: [AppComponent],
 })
