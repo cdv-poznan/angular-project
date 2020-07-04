@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: Lato, sans-serif;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+    display: flex;
+    background-color: red;
+    padding: 15px 15px 25px;
+    margin: 15px;
+    border-radius: 18px;
+    flex: 1;
+}
+
+main {
+    display: flex;
+    padding: 15px 15px 25px;
+    flex-direction: column;
+    flex-flow: row wrap;
+    align-items: left;
+    text-align: center;
+}
+
+section {
+    display: flex;
+    flex-flow: column wrap;
+    flex: 5 200px;
+    margin-right: 5px;
+    border-radius: 18px;
+    background-image: url('src/img/tlo-item.jpg'); 
+    background-size: cover;
+    background-position: top center;
+    align-items: center;
+    justify-content: space-around;
+}
+aside {
+    flex: 2 200px;
+    background-image: url('src/img/tlo-pogoda.jpg');
+    background-size: cover;
+    background-position: top center;
+    margin-left: 5px;
+    display: flex;
+    flex-flow: column wrap;
+    border-radius: 18px;
+}
