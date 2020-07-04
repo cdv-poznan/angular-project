@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-slider',
-  templateUrl: './slider.component.html',
-  styleUrls: ['./slider.component.scss']
+  selector: 'app-homepage-slider',
+  templateUrl: './homepage-slider.component.html',
+  styleUrls: ['./homepage-slider.component.scss']
 })
-export class SliderComponent {
+export class HomepageSliderComponent {
   slideImages = [
     `./assets/img/slider-nba-teams.jpg`,
     `./assets/img/slider-nba-players.jpg`,

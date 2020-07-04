@@ -1,3 +1,51 @@
-<app-header></app-header>
-<p>game-detail works!</p>
-<app-footer></app-footer>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <div *ngIf="game">
+        <h1>
+          {{ game.visitor_team.full_name }} : {{ game.home_team.full_name }}
+        </h1>
+        <h2>{{ game.date | date: 'yyyy-MM-dd' }}</h2>
+        <div class="gameDetailBox">
+          <div class="row">
+            <div class="col-6">
+              <img
+                src="/assets/teams-logo/png/{{ game.visitor_team.abbreviation }}.png"
+                alt=""
+              />
+            </div>
+            <div class="col-6">
+              <img
+                src="/assets/teams-logo/png/{{ game.home_team.abbreviation }}.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <strong>{{ game.visitor_team_score }}</strong
+              ><!-- ${{ game.visitor_team.abbreviation }} -->
+            </div>
+            <div class="col-6">
+              <strong>{{ game.home_team_score }}</strong
+              ><!-- ${{ game.home_team.abbreviation }} -->
+            </div>
+          </div>
+        </div>
+        <div class="gameLinkBox">
+          <div class="row">
+            <div class="col-12">
+              <a
+                href="https://watch.nba.com/game/{{ game.date | date: 'yyyy-MM-dd' | gameDateToUrl }}/{{ game.visitor_team.abbreviation }}{{ game.home_team.abbreviation }}"
+                target="_blank"
+                ><h2>Zobacz więcej na NBA.com</h2></a
+              >
+            </div>
+          </div>
+
+          <!-- {{ game.id }} -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

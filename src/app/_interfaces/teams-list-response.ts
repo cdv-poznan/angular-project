@@ -1,5 +1,5 @@
 import { Team } from './team';
-import { ResultMeta } from '../model/resultmeta';
+import { ResultMeta } from './resultmeta';
 
 export interface TeamsListResponse {
     data: Team[];

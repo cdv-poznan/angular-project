@@ -3,25 +3,29 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SharedComponent } from './shared/shared.component';
+import { SharedComponent } from './_shared/shared.component';
 import { HomeComponent } from './home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { SliderComponent } from './home/slider/slider.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { HeaderComponent } from './shared/header/header.component';
-import { FooterComponent } from './shared/footer/footer.component';
+import { HeaderComponent } from './_shared/header/header.component';
+import { FooterComponent } from './_shared/footer/footer.component';
+import { HomepageSliderComponent } from './home/homepage-slider/homepage-slider.component';
 import { HomepageTeamsComponent } from './home/homepage-teams/homepage-teams.component';
+
+// import { GameDateToUrlPipe } from './_pipes/game-date-to-url.pipe';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     SharedComponent,
     HomeComponent,
-    SliderComponent,
+    HomepageSliderComponent,
     HeaderComponent,
     FooterComponent,
     HomepageTeamsComponent,
+    // GameDateToUrlPipe,
   ],
   imports: [
     BrowserModule,
@@ -31,6 +35,7 @@ import { HomepageTeamsComponent } from './home/homepage-teams/homepage-teams.com
     NgbModule,
     FontAwesomeModule,
   ],
+  // exports: [GameDateToUrlPipe],
   providers: [],
   bootstrap: [AppComponent],
 })

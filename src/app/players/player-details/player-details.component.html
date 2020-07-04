@@ -1,2 +1,40 @@
+<div class="container">
+    <div class="row">
+      <div class="col-12">
+          <div *ngIf="player">
 
-<p>player-detail works!</p>
+          
+<h1>{{ player.first_name }} {{ player.last_name }}</h1>
+  <div class="playerIntroBox align-items-center col-12">
+  <div class="row playerImage">
+            <div class="col-12"><img src="./assets/players-img/{{ player.id }}-{{ player.first_name }}-{{ player.first_name }}.jpg" class="img-responsive" /></div>
+        </div>
+        <div class="row playerInfo">
+            <div class="col-12 col-md-6">
+              <div class="row">
+                <div class="col-3 col-sm-6 col-md-6 col-lg-3 col-xl-3">Drużyna</div>
+                <div class="col-9 col-sm-6 col-md-6 col-lg-9 col-xl-9"><h3>{{ player.team.full_name }}</h3></div>
+              </div>            
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="row">
+                <div class="col-3 col-sm-6 col-md-6 col-lg-3 col-xl-3">Pozycja</div>
+                <div class="col-9 col-sm-6 col-md-6 col-lg-9 col-xl-9"><h3>{{ player.position }}</h3></div>
+              </div>
+              <div class="row">
+                <div class="col-3 col-sm-6 col-md-6 col-lg-3 col-xl-3" > Wzrost</div >
+                <div class="col-9 col-sm-6 col-md-6 col-lg-9 col-xl-9"><h3>{{ player.height_feet }} ft {{ player.height_inches }} in</h3></div>
+              </div>
+            </div>
+            
+        </div>
+         <!-- {{ player.id }} -->
+  </div >
+
+  <div *ngIf="errorMessage">
+    <p>{{ errorMessage }}</p>
+  </div>
+</div>
+    </div>
+  </div>
+</div>

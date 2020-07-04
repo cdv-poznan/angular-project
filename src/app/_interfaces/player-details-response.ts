@@ -1,5 +1,5 @@
-export interface Player {
-    id: number,
+export interface PlayerDetailsResponse {
+  id: number,
     first_name: string,
     height_feet: number,
     height_inches: number,
@@ -14,7 +14,5 @@ export interface Player {
         full_name: string,
         name: string
     },
-    weight_pounds: string
-    }
-  
-    
+    weight_pounds: number,
+}

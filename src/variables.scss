@@ -1,0 +1,39 @@
+$color-darkgray: #333333;
+$color-gray: #cccccc;
+$color-white: #eeeeee;
+$color-yellow: #fec42f;
+$color-violet: #542582;
+$color-totalwhite: #fff;
+
+$border-gray: 1px solid #cccccc;
+$border-white: 1px solid #fff;
+
+$phone: 480px;
+$tablet: 768px;
+$desktop: 1024px;
+$xlarge: 1366px;
+$xxlarge: 1600px;
+
+@mixin tablet {
+  @media (min-width: #{$tablet}) and (max-width: #{$desktop - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) and (max-width: #{$xlarge - 1px}) {
+    @content;
+  }
+}
+
+@mixin xlarge {
+  @media (min-width: #{$xlarge}) and (max-width: #{$xxlarge - 1px}) {
+    @content;
+  }
+}
+
+@mixin xxlarge {
+  @media (min-width: #{$xxlarge}) {
+    @content;
+  }
+}

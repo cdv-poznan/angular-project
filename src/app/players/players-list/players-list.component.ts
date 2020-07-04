@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { PlayersService } from '../players.service';
-import { Player } from '../../model/player';
+import { PlayersService } from '../../_services/players.service';
+import { Player } from '../../_interfaces/player';
 
 @Component({
   selector: 'app-players-list',
@@ -13,7 +13,7 @@ export class PlayersListComponent implements OnInit {
   constructor(private playersService: PlayersService) { }
 
   async ngOnInit(): Promise<void> {
-    this.players = await this.playersService.getPlayers();
+    this.players = await this.playersService.getPlayersList();
   }
 
 }

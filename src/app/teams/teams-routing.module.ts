@@ -7,12 +7,13 @@ const routes: Routes = [
   {
     path: '',
     component: TeamsListComponent,
-    children: [
-      {
+  },
+  {
+    
         path: ':id',
         component: TeamDetailsComponent,
-      },
-    ],
+ 
+   
   },
 ];
 

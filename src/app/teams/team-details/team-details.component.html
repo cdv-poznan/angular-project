@@ -1,15 +1,50 @@
-<div *ngIf="team">
-    <h2>{{ team.full_name }}</h2>
-    <p>
-        ID: {{ team.full_name }}<br>
-        abbreviation: {{ team.abbreviation }}<br>
-        city: {{ team.city }}<br>
-        conference: {{ team.conference }}<br>
-        division: {{ team.division }}<br>
-        name: {{ team.name }}<br>
-      </p>
-</div>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <div *ngIf="team">
+        <div class="teamBox">
+          <div class="row d-flex align-items-center">
+            <div class="col-12 col-md-4">
+              <img
+                  src="/assets/teams-logo/png/{{ team.abbreviation }}.png"
+                  alt="{{ team.name }}"
+                  class="img-responsive mx-auto d-block"
+                />
+            </div>
+            <div class="col-12 col-md-8">
+              <h2>{{ team.full_name }}</h2>
+              <div class="row d-flex">
+                <div class="col-6">Miasto:</div>
+                <div class="col-6"><h3>{{ team.city }}</h3></div>
+              </div>
+              <div class="row">
+                <div class="col-6">Konferencja:</div>
+                <div class="col-6"><h3>{{ team.conference }}</h3></div>
+              </div>
+              <div class="row">
+                <div class="col-6">Dywizja:</div>
+                <div class="col-6"><h3>{{ team.division }}</h3></div>
+              </div>
+            </div>
+          </div>
+          <!-- {{ team.abbreviation }} - {{ team.id }} - {{ team.name }} -->
+          <hr>
+          <mat-tab-group mat-align-tabs="center">
+            <mat-tab label="Zawodnicy">
+              <app-team-players></app-team-players>
+            </mat-tab>       
+            <mat-tab label="Ostatnie mecze">
+              <app-team-games></app-team-games>
+            </mat-tab>
+          </mat-tab-group>
+          
+        </div>
+    </div>
+    
+    <div *ngIf="errorMessage">
+      <p>{{ errorMessage }}</p>
+    </div>
+      </div>
+    </div>
+  </div>
 
-<div *ngIf="errorMessage">
-  <p>{{ errorMessage }}</p>
-</div>

@@ -11,17 +11,17 @@ const routes: Routes = [
   {
     path: 'teams',
     loadChildren: () =>
-      import('./teams/teams.module').then((m) => m.TeamsModule),
+      import('./_modules/teams.module').then((m) => m.TeamsModule),
   },
-  // {
-  //   path: 'games',
-  //   loadChildren: () =>
-  //     import('./games/games.module').then((m) => m.GamesModule),
-  // },
+  {
+    path: 'games',
+    loadChildren: () =>
+      import('./_modules/games.module').then((m) => m.GamesModule),
+  },
   {
     path: 'players',
     loadChildren: () =>
-      import('./players/players.module').then((m) => m.PlayersModule),
+      import('./_modules/players.module').then((m) => m.PlayersModule),
   },
   // {
   //   path: 'stats',
@@ -30,7 +30,10 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(
+    routes,
+    // { enableTracing: true },
+    )],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}

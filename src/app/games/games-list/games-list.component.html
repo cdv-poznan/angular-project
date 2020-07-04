@@ -1,3 +1,33 @@
-<app-header></app-header>
-<p>game-list works!</p>
-<app-footer></app-footer>
+<div class="container">
+  <div class="row">
+      <div class="col-12">
+        <div *ngIf="games?.length; else emptyBlock">
+          <ng-container *ngFor="let game of games">
+            <div class="gameBox">
+              <div class="row d-flex align-items-center">
+                <div class="col d-none d-md-block">
+                  {{ game.visitor_team.full_name }}
+                </div>
+                <div class="col-2 col-lg-1">
+                  <img src="/assets/teams-logo/png/{{ game.visitor_team.abbreviation }}.png" alt="">
+                </div>
+                <div class="col">
+                  <span>{{ game.date | date: 'yyyy-MM-dd' }}</span><br>
+                  <strong>{{ game.visitor_team_score }} : {{ game.home_team_score }} </strong><br>
+                  <a href="/games/{{ game.id }}">Szczegóły</a>
+                </div>
+                <div class="col-2 col-lg-1">
+                  <img src="/assets/teams-logo/png/{{ game.home_team.abbreviation }}.png" alt="">
+                </div>
+                <div class="col d-none d-md-block">{{ game.home_team.full_name }}</div>
+              </div>
+            </div>
+          </ng-container>
+
+        </div>
+        <ng-template #emptyBlock>
+          The list is empty.
+          </ng-template>
+      </div>
+    </div>
+</div>

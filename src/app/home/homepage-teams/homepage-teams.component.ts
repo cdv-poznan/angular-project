@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { TeamsService } from '../../teams/teams.service';
-import { Team } from '../../model/team';
+import { TeamsService } from '../../_services/teams.service';
+import { Team } from '../../_interfaces/team';
 
 @Component({
   selector: 'app-homepage-teams',
@@ -13,7 +13,7 @@ export class HomepageTeamsComponent implements OnInit {
   constructor(private teamsService: TeamsService) { }
 
   async ngOnInit(): Promise<void> {
-    this.teams = await this.teamsService.getTeams();
+    this.teams = await this.teamsService.getTeamsList();
   }
 
 }

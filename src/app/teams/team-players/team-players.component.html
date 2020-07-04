@@ -1,0 +1,46 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+          <div *ngIf="teamplayers?.length; else emptyBlock">
+            <ng-container *ngFor="let teamplayer of teamplayers">              
+              <div class="playerIntroBox align-items-center col-12">
+                <div class="row playerInfo">
+                  <div class="col-12">
+                    <div class="row">
+                      <div class="col-12 col-md-4">
+                        <a routerLink="/players/{{ teamplayer.id }}"><img
+                          src="./assets/players-img/small/{{ teamplayer.id }}-{{ teamplayer.first_name }}-{{ teamplayer.last_name }}.png"
+                          class="img-responsive"
+                        />
+                      </a>
+                      </div>
+                      <div class="col-8">
+                        <div class="row">
+                          <h3>{{ teamplayer.first_name }} {{ teamplayer.last_name }}</h3>
+                          <div class="col-12">
+                            Pozycja: <b>{{ teamplayer.position }}</b>
+                          </div>
+                          <div class="col-12">
+                            Wzrost:
+                            <b
+                              >{{ teamplayer.height_feet }} ft {{
+                              teamplayer.height_inches }} in</b
+                            >
+                          </div>
+                        </div>    
+                      </div>                      
+                    </div>
+                  </div>
+                </div>
+                <!-- {{ teamplayer.id }} -->
+              </div>
+            </ng-container>
+          </div>    
+          <ng-template #emptyBlock>
+            The list is empty.
+          </ng-template>
+    </div>
+  </div>
+</div>
+
+
