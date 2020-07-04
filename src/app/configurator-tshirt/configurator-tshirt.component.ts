@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { fabric } from 'fabric';
 import { Form } from '@angular/forms';
 import { MatRadioModule } from '@angular/material/radio';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-configurator-tshirt',
@@ -49,15 +50,24 @@ export class ConfiguratorTshirtComponent implements OnInit {
     const file = event.target.files[0];
     const reader = new FileReader();
     reader.onload = (loadEvent: any) => {
-      const imgObj = new Image();
-      imgObj.src = loadEvent.target.result as string;
-      const userImage = new fabric.Image(imgObj, {
-        left: 130,
-        top: 100,
-      });
-      userImage.scaleToWidth(this.canvas.getWidth() - 240);
-      this.canvas.add(userImage);
-      this.canvas.renderAll();
+      if (this.checkIfElementAdded('image')) {
+        this.canvas.getObjects().forEach((item) => {
+          if (item.type === 'image') {
+            item._element.src = loadEvent.target.result as string;
+          }
+          this.canvas.renderAll();
+        });
+      } else {
+        const imgObj = new Image();
+        imgObj.src = loadEvent.target.result as string;
+        const userImage = new fabric.Image(imgObj, {
+          left: 130,
+          top: 100,
+        });
+        userImage.scaleToWidth(this.canvas.getWidth() - 240);
+        this.canvas.add(userImage);
+        this.canvas.renderAll();
+      }
     };
     reader.readAsDataURL(file);
   }
@@ -69,7 +79,7 @@ export class ConfiguratorTshirtComponent implements OnInit {
 
   onTextChanged(event) {
     if (this.checkIfElementAdded('i-text')) {
-      this.canvas.getObjects().forEach( (item) => {
+      this.canvas.getObjects().forEach((item) => {
         if (item.type === 'i-text') {
           item.text = this.tshirtText;
           this.canvas.renderAll();
@@ -89,7 +99,7 @@ export class ConfiguratorTshirtComponent implements OnInit {
   }
 
   onTextColorChange() {
-    this.canvas.getObjects().forEach( (item) => {
+    this.canvas.getObjects().forEach((item) => {
       if (item.type === 'i-text') {
         item.set('fill', this.textColor);
       }
@@ -98,21 +108,44 @@ export class ConfiguratorTshirtComponent implements OnInit {
   }
 
   onFontChange() {
-    console.log(this.selectedFont);
     let fontToApply: string;
-    switch(this.selectedFont) {
+    switch (this.selectedFont) {
       case 'lato':
         fontToApply = '\'Lato\', sans-serif;';
         break;
       case 'bangers':
         fontToApply = '\'Bangers\', cursive;';
         break;
+      case 'lobster':
+        fontToApply = '\'Lobster\', cursive;';
+        break;
+      case 'museoModerno':
+        fontToApply = '\'MuseoModerno\', cursive;';
+        break;
+      case 'piedra':
+        fontToApply = '\'Piedra\', cursive;';
+        break;
+      case 'satisfy':
+        fontToApply = '\'Satisfy\', cursive;';
+        break;
     }
-    this.canvas.getObjects().forEach( (item) => {
+    this.canvas.getObjects().forEach((item) => {
       if (item.type === 'i-text') {
         item.set('fontFamily', this.selectedFont);
       }
-      this.canvas.renderAll();
+    });
+    this.canvas.renderAll();
+  }
+
+  addToBasket(e) {
+    e.preventDefault();
+    Swal.fire({
+      title: 'Thank you!',
+      text: 'Cool design!',
+      icon: 'success',
+      confirmButtonText: 'Ok',
+      confirmButtonColor: '#441C55'
+
     });
   }
 

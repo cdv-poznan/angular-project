@@ -1,5 +1,5 @@
 // 🧑‍🎨 👨‍🎨 👩‍🎨
-@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+// @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Fontdiner+Swanky&family=Indie+Flower&family=Lato:wght@300;400&family=Lobster&family=MuseoModerno&family=Passion+One&family=Piedra&family=Poiret+One&family=Press+Start+2P&family=Satisfy&display=swap');
 @import '../variables';
 
 .configurator-wrapper {
@@ -34,4 +34,8 @@ form.list-group .list-group-item {
   font-size: 1.5em;
   padding-bottom: 1em;
   margin-top: auto;
+}
+
+.swal2-confirm {
+  background-color: $purple !important;
 }
