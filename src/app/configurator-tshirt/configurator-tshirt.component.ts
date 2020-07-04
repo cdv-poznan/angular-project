@@ -70,6 +70,7 @@ export class ConfiguratorTshirtComponent implements OnInit {
       }
     };
     reader.readAsDataURL(file);
+    this.canvas.renderAll();
   }
 
   checkIfElementAdded(typeOfElement) {
