@@ -30,4 +30,18 @@ export class GamesService {
     return response;
     // console.log(response.data);
   }
+
+  public async getGamesSpecifiedList(gameSeasonToShow: number, gamePageToShow: number, gameTeamIDToShow: number, gamePerPageToShow: number): Promise<Game[]> {
+    const urlGameSeason = `?seasons[]=${gameSeasonToShow}`;
+    const urlParametersPage = `&page=${gamePageToShow}`;
+    const urlTeamIDs = `&team_ids[]=${gameTeamIDToShow}`;
+    const urlParametersPerPage = `&per_page=${gamePerPageToShow}`;
+    const nbaAllGamesURL = `${GamesService.API_URL}${urlGameSeason}${urlParametersPage}${urlTeamIDs}${urlParametersPerPage}`;
+    const response = await this.httpClient
+      .get<GamesListResponse>(nbaAllGamesURL)
+      .toPromise();
+
+    return response.data;
+  }
+
 }

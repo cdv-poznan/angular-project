@@ -361,3 +361,15 @@ select {
   border: 1px solid $color-violet;
   padding: 10px;
 }
+
+.mat-tab-body-wrapper {
+  padding: 30px 0;
+}
+
+.mat-tab-label {
+  margin: 30px;
+}
+
+.mat-tab-label .mat-tab-label-content {
+  font-size: 30px;
+}
