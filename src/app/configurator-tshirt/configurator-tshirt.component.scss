@@ -1,0 +1,41 @@
+// 🧑‍🎨 👨‍🎨 👩‍🎨
+// @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Fontdiner+Swanky&family=Indie+Flower&family=Lato:wght@300;400&family=Lobster&family=MuseoModerno&family=Passion+One&family=Piedra&family=Poiret+One&family=Press+Start+2P&family=Satisfy&display=swap');
+@import '../variables';
+
+.configurator-wrapper {
+  width: 80%;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.tshirt-wrapper {
+  width: 450px;
+}
+
+.add-to-basket-form {
+  border: 1px solid lightgray;
+  padding: 0;
+}
+
+form.list-group .list-group-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+#chooseText textarea {
+  width: inherit;
+}
+
+.zeroAdded::after {
+  content: '0';
+}
+
+.item-info {
+  font-size: 1.5em;
+  padding-bottom: 1em;
+  margin-top: auto;
+}
+
+.swal2-confirm {
+  background-color: $purple !important;
+}

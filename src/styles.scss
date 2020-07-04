@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Fontdiner+Swanky&family=Indie+Flower&family=Lato:wght@300;400&family=Lobster&family=MuseoModerno&family=Passion+One&family=Piedra&family=Poiret+One&family=Press+Start+2P&family=Satisfy&display=swap');
+@import '~@angular/material/theming';
+@import './app/variables.scss';
+@import '~bootstrap/scss/bootstrap';
+
+html, body {
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+.btn-primary {
+  background-color: $purple !important;
+}

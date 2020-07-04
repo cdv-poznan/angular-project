@@ -1,0 +1,98 @@
+<div class="row configurator-wrapper">
+  <div class="col-md-5">
+    <div class="tshirt-wrapper" [ngStyle]="{'background-color': selectedColor}">
+
+      <canvas id="tshirtCanvas" width="450" height="540"></canvas>
+    </div>
+  </div>
+  <form class="col-md-4 list-group add-to-basket-form">
+    <li class="list-group-item" data-toggle="collapse" href="#colors" role="button" aria-expanded="false"
+      aria-controls="colors">
+      Choose T-shirt color <span class="triangle">&#9660;</span>
+    </li>
+    <div class="form-group colors collapse px-3 pt-2" id="colors">
+      <mat-radio-group [(ngModel)]="selectedColor" name="color">
+        <div>
+          <mat-radio-button value="white">White</mat-radio-button>
+        </div>
+        <div>
+          <mat-radio-button value="black">Black</mat-radio-button>
+        </div>
+        <div>
+          <mat-radio-button value="blue">Blue</mat-radio-button>
+        </div>
+      </mat-radio-group>
+    </div>
+    <li class="list-group-item" data-toggle="collapse" href="#chooseImage" role="button" aria-expanded="false"
+      aria-controls="chooseImage">
+      Choose image <span class="triangle">&#9660;</span>
+    </li>
+    <div class="form-group colors collapse px-3 pt-2" id="chooseImage">
+      <div>
+        <input (change)="onFileChanged($event)" type="file" accept=".jpg,.svg,.png,.jpeg" name="tshirtImage" id="">
+        <!-- <button type="button btn-primary" mat-raised-button (click)="fileInput.click()">Choose File</button> -->
+        <!-- <input hidden (change)="onFileChanged($event)" #fileInput type="file" id="file"> -->
+      </div>
+    </div>
+    <li class="list-group-item" data-toggle="collapse" href="#chooseText" role="button" aria-expanded="false"
+      aria-controls="chooseText">
+      Add text <span class="triangle">&#9660;</span>
+    </li>
+    <div class="form-group colors collapse px-3 pt-2" id="chooseText">
+      <div class="col-12">
+        <textarea [(ngModel)]="tshirtText" (input)="onTextChanged($event)" name="tshirtText" cols=""></textarea>
+      </div>
+      <div class="col-12 pt-2 d-flex justify-content-between">
+        <button (click)="changeTextColor.click()" class="btn btn-primary" id="color-picker">Change text color</button>
+        <input #changeTextColor [(colorPicker)]="textColor" (colorPickerChange)="onTextColorChange()" hidden />
+        <select [(ngModel)]="selectedFont" (change)="onFontChange()" name="fontFamily" id="">
+          <option value="lato">Lato</option>
+          <option value="lobster">Lobster</option>
+          <option value="museoModerno">Museo Moderno</option>
+          <option value="piedra">Piedra</option>
+          <option value="satisfy">Satisfy</option>
+          <option value="bangers">Bangers</option>
+        </select>
+      </div>
+    </div>
+    <li class="list-group-item" data-toggle="collapse" href="#size" role="button" aria-expanded="false"
+      aria-controls="size">
+      Choose T-shirt size <span class="triangle">&#9660;</span>
+    </li>
+    <div class="form-group colors collapse px-3 pt-2" id="size">
+      <mat-radio-group [(ngModel)]="selectedSize" name="size">
+        <div>
+          <mat-radio-button value="xs">XS</mat-radio-button>
+        </div>
+        <div>
+          <mat-radio-button value="s">S</mat-radio-button>
+        </div>
+        <div>
+          <mat-radio-button value="m">M</mat-radio-button>
+        </div>
+        <div>
+          <mat-radio-button value="l">L</mat-radio-button>
+        </div>
+        <div>
+          <mat-radio-button value="xl">XL</mat-radio-button>
+        </div>
+      </mat-radio-group>
+    </div>
+    <div class="item-info">
+      <div class="d-flex">
+        <div class="col-sm-3">Color: </div>
+        <div><strong>{{selectedColor}}</strong></div>
+      </div>
+      <div class="d-flex">
+        <div class="col-sm-3">Size: </div>
+        <div><strong>{{selectedSize | uppercase}}</strong></div>
+      </div>
+      <div class="d-flex">
+        <div class="col-sm-3">Price: </div>
+        <div><strong class="price-value" [ngClass]="{'zeroAdded': shouldAddZero === true}">{{price}} &euro;</strong>
+        </div>
+      </div>
+    </div>
+    <button class="btn btn-primary" type="submit" (click)="addToBasket($event)">Add to basket</button>
+  </form>
+</div>
