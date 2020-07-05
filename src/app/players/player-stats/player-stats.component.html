@@ -1,1 +1,49 @@
-<p>player-stats works!</p>
+<div *ngIf="playerstats">         
+    <h2>STATS</h2>
+    <div class="playerIntroBox align-items-center col-12">
+          <div class="row playerInfo">
+            <div class="col-12">
+              <div class="row">
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col"><abbr title="Minutes Per Game">MPG</abbr></th>
+                            <th><abbr title="Field Goal Percentage">FG%</abbr></th>
+                            <th><abbr title="Three Point Percentage">3P%</abbr></th>
+                            <th><abbr title="Free Throw Percentage">FT%</abbr></th>
+                            <th><abbr title="Points Per Game">PPG</abbr></th>
+                            <th><abbr title="Rebounds Per Game">RPG</abbr></th>
+                            <th><abbr title="Assists Per Game">APG</abbr></th>
+                            <th><abbr title="Blocks Per Game">BPG</abbr></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>{{ playerstats.min }}</td>
+                            <td>{{ playerstats.fg_pct*100}}</td>
+                            <td>{{ playerstats.fg3_pct*100 }}</td>
+                            <td>{{ playerstats.ft_pct*100 }}</td>
+                            <td>{{ playerstats.pts }}</td>
+                            <td>{{ playerstats.reb }}</td>
+                            <td>{{ playerstats.ast }}</td>
+                            <td>{{ playerstats.blk }}</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+
+
+                  
+              </div>
+              
+            </div>
+          </div>
+  
+           <!-- {{ player.id }} -->
+    </div >
+  
+    <div *ngIf="errorMessage">
+      <p>{{ errorMessage }}</p>
+    </div>
+  </div>
