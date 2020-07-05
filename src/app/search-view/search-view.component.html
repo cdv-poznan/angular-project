@@ -1,0 +1,65 @@
+<div class="container mt-5">
+    <h1>Search results - {{query}}</h1>
+
+    <div>
+        <div>
+            <p>Total results: {{searchResults.total_results}}</p>
+
+            <ul ngbNav class="nav nav-pills my-3 flex-column flex-sm-row" id="pills-tab" role="tablist">
+                <li ngbNavItem class="flex-sm-fill text-sm-center nav-item">
+                    <a class="nav-link link" [routerLink]="['/search']"
+                        [queryParams]="{ query: query, category: 'multi'}" routerLinkActive="active">
+                        All
+                    </a>
+                </li>
+                <li ngbNavItem class="flex-sm-fill text-sm-center nav-item">
+                    <a class="nav-link link " [routerLink]="['/search']"
+                        [queryParams]="{query: query , category: 'movie'}" routerLinkActive="active">
+                        Movies
+                    </a>
+                </li>
+                <li ngbNavItem class="flex-sm-fill text-sm-center nav-item">
+                    <a class="nav-link link" [routerLink]="['/search']"
+                        [queryParams]="{ query: query, category: 'person'}" routerLinkActive="active">
+                        People
+                    </a>
+                </li>
+                <li ngbNavItem class="flex-sm-fill text-sm-center nav-item">
+                    <a class="nav-link link " [routerLink]="['/search']"
+                        [queryParams]="{ query: query,  category: 'tv'}" routerLinkActive="active">
+                        Tv shows
+                    </a>
+                </li>
+            </ul>
+
+            <app-search-result *ngFor="let result of searchResults.results" [result]="result" [mediaType]="category">
+
+            </app-search-result>
+
+            <p *ngIf="searchResults.total_pages != 0" class="text-right mb-2">Page {{page}} of
+                {{searchResults.total_pages}}</p>
+            <nav aria-label="search pagination d-flex">
+                <ul class="pagination flex-wrap justify-content-end">
+
+
+                    <li *ngIf="page !== 1" class="page-item">
+                        <a class="page-link link" [routerLink]="['/search/']"
+                            [queryParams]="{page: page -1, query: query, category: category}">Previous</a>
+                    </li>
+
+
+
+                    <li *ngIf="page < searchResults.total_pages" class="page-item">
+                        <a class="page-link link" [routerLink]="['/search/']"
+                            [queryParams]="{page: page + 1, query: query, category: category}">Next</a>
+                    </li>
+
+                </ul>
+            </nav>
+
+        </div>
+
+
+    </div>
+
+</div>

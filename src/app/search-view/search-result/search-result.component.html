@@ -1,0 +1,25 @@
+<div class="card mb-3 mt-4">
+    <div class=" row no-gutters">
+        <div class="col-4 col-sm-auto">
+            <a [routerLink]="['/'+ mediaType + '/' + result.id]">
+                <img src="{{fullPath}}" class="card-img-top" alt="{{result?.name}}{{result?.title}}">
+            </a>
+        </div>
+        <div class="col d-flex flex-column">
+            <div class=" px-2 px-sm-4 py-2 py-sm-3 d-flex flex-column ">
+                <a>
+                    <h5 class="card-title">
+                        {{result.title}}{{result.name}}
+                    </h5>
+                </a>
+
+                <small>
+                    <p class="card-text text-left search__overview">
+                        {{result.overview}}
+                    </p>
+                </small>
+
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,1 +1,114 @@
-/* You can add global styles to this file, and also import other style files */
+@import "././variables.scss";
+
+// Automates responsive resizing
+// https://github.com/twbs/rfs
+$enable-responsive-font-sizes: true;
+/* Importing Bootstrap SCSS file. */
+@import "~bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+@import "~ngx-owl-carousel-o/lib/styles/scss/owl.carousel";
+@import "~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default";
+
+html {
+  box-sizing: border-box;
+  position: relative;
+  min-height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-family: "Montserrat", sans-serif;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+hr {
+  border-color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+a,
+a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+.carousel {
+  &__image {
+    border-radius: 10px;
+  }
+  &__title {
+    margin-top: auto;
+    overflow: hidden;
+    &:hover {
+      font-weight: 500;
+    }
+  }
+}
+.carousel-wrap {
+  margin: auto;
+  position: relative;
+}
+.owl-carousel .owl-nav {
+  overflow: hidden;
+  height: 0px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #2caae1;
+}
+
+.owl-carousel .item {
+  text-align: center;
+}
+.owl-carousel .nav-btn {
+  height: 47px;
+  position: absolute;
+  width: 26px;
+  cursor: pointer;
+  top: 40% !important;
+}
+
+.owl-carousel .owl-prev.disabled,
+.owl-carousel .owl-next.disabled {
+  pointer-events: none;
+  opacity: 0.2;
+}
+
+.owl-carousel .prev-slide {
+  background: url(https://freakyjolly.com/demo/jquery/OwlCarousel2/nav-icon.png) no-repeat scroll 0 0;
+  left: -33px;
+}
+.owl-carousel .next-slide {
+  background: url(https://freakyjolly.com/demo/jquery/OwlCarousel2/nav-icon.png) no-repeat scroll -24px 0px;
+  right: -33px;
+}
+.owl-carousel .prev-slide:hover {
+  background-position: 0px -53px;
+}
+.owl-carousel .next-slide:hover {
+  background-position: -24px -53px;
+}

@@ -1,0 +1,19 @@
+<div class="mt-3 px-4 px-sm-0">
+    <owl-carousel-o [options]="customOptions" class="carousel-wrap" #owlCar>
+
+        <ng-container *ngFor="let result of carouselContext.slice(0,7)">
+            <ng-template carouselSlide [id]="result.id">
+                <div>
+                    <a routerLink="{{'/' + mediaType +'/' + result.id}}">
+                        <img class="carousel__image" [src]="getImage(result)">
+                        <p class="carousel__title mt-2">
+                            {{result.title}}{{result.name}}
+
+                        </p>
+                    </a>
+                </div>
+            </ng-template>
+        </ng-container>
+
+    </owl-carousel-o>
+</div>

@@ -1,0 +1,20 @@
+.movie__header {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  color: white;
+}
+.movie__header__heading {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+.movie__header__heading__title {
+  font-weight: 700;
+}
+.movie__card {
+  border: none;
+}
+.movie__header__poster {
+  border-radius: 10px;
+}
