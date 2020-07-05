@@ -8,13 +8,13 @@ import { GameDetailsResponse } from '../_interfaces/game-details-response';
   providedIn: 'root',
 })
 export class GamesService {
-  private static readonly API_URL = 'https://balldontlie.io/api/v1/games';
+  private static readonly GAMES_URL = 'https://balldontlie.io/api/v1/games';
 
   constructor(private httpClient: HttpClient) {}
 
   public async getGamesList(): Promise<Game[]> {
     const response = await this.httpClient
-      .get<GamesListResponse>(GamesService.API_URL)
+      .get<GamesListResponse>(GamesService.GAMES_URL)
       .toPromise();
 
     return response.data;
@@ -22,10 +22,9 @@ export class GamesService {
 
   public async getGameDetails(id: number): Promise<Game> {
 
-    // console.log(`${TeamsService.API_URL}/${id}`);
 
     const response = await this.httpClient
-      .get<GameDetailsResponse>(`${GamesService.API_URL}/${id}`)
+      .get<GameDetailsResponse>(`${GamesService.GAMES_URL}/${id}`)
       .toPromise();
     return response;
     // console.log(response.data);
@@ -36,7 +35,7 @@ export class GamesService {
     const urlParametersPage = `&page=${gamePageToShow}`;
     const urlTeamIDs = `&team_ids[]=${gameTeamIDToShow}`;
     const urlParametersPerPage = `&per_page=${gamePerPageToShow}`;
-    const nbaAllGamesURL = `${GamesService.API_URL}${urlGameSeason}${urlParametersPage}${urlTeamIDs}${urlParametersPerPage}`;
+    const nbaAllGamesURL = `${GamesService.GAMES_URL}${urlGameSeason}${urlParametersPage}${urlTeamIDs}${urlParametersPerPage}`;
     const response = await this.httpClient
       .get<GamesListResponse>(nbaAllGamesURL)
       .toPromise();
@@ -48,12 +47,14 @@ export class GamesService {
     const urlGameSeason = `?seasons[]=${gameSeasonToShow}`;
     const urlParametersPage = `&page=${gamePageToShow}`;
     const urlParametersPerPage = `&per_page=${gamePerPageToShow}`;
-    const nbaAllGamesURL = `${GamesService.API_URL}${urlGameSeason}${urlParametersPage}${urlParametersPerPage}`;
+    const nbaAllGamesURL = `${GamesService.GAMES_URL}${urlGameSeason}${urlParametersPage}${urlParametersPerPage}`;
     const response = await this.httpClient
       .get<GamesListResponse>(nbaAllGamesURL)
       .toPromise();
 
     return response.data;
   }
+
+
 
 }

@@ -9,12 +9,13 @@ import { PlayerDetailsResponse } from '../_interfaces/player-details-response';
 })
 export class PlayersService {
   private static readonly API_URL = 'https://www.balldontlie.io/api/v1/players';
+  private static readonly JSON_URL = '/assets/json/';
 
   constructor(private httpClient: HttpClient) {}
 
   public async getPlayersList(): Promise<Player[]> {
     const response = await this.httpClient
-      .get<PlayersListResponse>(PlayersService.API_URL)
+      .get<PlayersListResponse>(`${PlayersService.JSON_URL}all-players.json`)
       .toPromise();
 
     return response.data;

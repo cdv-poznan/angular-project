@@ -1,0 +1,57 @@
+{
+	"data":[
+		{
+            "id": 57,
+            "first_name": "Devin",
+            "height_feet": 6,
+            "height_inches": 6,
+            "last_name": "Booker",
+            "position": "G",
+            "team": 24,
+            "weight_pounds": 210
+        },
+		{
+            "id": 22,
+            "first_name": "Deandre",
+            "height_feet": 7,
+            "height_inches": 1,
+            "last_name": "Ayton",
+            "position": "C",
+            "team": 24,
+            "weight_pounds": 250
+        },
+		{
+            "id": 360,
+            "first_name": "Kelly",
+            "height_feet": 6,
+            "height_inches": 7,
+            "last_name": "Oubre Jr.",
+            "position": "F",
+            "team": 24,
+            "weight_pounds": 205
+        },
+		{
+            "id": 404,
+            "first_name": "Ricky",
+            "height_feet": 6,
+            "height_inches": 4,
+            "last_name": "Rubio",
+            "position": "G",
+            "team": 24,
+            "weight_pounds": 190
+        },
+		{
+            "id": 35,
+            "first_name": "Aron",
+            "height_feet": 6,
+            "height_inches": 10,
+            "last_name": "Baynes",
+            "position": "C-F",
+            "team": 24,
+            "weight_pounds": 260
+        }
+		
+		
+		
+	]
+}

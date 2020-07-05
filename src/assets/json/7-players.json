@@ -1,0 +1,176 @@
+{
+	"data":[
+		{
+            "id": 132,
+            "first_name": "Luka",
+            "height_feet": 6,
+            "height_inches": 7,
+            "last_name": "Doncic",
+            "position": "F-G",
+            "team": 7,
+            "weight_pounds": 218
+        },
+		{
+            "id": 378,
+            "first_name": "Kristaps",
+            "height_feet": 7,
+            "height_inches": 3,
+            "last_name": "Porzingis",
+            "position": "F-C",
+            "team": 7,
+            "weight_pounds": 240
+        },
+		{
+            "id": 379,
+            "first_name": "Dwight",
+            "height_feet": 6,
+            "height_inches": 11,
+            "last_name": "Powell",
+            "position": "F-C",
+            "team": 7,
+            "weight_pounds": 240
+        },
+		{
+            "id": 73,
+            "first_name": "Jalen",
+            "height_feet": 6,
+            "height_inches": 3,
+            "last_name": "Brunson",
+            "position": "G",
+            "team": 7,
+            "weight_pounds": 190
+        },
+		{
+            "id": 191,
+            "first_name": "Tim",
+            "height_feet": 6,
+            "height_inches": 6,
+            "last_name": "Hardaway",
+            "position": "G",
+            "team": 7,
+            "weight_pounds": 205
+        },
+		{
+            "id": 235,
+            "first_name": "Justin",
+            "height_feet": 6,
+            "height_inches": 8,
+            "last_name": "Jackson",
+            "position": "F",
+            "team": 7,
+            "weight_pounds": 210
+        },
+		{
+            "id": 257,
+            "first_name": "Maxi",
+            "height_feet": 6,
+            "height_inches": 11,
+            "last_name": "Kleber",
+            "position": "F",
+            "team": 7,
+            "weight_pounds": 240
+        },
+		{
+            "id": 296,
+            "first_name": "Boban",
+            "height_feet": 7,
+            "height_inches": 3,
+            "last_name": "Marjanovic",
+            "position": "C",
+            "team": 7,
+            "weight_pounds": 290
+        },
+		{
+            "id": 91,
+            "first_name": "Willie",
+            "height_feet": 7,
+            "height_inches": 0,
+            "last_name": "Cauley-Stein",
+            "position": "C",
+            "team": 7,
+            "weight_pounds": 240
+        },
+		{
+            "id": 114,
+            "first_name": "Seth",
+            "height_feet": 6,
+            "height_inches": 2,
+            "last_name": "Curry",
+            "position": "G",
+            "team": 7,
+            "weight_pounds": 185
+        },
+		{
+            "id": 487,
+            "first_name": "Delon",
+            "height_feet": 6,
+            "height_inches": 5,
+            "last_name": "Wright",
+            "position": "G",
+            "team": 7,
+            "weight_pounds": 183
+        },
+		{
+            "id": 158,
+            "first_name": "Dorian",
+            "height_feet": 6,
+            "height_inches": 8,
+            "last_name": "Finney-Smith",
+            "position": "F",
+            "team": 7,
+            "weight_pounds": 220
+        },
+		{
+            "id": 29,
+            "first_name": "JJ",
+            "height_feet": 6,
+            "height_inches": 0,
+            "last_name": "Barea",
+            "position": "G",
+            "team": 7,
+            "weight_pounds": 185
+        },
+		{
+            "id": 271,
+            "first_name": "Courtney",
+            "height_feet": 6,
+            "height_inches": 5,
+            "last_name": "Lee",
+            "position": "G",
+            "team": 7,
+            "weight_pounds": 215
+        },
+		{
+            "id": 255,
+            "first_name": "Michael",
+            "height_feet": 6,
+            "height_inches": 7,
+            "last_name": "Kidd-Gilchrist",
+            "position": "F",
+            "team": 7,
+            "weight_pounds": 232
+        },
+		{
+            "id": 2211,
+            "first_name": "Antonius",
+            "height_feet": null,
+            "height_inches": null,
+            "last_name": "Cleveland",
+            "position": "",
+            "team": 7,
+            "weight_pounds": null
+        },
+		{
+            "id": 666859,
+            "first_name": "Josh",
+            "height_feet": null,
+            "height_inches": null,
+            "last_name": "Reaves",
+            "position": "G",
+            "team": 7,
+            "weight_pounds": null
+        }
+		
+		
+	]
+}

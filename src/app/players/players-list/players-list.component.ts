@@ -24,8 +24,8 @@ export class PlayersListComponent implements OnInit {
   ) {}
 
   async ngOnInit(): Promise<void> {
-    this.teams = await this.teamsService.getTeamsList();
-    // this.players = await this.playersService.getPlayersList();
+    // this.teams = await this.teamsService.getTeamsList();
+    this.players = await this.playersService.getPlayersList();
   }
 
   async changeViewMode(

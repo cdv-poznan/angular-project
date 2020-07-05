@@ -1,0 +1,176 @@
+{
+	"data":[
+		{
+            "id": 666442,
+            "first_name": "Goga",
+            "height_feet": null,
+            "height_inches": null,
+            "last_name": "Bitadze",
+            "position": "C",
+            "team": 12,
+            "weight_pounds": null
+        },
+		{
+            "id": 65,
+            "first_name": "Malcolm",
+            "height_feet": 6,
+            "height_inches": 5,
+            "last_name": "Brogdon",
+            "position": "G",
+            "team": 12,
+            "weight_pounds": 229
+        },
+		{
+            "id": 215,
+            "first_name": "Justin",
+            "height_feet": 6,
+            "height_inches": 6,
+            "last_name": "Holiday",
+            "position": "F-G",
+            "team": 12,
+            "weight_pounds": 181
+        },
+		{
+            "id": 213,
+            "first_name": "Aaron",
+            "height_feet": 6,
+            "height_inches": 1,
+            "last_name": "Holiday",
+            "position": "G",
+            "team": 12,
+            "weight_pounds": 185
+        },
+		{
+            "id": 666459,
+            "first_name": "Brian",
+            "height_feet": null,
+            "height_inches": null,
+            "last_name": "Bowen II",
+            "position": "F",
+            "team": 12,
+            "weight_pounds": null
+        },
+		{
+            "id": 240,
+            "first_name": "Alize",
+            "height_feet": 6,
+            "height_inches": 9,
+            "last_name": "Johnson",
+            "position": "F",
+            "team": 12,
+            "weight_pounds": 212
+        },
+		{
+            "id": 267,
+            "first_name": "Jeremy",
+            "height_feet": 6,
+            "height_inches": 5,
+            "last_name": "Lamb",
+            "position": "G",
+            "team": 12,
+            "weight_pounds": 185
+        },
+		 {
+            "id": 270,
+            "first_name": "TJ",
+            "height_feet": 6,
+            "height_inches": 10,
+            "last_name": "Leaf",
+            "position": "F",
+            "team": 12,
+            "weight_pounds": 225
+        },
+		{
+            "id": 304,
+            "first_name": "T.J.",
+            "height_feet": 6,
+            "height_inches": 2,
+            "last_name": "McConnell",
+            "position": "G",
+            "team": 12,
+            "weight_pounds": 190
+        },
+		{
+            "id": 305,
+            "first_name": "Doug",
+            "height_feet": 6,
+            "height_inches": 8,
+            "last_name": "McDermott",
+            "position": "F",
+            "team": 12,
+            "weight_pounds": 225
+        },
+		{
+            "id": 323,
+            "first_name": "Naz",
+            "height_feet": 6,
+            "height_inches": 4,
+            "last_name": "Mitrou-Long",
+            "position": "G",
+            "team": 12,
+            "weight_pounds": 218
+        },
+		{
+            "id": 357,
+            "first_name": "Victor",
+            "height_feet": 6,
+            "height_inches": 4,
+            "last_name": "Oladipo",
+            "position": "G",
+            "team": 12,
+            "weight_pounds": 210
+        },
+		{
+            "id": 406,
+            "first_name": "Domantas",
+            "height_feet": 6,
+            "height_inches": 11,
+            "last_name": "Sabonis",
+            "position": "F",
+            "team": 12,
+            "weight_pounds": 240
+        },
+		{
+            "id": 2080,
+            "first_name": "JaKarr",
+            "height_feet": null,
+            "height_inches": null,
+            "last_name": "Sampson",
+            "position": "",
+            "team": 12,
+            "weight_pounds": null
+        },
+		{
+            "id": 432,
+            "first_name": "Edmond",
+            "height_feet": 6,
+            "height_inches": 6,
+            "last_name": "Sumner",
+            "position": "G",
+            "team": 12,
+            "weight_pounds": 176
+        },
+		{
+            "id": 452,
+            "first_name": "Myles",
+            "height_feet": 6,
+            "height_inches": 11,
+            "last_name": "Turner",
+            "position": "C-F",
+            "team": 12,
+            "weight_pounds": 250
+        },
+		{
+            "id": 469,
+            "first_name": "T.J.",
+            "height_feet": 6,
+            "height_inches": 8,
+            "last_name": "Warren",
+            "position": "F",
+            "team": 12,
+            "weight_pounds": 215
+        }
+		
+		
+	]
+}

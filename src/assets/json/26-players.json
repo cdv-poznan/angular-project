@@ -1,0 +1,57 @@
+{
+	"data":[
+		{
+            "id": 161,
+            "first_name": "De'Aaron",
+            "height_feet": 6,
+            "height_inches": 3,
+            "last_name": "Fox",
+            "position": "G",
+            "team": 26,
+            "weight_pounds": 175
+        },
+		{
+            "id": 210,
+            "first_name": "Buddy",
+            "height_feet": 6,
+            "height_inches": 4,
+            "last_name": "Hield",
+            "position": "G",
+            "team": 26,
+            "weight_pounds": 214
+        },
+		{
+            "id": 30,
+            "first_name": "Harrison",
+            "height_feet": 6,
+            "height_inches": 8,
+            "last_name": "Barnes",
+            "position": "F",
+            "team": 26,
+            "weight_pounds": 225
+        },
+		{
+            "id": 362,
+            "first_name": "Jabari",
+            "height_feet": 6,
+            "height_inches": 8,
+            "last_name": "Parker",
+            "position": "F",
+            "team": 26,
+            "weight_pounds": 245
+        },
+		{
+            "id": 53,
+            "first_name": "Bogdan",
+            "height_feet": 6,
+            "height_inches": 6,
+            "last_name": "Bogdanovic",
+            "position": "G",
+            "team": 26,
+            "weight_pounds": 205
+        }
+		
+		
+		
+	]
+}

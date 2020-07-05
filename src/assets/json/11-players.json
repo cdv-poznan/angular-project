@@ -1,0 +1,165 @@
+{
+	"data":[
+		{
+            "id": 2099,
+            "first_name": "Bruno",
+            "height_feet": 6,
+            "height_inches": 9,
+            "last_name": "Caboclo",
+            "position": "",
+            "team": 11,
+            "weight_pounds": 218
+        },
+		{
+            "id": 84,
+            "first_name": "DeMarre",
+            "height_feet": 6,
+            "height_inches": 8,
+            "last_name": "Carroll",
+            "position": "F",
+            "team": 11,
+            "weight_pounds": 215
+        },
+		{
+            "id": 94,
+            "first_name": "Tyson",
+            "height_feet": 7,
+            "height_inches": 1,
+            "last_name": "Chandler",
+            "position": "C",
+            "team": 11,
+            "weight_pounds": 240
+        },
+		{
+            "id": 666509,
+            "first_name": "Chris",
+            "height_feet": null,
+            "height_inches": null,
+            "last_name": "Clemons",
+            "position": "G",
+            "team": 11,
+            "weight_pounds": null
+        },
+		{
+            "id": 108,
+            "first_name": "Robert",
+            "height_feet": 6,
+            "height_inches": 9,
+            "last_name": "Covington",
+            "position": "F",
+            "team": 11,
+            "weight_pounds": 225
+        },
+		{
+            "id": 50729,
+            "first_name": "Michael",
+            "height_feet": null,
+            "height_inches": null,
+            "last_name": "Frazier",
+            "position": "G",
+            "team": 11,
+            "weight_pounds": null
+        },
+		{
+            "id": 178,
+            "first_name": "Eric",
+            "height_feet": 6,
+            "height_inches": 4,
+            "last_name": "Gordon",
+            "position": "G",
+            "team": 11,
+            "weight_pounds": 215
+        },
+		{
+            "id": 188,
+            "first_name": "Jeff",
+            "height_feet": 6,
+            "height_inches": 9,
+            "last_name": "Green",
+            "position": "F",
+            "team": 11,
+            "weight_pounds": 235
+        },
+		{
+            "id": 192,
+            "first_name": "James",
+            "height_feet": 6,
+            "height_inches": 5,
+            "last_name": "Harden",
+            "position": "G",
+            "team": 11,
+            "weight_pounds": 220
+        },
+		{
+            "id": 666653,
+            "first_name": "William",
+            "height_feet": null,
+            "height_inches": null,
+            "last_name": "Howard",
+            "position": "G-F",
+            "team": 11,
+            "weight_pounds": null
+        },
+		{
+            "id": 2175,
+            "first_name": "Danuel",
+            "height_feet": 6,
+            "height_inches": 7,
+            "last_name": "House",
+            "position": "",
+            "team": 11,
+            "weight_pounds": 220
+        },
+		{
+            "id": 309,
+            "first_name": "Ben",
+            "height_feet": null,
+            "height_inches": null,
+            "last_name": "McLemore",
+            "position": "G",
+            "team": 11,
+            "weight_pounds": null
+        },
+		{
+            "id": 393,
+            "first_name": "Austin",
+            "height_feet": 6,
+            "height_inches": 4,
+            "last_name": "Rivers",
+            "position": "G",
+            "team": 11,
+            "weight_pounds": 200
+        },
+		{
+            "id": 411,
+            "first_name": "Thabo",
+            "height_feet": 6,
+            "height_inches": 7,
+            "last_name": "Sefolosha",
+            "position": "F",
+            "team": 11,
+            "weight_pounds": 220
+        },
+		{
+            "id": 450,
+            "first_name": "PJ",
+            "height_feet": 6,
+            "height_inches": 6,
+            "last_name": "Tucker",
+            "position": "F",
+            "team": 11,
+            "weight_pounds": 245
+        },
+		{
+            "id": 472,
+            "first_name": "Russell",
+            "height_feet": 6,
+            "height_inches": 3,
+            "last_name": "Westbrook",
+            "position": "G",
+            "team": 11,
+            "weight_pounds": 200
+        }
+		
+	]
+}

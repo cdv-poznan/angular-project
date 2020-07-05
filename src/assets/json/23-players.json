@@ -1,0 +1,56 @@
+{
+	"data":[
+		{
+            "id": 145,
+            "first_name": "Joel",
+            "height_feet": 7,
+            "height_inches": 0,
+            "last_name": "Embiid",
+            "position": "F-C",
+            "team": 23,
+            "weight_pounds": 250
+        },
+		{
+            "id": 200,
+            "first_name": "Tobias",
+            "height_feet": 6,
+            "height_inches": 9,
+            "last_name": "Harris",
+            "position": "F",
+            "team": 23,
+            "weight_pounds": 235
+        },
+		{
+            "id": 417,
+            "first_name": "Ben",
+            "height_feet": 6,
+            "height_inches": 10,
+            "last_name": "Simmons",
+            "position": "G-F",
+            "team": 23,
+            "weight_pounds": 230
+        },
+		{
+            "id": 77,
+            "first_name": "Alec",
+            "height_feet": 6,
+            "height_inches": 6,
+            "last_name": "Burks",
+            "position": "G",
+            "team": 23,
+            "weight_pounds": 214
+        },
+		{
+            "id": 391,
+            "first_name": "Josh",
+            "height_feet": 6,
+            "height_inches": 6,
+            "last_name": "Richardson",
+            "position": "G-F",
+            "team": 23,
+            "weight_pounds": 200
+        }
+		
+		
+	]
+}

@@ -1,0 +1,57 @@
+{
+	"data":[
+		{
+            "id": 125,
+            "first_name": "DeMar",
+            "height_feet": 6,
+            "height_inches": 7,
+            "last_name": "DeRozan",
+            "position": "G",
+            "team": 27,
+            "weight_pounds": 220
+        },
+		{
+            "id": 6,
+            "first_name": "LaMarcus",
+            "height_feet": 6,
+            "height_inches": 11,
+            "last_name": "Aldridge",
+            "position": "F",
+            "team": 27,
+            "weight_pounds": 260
+        },
+		{
+            "id": 319,
+            "first_name": "Patty",
+            "height_feet": 6,
+            "height_inches": 0,
+            "last_name": "Mills",
+            "position": "G",
+            "team": 27,
+            "weight_pounds": 180
+        },
+		{
+            "id": 159,
+            "first_name": "Bryn",
+            "height_feet": 6,
+            "height_inches": 3,
+            "last_name": "Forbes",
+            "position": "G",
+            "team": 27,
+            "weight_pounds": 190
+        },
+		{
+            "id": 334,
+            "first_name": "Dejounte",
+            "height_feet": 6,
+            "height_inches": 5,
+            "last_name": "Murray",
+            "position": "G",
+            "team": 27,
+            "weight_pounds": 170
+        }
+		
+		
+		
+	]
+}

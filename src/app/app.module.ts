@@ -29,7 +29,6 @@ import { PlayerSearchComponent } from './players/player-search/player-search.com
     FooterComponent,
     HomepageTeamsComponent,
     PlayerSearchComponent,
-    // GameDateToUrlPipe,
   ],
   imports: [
     BrowserModule,

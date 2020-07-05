@@ -1,14 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { GamesService } from '../../_services/games.service';
-import { LoggingService } from '../../_services/logging.service';
 import { Game } from '../../_interfaces/game';
 
 @Component({
   selector: 'app-game-detail',
   templateUrl: './game-details.component.html',
   styleUrls: ['./game-details.component.scss'],
-  providers: [GamesService, LoggingService],
+  providers: [GamesService],
 })
 export class GameDetailsComponent implements OnInit {
   public game: Game;
@@ -17,7 +16,6 @@ export class GameDetailsComponent implements OnInit {
   constructor(
     private activatedRoute: ActivatedRoute,
     private gamesService: GamesService,
-    private loggingService: LoggingService,
   ) {}
 
   async ngOnInit(): Promise<void> {

@@ -1,0 +1,175 @@
+{
+	"data":[
+		{
+            "id": 19,
+            "first_name": "Ryan",
+            "height_feet": 6,
+            "height_inches": 3,
+            "last_name": "Arcidiacono",
+            "position": "G",
+            "team": 5,
+            "weight_pounds": 200
+        },
+		{
+            "id": 139,
+            "first_name": "Kris",
+            "height_feet": 6,
+            "height_inches": 4,
+            "last_name": "Dunn",
+            "position": "G",
+            "team": 5,
+            "weight_pounds": 205
+        },
+		{
+            "id": 154,
+            "first_name": "Cristiano",
+            "height_feet": 6,
+            "height_inches": 10,
+            "last_name": "Felicio",
+            "position": "F-C",
+            "team": 5,
+            "weight_pounds": 265
+        },
+		{
+            "id": 666577,
+            "first_name": "Daniel",
+            "height_feet": null,
+            "height_inches": null,
+            "last_name": "Gafford",
+            "position": "F",
+            "team": 5,
+            "weight_pounds": null
+        },
+		{
+            "id": 199,
+            "first_name": "Shaquille",
+            "height_feet": 6,
+            "height_inches": 4,
+            "last_name": "Harrison",
+            "position": "G",
+            "team": 5,
+            "weight_pounds": 190
+        },
+		{
+            "id": 222,
+            "first_name": "Chandler",
+            "height_feet": 6,
+            "height_inches": 7,
+            "last_name": "Hutchison",
+            "position": "F",
+            "team": 5,
+            "weight_pounds": 197
+        },
+		{
+            "id": 376,
+            "first_name": "Otto",
+            "height_feet": 6,
+            "height_inches": 8,
+            "last_name": "Porter",
+            "position": "F",
+            "team": 5,
+            "weight_pounds": 198
+        },
+		{
+            "id": 85,
+            "first_name": "Wendell",
+            "height_feet": 6,
+            "height_inches": 10,
+            "last_name": "Carter",
+            "position": "F",
+            "team": 5,
+            "weight_pounds": 255
+        },
+		{
+            "id": 261,
+            "first_name": "Luke",
+            "height_feet": 7,
+            "height_inches": 1,
+            "last_name": "Kornet",
+            "position": "F-C",
+            "team": 5,
+            "weight_pounds": 250
+        },
+		{
+            "id": 268,
+            "first_name": "Zach",
+            "height_feet": 6,
+            "height_inches": 5,
+            "last_name": "LaVine",
+            "position": "G",
+            "team": 5,
+            "weight_pounds": 200
+        },
+		{
+            "id": 297,
+            "first_name": "Lauri",
+            "height_feet": 7,
+            "height_inches": 0,
+            "last_name": "Markkanen",
+            "position": "F",
+            "team": 5,
+            "weight_pounds": 240
+        },
+		{
+            "id": 666783,
+            "first_name": "Adam",
+            "height_feet": null,
+            "height_inches": null,
+            "last_name": "Mokoka",
+            "position": "G",
+            "team": 5,
+            "weight_pounds": null
+        },
+		{
+            "id": 408,
+            "first_name": "Tomas",
+            "height_feet": 6,
+            "height_inches": 7,
+            "last_name": "Satoransky",
+            "position": "G-F",
+            "team": 5,
+            "weight_pounds": 210
+        },
+		{
+            "id": 666908,
+            "first_name": "Max",
+            "height_feet": null,
+            "height_inches": null,
+            "last_name": "Strus",
+            "position": "G",
+            "team": 5,
+            "weight_pounds": null
+        },
+		{
+            "id": 456,
+            "first_name": "Denzel",
+            "height_feet": 6,
+            "height_inches": 6,
+            "last_name": "Valentine",
+            "position": "G",
+            "team": 5,
+            "weight_pounds": 210
+        },
+		{
+            "id": 666956,
+            "first_name": "Coby",
+            "height_feet": null,
+            "height_inches": null,
+            "last_name": "White",
+            "position": "G",
+            "team": 5,
+            "weight_pounds": null
+        },
+		{
+            "id": 489,
+            "first_name": "Thaddeus",
+            "height_feet": 6,
+            "height_inches": 8,
+            "last_name": "Young",
+            "position": "F",
+            "team": 5,
+            "weight_pounds": 221
+        }
+		
+	]
+}

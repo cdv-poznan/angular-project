@@ -1,0 +1,145 @@
+{
+	"data":[
+		{
+            "id": 123,
+            "first_name": "Matthew",
+            "height_feet": 6,
+            "height_inches": 4,
+            "last_name": "Dellavedova",
+            "position": "G",
+            "team": 6,
+            "weight_pounds": 200
+        },
+		{
+            "id": 137,
+            "first_name": "Andre",
+            "height_feet": 6,
+            "height_inches": 11,
+            "last_name": "Drummond",
+            "position": "C",
+            "team": 6,
+            "weight_pounds": 279
+        },
+		{
+            "id": 151,
+            "first_name": "Dante",
+            "height_feet": 6,
+            "height_inches": 6,
+            "last_name": "Exum",
+            "position": "G",
+            "team": 6,
+            "weight_pounds": 190
+        },
+		{
+            "id": 666581,
+            "first_name": "Darius",
+            "height_feet": null,
+            "height_inches": null,
+            "last_name": "Garland",
+            "position": "G",
+            "team": 6,
+            "weight_pounds": null
+        },
+		{
+            "id": 666849,
+            "first_name": "Kevin",
+            "height_feet": null,
+            "height_inches": null,
+            "last_name": "Porter",
+            "position": "G",
+            "team": 6,
+            "weight_pounds": null
+        },
+		{
+            "id": 340,
+            "first_name": "Larry",
+            "height_feet": 6,
+            "height_inches": 9,
+            "last_name": "Nance",
+            "position": "F",
+            "team": 6,
+            "weight_pounds": 230
+        },
+		{
+            "id": 285,
+            "first_name": "Kevin",
+            "height_feet": 6,
+            "height_inches": 10,
+            "last_name": "Love",
+            "position": "F-C",
+            "team": 6,
+            "weight_pounds": 251
+        },
+		{
+            "id": 308,
+            "first_name": "Alfonzo",
+            "height_feet": 6,
+            "height_inches": 8,
+            "last_name": "McKinnie",
+            "position": "F",
+            "team": 6,
+            "weight_pounds": 215
+        },
+		{
+            "id": 1687493,
+            "first_name": "Matt",
+            "height_feet": null,
+            "height_inches": null,
+            "last_name": "Mooney",
+            "position": "G",
+            "team": 6,
+            "weight_pounds": null
+        },
+		{
+            "id": 359,
+            "first_name": "Cedi",
+            "height_feet": 6,
+            "height_inches": 8,
+            "last_name": "Osman",
+            "position": "F",
+            "team": 6,
+            "weight_pounds": 215
+        },
+		{
+            "id": 413,
+            "first_name": "Collin",
+            "height_feet": 6,
+            "height_inches": 2,
+            "last_name": "Sexton",
+            "position": "G",
+            "team": 6,
+            "weight_pounds": 190
+        },
+		{
+            "id": 444,
+            "first_name": "Tristan",
+            "height_feet": 6,
+            "height_inches": 10,
+            "last_name": "Thompson",
+            "position": "C-F",
+            "team": 6,
+            "weight_pounds": 238
+        },
+		{
+		    "id": 666940,
+            "first_name": "Dean",
+            "height_feet": null,
+            "height_inches": null,
+            "last_name": "Wade",
+            "position": "F",
+            "team": 6,
+            "weight_pounds": null
+        },
+		{
+            "id": 492,
+            "first_name": "Ante",
+            "height_feet": 6,
+            "height_inches": 11,
+            "last_name": "Zizic",
+            "position": "C",
+            "team": 6,
+            "weight_pounds": 254
+        }
+		
+	]
+}
