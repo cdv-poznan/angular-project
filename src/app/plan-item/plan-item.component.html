@@ -1,1 +1,158 @@
-<p>plan-item works!</p>
+    <div class="board">
+
+        <div class="board-bar">
+            <p class="board-name">{{ board.name }}</p>
+        </div>
+
+        <div class="board-wrapper">
+
+            <div class="board-columns" cdkDropListGroup>
+                <div class="board-column">
+
+                    <div class="column-title">
+                        {{ column.name }}
+                
+                    </div>
+
+                    <div class="tasks-container" 
+                    cdkDropList
+                    #todoList="cdkDropList"
+                    [cdkDropListData]="Poniedzialek"
+                    (cdkDropListDropped)="drop($event)">
+                        <div class="task" *ngFor="let item of Poniedzialek" cdkDrag>
+                            {{ item }}
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="board-columns" cdkDropListGroup>
+                <div class="board-column" >
+
+                    <div class="column-title">
+                        {{ column.name }}
+                
+                    </div>
+
+                    <div class="tasks-container" 
+                    cdkDropList
+                    #todoList="cdkDropList"
+                    [cdkDropListData]="Wtorek"
+                    (cdkDropListDropped)="drop($event)">
+                        <div class="task" *ngFor="let item of Wtorek" cdkDrag>
+                            {{ item }}
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="board-columns" cdkDropListGroup>
+                <div class="board-column" >
+
+                    <div class="column-title">
+                        {{ column.name }}
+                
+                    </div>
+
+                    <div class="tasks-container" 
+                    cdkDropList
+                    #todoList="cdkDropList"
+                    [cdkDropListData]="Sroda"
+                    (cdkDropListDropped)="drop($event)">
+                        <div class="task" *ngFor="let item of Sroda" cdkDrag>
+                            {{ item }}
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="board-columns" cdkDropListGroup>
+                <div class="board-column" >
+
+                    <div class="column-title">
+                        {{ column.name }}
+                
+                    </div>
+
+                    <div class="tasks-container" 
+                    cdkDropList
+                    #todoList="cdkDropList"
+                    [cdkDropListData]="Czwartek"
+                    (cdkDropListDropped)="drop($event)">
+                        <div class="task" *ngFor="let item of Czwartek" cdkDrag>
+                            {{ item }}
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="board-columns" cdkDropListGroup>
+                <div class="board-column" >
+
+                    <div class="column-title">
+                        {{ column.name }}
+                
+                    </div>
+
+                    <div class="tasks-container" 
+                    cdkDropList
+                    #todoList="cdkDropList"
+                    [cdkDropListData]="Piatek"
+                    (cdkDropListDropped)="drop($event)">
+                        <div class="task" *ngFor="let item of Piatek" cdkDrag>
+                            {{ item }}
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="board-columns" cdkDropListGroup>
+                <div class="board-column" >
+
+                    <div class="column-title">
+                        {{ column.name }}
+                
+                    </div>
+
+                    <div class="tasks-container" 
+                    cdkDropList
+                    #todoList="cdkDropList"
+                    [cdkDropListData]="Sobota"
+                    (cdkDropListDropped)="drop($event)">
+                        <div class="task" *ngFor="let item of Sobota" cdkDrag>
+                            {{ item }}
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="board-columns" cdkDropListGroup>
+                <div class="board-column" >
+
+                    <div class="column-title">
+                        {{ column.name }}
+                
+                    </div>
+
+                    <div class="tasks-container" 
+                    cdkDropList
+                    #todoList="cdkDropList"
+                    [cdkDropListData]="Niedziela"
+                    (cdkDropListDropped)="drop($event)">
+                        <div class="task" *ngFor="let item of Niedziela" cdkDrag>
+                            {{ item }}
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>

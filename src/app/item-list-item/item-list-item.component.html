@@ -1,11 +1,26 @@
 <div class="list">
-  <label class="title-section" for="item">Spakuj też!</label>
+  <label class="title-section" for="item" >Spakuj też!</label>
   <form id="itemForm">
-    <input type="text" class="form-control" id="item" placeholder="Podaj przedmiot">
-    <button type="submit" class="btn btn-primary">Dodaj przedmiot</button>
+    <input type="text" class="form-control" placeholder="Podaj przedmiot" [(ngModel)]="newTask" [ngModelOptions]="{standalone: true}">
+    <button type="submit" class="btn btn-primary" (click)="addTask()" >Dodaj przedmiot</button>
   </form>
   <div class="item-box"></div>
-  <ul id="items" class="item-list"></ul>
-
-  <button id="clear" class="btn cleari-items">Olej i nie bierz nic</button>
+  <ul class="item-list" > 
+    <li *ngFor="let task of taskList" >
+      {{task}}
+      <button class="btn" (click)="remove(task)">Usuń</button>
+      <button class="btn" (click)="done(task)">Gotowe</button>
+    </li>
+  </ul>
+  <label class="title-section" for="item" >Spakowałeś już!</label>
+  <ng-container *ngIf="taskDone.length > 0; else noTask">
+  <ul class="item-list" >
+    <li *ngFor="let task of taskDone">
+      {{task}}
+    </li>
+  </ul>
+</ng-container>
+<ng-template #noTask>
+  <p class="title-section">Narazie nic nie spakowałeś!</p>
+</ng-template>
 </div>
