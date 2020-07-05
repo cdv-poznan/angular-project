@@ -21,9 +21,9 @@
                     <tbody>
                         <tr>
                             <td>{{ playerstats.min }}</td>
-                            <td>{{ playerstats.fg_pct*100}}</td>
-                            <td>{{ playerstats.fg3_pct*100 }}</td>
-                            <td>{{ playerstats.ft_pct*100 }}</td>
+                            <td>{{ playerstats.fg_pct*100 | number }}</td>
+                            <td>{{ playerstats.fg3_pct*100 | number }}</td>
+                            <td>{{ playerstats.ft_pct*100 | number }}</td>
                             <td>{{ playerstats.pts }}</td>
                             <td>{{ playerstats.reb }}</td>
                             <td>{{ playerstats.ast }}</td>
