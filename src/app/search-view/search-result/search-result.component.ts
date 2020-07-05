@@ -8,8 +8,8 @@ import { Component, OnInit, Input } from '@angular/core';
 export class SearchResultComponent implements OnInit {
   @Input() result;
   @Input() mediaType;
-  path;
-  fullPath;
+  path: string;
+  fullPath: string;
 
   constructor() {}
 

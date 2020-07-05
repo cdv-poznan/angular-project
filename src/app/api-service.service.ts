@@ -1,16 +1,19 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpParams } from '@angular/common/http';
 
 import { catchError } from 'rxjs/operators';
 
 import { HttpErrorHandler, HandleError } from './http-error-handler.service';
 import { apiKey } from 'src/environments/apiConfig';
-
-const apiUrl: string = 'https://api.themoviedb.org/3';
-const queryNowPlayingMovies: string = 'movie/now_playing';
+import { Observable } from 'rxjs';
 
 export enum moviesQueryTypes {
   nowPlaying = 'now_playing',
+  popular = 'popular',
+  topRated = 'top_rated',
+}
+export enum showsQueryTypes {
+  nowPlaying = 'on_the_air',
   popular = 'popular',
   topRated = 'top_rated',
 }
@@ -19,8 +22,12 @@ export enum moviesQueryTypes {
   providedIn: 'root',
 })
 export class ApiServiceService {
+  apiUrl: string = 'https://api.themoviedb.org/3';
+
+  options = { params: new HttpParams().set('api_key', apiKey) };
+
   private urlCreator = (path: string, page: number = 1, query = '') =>
-    `${apiUrl}/${path}?api_key=${apiKey}&language=en-US&page=${page}&query=${query}`;
+    `${this.apiUrl}/${path}?api_key=${apiKey}&language=en-US&page=${page}&query=${query}`;
 
   private handleError: HandleError;
 
@@ -28,47 +35,54 @@ export class ApiServiceService {
     this.handleError = httpErrorHandler.createHandleError('HeroesService');
   }
 
-  getMovies(query: moviesQueryTypes) {
+  getMovies(query: moviesQueryTypes): Observable<any> {
     return this.http
-      .get(this.urlCreator(`movie/${query}`))
+      .get(`${this.apiUrl}/movie/${query}`, this.options)
       .pipe(catchError(this.handleError('getMovies', [])));
   }
 
-  getShows(query: string) {
+  getShows(query: string): Observable<any> {
     return this.http
-      .get(this.urlCreator(`tv/${query}`))
+      .get(`${this.apiUrl}/tv/${query}`, this.options)
       .pipe(catchError(this.handleError('getShows', [])));
   }
 
-  getMedia(id: string, mediaType: string) {
+  getMedia(id: string, mediaType: string): Observable<any> {
     return this.http
-      .get(this.urlCreator(`${mediaType}/${id}`))
+      .get(`${this.apiUrl}/${mediaType}/${id}`, this.options)
       .pipe(catchError(this.handleError('getMovie', [])));
   }
 
-  getPerson(id: string) {
+  getPerson(id: string): Observable<any> {
     return this.http
-      .get(this.urlCreator(`person/${id}`))
+      .get(`${this.apiUrl}/person/${id}`, this.options)
       .pipe(catchError(this.handleError('getPerson', [])));
   }
-  getSimilar(id: string, mediaType: string) {
+  getSimilar(id: string, mediaType: string): Observable<any> {
     return this.http
-      .get(this.urlCreator(`${mediaType}/${id}/similar`))
+      .get(`${this.apiUrl}/${mediaType}/${id}/similar`, this.options)
       .pipe(catchError(this.handleError('getSimilar', [])));
   }
-  getCast(id: string, mediaType: string) {
+  getCast(id: string, mediaType: string): Observable<any> {
     return this.http
-      .get(this.urlCreator(`${mediaType}/${id}/credits`))
+      .get(`${this.apiUrl}/${mediaType}/${id}/credits`, this.options)
       .pipe(catchError(this.handleError('getCast', [])));
   }
-  getPersonFilmography(id: string) {
+  getPersonFilmography(id: string): Observable<any> {
     return this.http
-      .get(this.urlCreator(`person/${id}/movie_credits`))
+      .get(`${this.apiUrl}/person/${id}/movie_credits`, this.options)
       .pipe(catchError(this.handleError('getPersonFilmography', [])));
   }
-  getSearchResuts(category, query, page) {
+  getSearchResuts(category: string, query: string, page: any): Observable<any> {
+    const searchParams = this.options.params
+      .set('page', page)
+      .set('query', query);
+    const searchOptions = {
+      params: searchParams,
+    };
+    console.log(searchOptions);
     return this.http
-      .get(this.urlCreator(`search/${category}`, page, query))
+      .get(`${this.apiUrl}/search/${category}`, searchOptions)
       .pipe(catchError(this.handleError('getSearchResults', [])));
   }
 }

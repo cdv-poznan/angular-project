@@ -21,7 +21,7 @@ export class MoviesViewComponent implements OnInit {
     this.getNowPlayingMovies();
     this.getPopularMovies();
     this.getTopRatedMovies();
-    this.titleService.setTitle(`Filmeo - the movie database`);
+    this.titleService.setTitle(`Filmeo - movies`);
   }
 
   getNowPlayingMovies(): void {

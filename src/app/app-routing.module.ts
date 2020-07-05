@@ -6,9 +6,12 @@ import { SearchViewComponent } from './search-view/search-view.component';
 import { PersonViewComponent } from './person-view/person-view.component';
 import { TvShowViewComponent } from './tv-show-view/tv-show-view.component';
 import { MoviesViewComponent } from './movies-view/movies-view.component';
+import { TvShowsViewComponent } from './tv-shows-view/tv-shows-view.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: '/movies', pathMatch: 'full' },
   { path: 'movies', component: MoviesViewComponent },
+  { path: 'tv-shows', component: TvShowsViewComponent },
   { path: 'movie/:id', component: MovieViewComponent },
   { path: 'tv/:id', component: TvShowViewComponent },
   { path: 'person/:id', component: PersonViewComponent },

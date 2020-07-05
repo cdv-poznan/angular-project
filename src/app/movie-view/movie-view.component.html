@@ -34,7 +34,7 @@
                 <h2>Cast</h2>
                 <app-carousel *ngIf="movieCast$ | async as movieCast" [carouselContext]="movieCast.cast"
                     mediaType="person"></app-carousel>
-                <h2 clacc="mt-4">Cast</h2>
+                <h2 clacc="mt-4">Similar</h2>
                 <app-carousel *ngIf="similarMovies$ | async as similarMovies" [carouselContext]="similarMovies.results"
                     mediaType="movie"></app-carousel>
 

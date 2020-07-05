@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiServiceService } from '../api-service.service';
-import { Router, ActivatedRoute, ParamMap } from '@angular/router';
+import { ActivatedRoute, ParamMap } from '@angular/router';
 import { switchMap } from 'rxjs/operators';
 import { Observable } from 'rxjs';
 import { Title } from '@angular/platform-browser';
@@ -15,11 +15,11 @@ export class MovieViewComponent implements OnInit {
   movie$: Observable<any>;
   similarMovies$: Observable<any>;
   movieCast$: Observable<any>;
-  title;
+  title: string;
 
   constructor(
     private route: ActivatedRoute,
-    private router: Router,
+
     private apiService: ApiServiceService,
     private titleService: Title,
   ) {}
@@ -45,13 +45,13 @@ export class MovieViewComponent implements OnInit {
     });
   }
 
-  public getBackground(url) {
+  public getBackground(url: string) {
     const style = {
       'background-image': `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://image.tmdb.org/t/p//original/${url})`,
     };
     return style;
   }
-  public getGenres(genres) {
+  public getGenres(genres: Array<any>): string {
     const genresList = genres.map((e) => e.name).join(', ');
     return genresList;
   }

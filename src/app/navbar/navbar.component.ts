@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 })
 export class NavbarComponent {
   public isMenuCollapsed = true;
-  searchQuery = '';
+  searchQuery: string = '';
 
   constructor(private formBuilder: FormBuilder, private router: Router) {}
   onSubmit(form) {

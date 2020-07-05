@@ -10,15 +10,13 @@ import { Title } from '@angular/platform-browser';
   styleUrls: ['./search-view.component.scss'],
 })
 export class SearchViewComponent implements OnInit {
-  query;
-  page = 1;
-  category = 'multi';
-  isPrev;
-  isNext;
-  nextPage;
-  prevPage;
+  query: string;
+  page: number = 1;
+  category: string = 'multi';
+  isPrev: boolean;
+  isNext: boolean;
   searchResults = { results: '', total_results: '', total_pages: null };
-  pagination;
+
   constructor(
     private route: ActivatedRoute,
     private apiService: ApiServiceService,

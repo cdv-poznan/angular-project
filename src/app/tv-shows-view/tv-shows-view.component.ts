@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ApiServiceService } from '../api-service.service';
+import { ApiServiceService, showsQueryTypes } from '../api-service.service';
 import { Title } from '@angular/platform-browser';
 
 @Component({
@@ -21,22 +21,22 @@ export class TvShowsViewComponent implements OnInit {
     this.getNowPlaying();
     this.getPopular();
     this.getTopRated();
-    this.titleService.setTitle(`Filmeo - the movie database`);
+    this.titleService.setTitle(`Filmeo - tv shows`);
   }
 
   getNowPlaying(): void {
     this.apiService
-      .getShows('now_playing')
+      .getShows(showsQueryTypes.nowPlaying)
       .subscribe((data: any) => (this.nowPlaying = data.results));
   }
   getPopular(): void {
     this.apiService
-      .getShows('popular')
+      .getShows(showsQueryTypes.popular)
       .subscribe((data: any) => (this.popular = data.results));
   }
   getTopRated(): void {
     this.apiService
-      .getShows('top_rated')
+      .getShows(showsQueryTypes.topRated)
       .subscribe((data: any) => (this.topRated = data.results));
   }
 }

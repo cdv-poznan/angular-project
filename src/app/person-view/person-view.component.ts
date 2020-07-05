@@ -14,8 +14,8 @@ import { Title } from '@angular/platform-browser';
 export class PersonViewComponent implements OnInit {
   person$: Observable<any>;
   personFilmography$: Observable<any>;
-  title;
-  imageUrl;
+  title: string;
+  imageUrl: string;
 
   constructor(
     private route: ActivatedRoute,
