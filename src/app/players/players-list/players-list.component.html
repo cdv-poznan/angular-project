@@ -1,30 +1,66 @@
 <div class="container">
     <div class="row">
       <div class="col-12">
-        <ul *ngIf="players?.length; else emptyBlock">
-          <ng-container *ngFor="let player of players">
 
-            <div class="playerBoxShort align-items-center row">
-                <div class="col-12 col-md-4">
-                <!-- <a routerLink="/players/{{ player.id }}"><img src="/assets/players-img/small/{{ player.id }}-{{ player.first_name }}-{{ player.last_name }}.png" class="img-responsive" /></a> -->
-                <!-- <a routerLink="/players/{{ player.id }}"><img src="/assets/players-img/small/{{ player.id }}-{{ player.first_name }}-{{ player.last_name }}.png" class="img-responsive" /></a> -->
-                  
-                </div>          
-                <div class="col-10 col-md-6 text-left">
-                <a routerLink="/players/{{ player.id }}">
-                          <h2>{{ player.first_name }} {{ player.last_name }}</h2>
-                          </a>
-                          <hr>
-                Drużyna: {{ player.team.full_name }}<br>Pozycja: {{ player.position }}</div>
-                <div class="col-2 col-md-2"><a routerLink="/players/{{ player.id }}"><i class="far fa-address-card fa-3x"></i></a></div>
-                 </div>
-
-          </ng-container>
+        <div class="main">
+        <div class="column-1">
+          <ul class="vertical-menu" *ngIf="teams?.length; else emptyBlock">
+          <!-- <ul class="vertical-menu" *ngIf="teams?.length; else emptyBlock">
+              <ng-container *ngFor="let team of teams">
+                <li (click)="changeViewMode(team.id,'team.abbreviation')" [ngClass]="{'active':viewMode == team.abbreviation }"><img src="/assets/teams-logo/png/{{ team.abbreviation }}.png" alt="{{ team.full_name }}" /></li>
+          </ng-container> 
         </ul>
-        
+                <ng-template #emptyBlock>
+            
+          </ng-template>-->
+
+              <li (click)="changeViewMode(1,'ATL')" [ngClass]="{'active':viewMode =='ATL'}"><img src="/assets/teams-logo/png/ATL.png" alt="Atlanta Hawks" /></li>
+              <li (click)="changeViewMode(2,'BOS')" [ngClass]="{'active':viewMode =='BOS'}"><img src="/assets/teams-logo/png/BOS.png" alt="Boston Celtics" /></li>
+              <li (click)="changeViewMode(3,'BKN')" [ngClass]="{'active':viewMode =='BKN'}"><img src="/assets/teams-logo/png/BKN.png" alt="Brooklyn Nets" /></li>
+              <li (click)="changeViewMode(4,'CHA')" [ngClass]="{'active':viewMode =='CHA'}"><img src="/assets/teams-logo/png/CHA.png" alt="Charlotte Hornets" /></li>
+              <li (click)="changeViewMode(5,'CHI')" [ngClass]="{'active':viewMode =='CHI'}"><img src="/assets/teams-logo/png/CHI.png" alt="Chicago Bulls" /></li>
+              <li (click)="changeViewMode(6,'CLE')" [ngClass]="{'active':viewMode =='CLE'}"><img src="/assets/teams-logo/png/CLE.png" alt="Cleveland Cavaliers" /></li>
+              <li (click)="changeViewMode(7,'DAL')" [ngClass]="{'active':viewMode =='DAL'}"><img src="/assets/teams-logo/png/DAL.png" alt="Dallas Maverics" /></li>
+              <li (click)="changeViewMode(8,'DEN')" [ngClass]="{'active':viewMode =='DEN'}"><img src="/assets/teams-logo/png/DEN.png" alt="Denver Nuggets" /></li>
+              <li (click)="changeViewMode(9,'DET')" [ngClass]="{'active':viewMode =='DET'}"><img src="/assets/teams-logo/png/DET.png" alt="Detroit Pistons" /></li>
+              <li (click)="changeViewMode(10,'GSW')" [ngClass]="{'active':viewMode =='GSW'}"><img src="/assets/teams-logo/png/GSW.png" alt="Golden State Warriors" /></li>
+              <li (click)="changeViewMode(11,'HOU')" [ngClass]="{'active':viewMode =='HOU'}"><img src="/assets/teams-logo/png/HOU.png" alt="Houston Rockets" /></li>
+              <li (click)="changeViewMode(12,'IND')" [ngClass]="{'active':viewMode =='IND'}"><img src="/assets/teams-logo/png/IND.png" alt="Indiana Pacers" /></li>
+              <li (click)="changeViewMode(13,'LAC')" [ngClass]="{'active':viewMode =='LAC'}"><img src="/assets/teams-logo/png/LAC.png" alt="LA Clippers" /></li>
+              <li (click)="changeViewMode(14,'LAL')" [ngClass]="{'active':viewMode =='LAL'}"><img src="/assets/teams-logo/png/LAL.png" alt="Los Angeles Lakers" /></li>
+              <li (click)="changeViewMode(15,'MEM')" [ngClass]="{'active':viewMode =='MEM'}"><img src="/assets/teams-logo/png/MEM.png" alt="Memphis Grizzlies" /></li>
+              <li (click)="changeViewMode(16,'MIA')" [ngClass]="{'active':viewMode =='MIA'}"><img src="/assets/teams-logo/png/MIA.png" alt="Miami Heat" /></li>
+              <li (click)="changeViewMode(17,'MIL')" [ngClass]="{'active':viewMode =='MIL'}"><img src="/assets/teams-logo/png/MIL.png" alt="Milwaukee Bucks" /></li>
+              <li (click)="changeViewMode(18,'MIN')" [ngClass]="{'active':viewMode =='MIN'}"><img src="/assets/teams-logo/png/MIN.png" alt="Minnesota Timberwolves" /></li>
+              <li (click)="changeViewMode(19,'NOP')" [ngClass]="{'active':viewMode =='NOP'}"><img src="/assets/teams-logo/png/NOP.png" alt="New Orleans Pelicans" /></li>
+              <li (click)="changeViewMode(20,'NYK')" [ngClass]="{'active':viewMode =='NYK'}"><img src="/assets/teams-logo/png/NYK.png" alt="New York Knicks" /></li>
+              <li (click)="changeViewMode(21,'OKC')" [ngClass]="{'active':viewMode =='OKC'}"><img src="/assets/teams-logo/png/OKC.png" alt="Oklahoma City Thunder" /></li>
+              <li (click)="changeViewMode(22,'ORL')" [ngClass]="{'active':viewMode =='ORL'}"><img src="/assets/teams-logo/png/ORL.png" alt="Orlando Magic" /></li>
+              <li (click)="changeViewMode(23,'PHI')" [ngClass]="{'active':viewMode =='PHI'}"><img src="/assets/teams-logo/png/PHI.png" alt="Philadelphia 76ers" /></li>
+              <li (click)="changeViewMode(24,'PHX')" [ngClass]="{'active':viewMode =='PHX'}"><img src="/assets/teams-logo/png/PHX.png" alt="Phoenix Suns" /></li>
+              <li (click)="changeViewMode(25,'POR')" [ngClass]="{'active':viewMode =='POR'}"><img src="/assets/teams-logo/png/POR.png" alt="Portland Trail Blazers" /></li>
+              <li (click)="changeViewMode(26,'SAC')" [ngClass]="{'active':viewMode =='SAC'}"><img src="/assets/teams-logo/png/SAC.png" alt="Sacramento Kings" /></li>
+              <li (click)="changeViewMode(27,'SAS')" [ngClass]="{'active':viewMode =='SAS'}"><img src="/assets/teams-logo/png/SAS.png" alt="San Antonio Spurs" /></li>
+              <li (click)="changeViewMode(28,'TOR')" [ngClass]="{'active':viewMode =='TOR'}"><img src="/assets/teams-logo/png/TOR.png" alt="Toronto Raptors" /></li>
+              <li (click)="changeViewMode(29,'UTA')" [ngClass]="{'active':viewMode =='UTA'}"><img src="/assets/teams-logo/png/UTA.png" alt="Utah Jazz" /></li>
+              <li (click)="changeViewMode(30,'WAS')" [ngClass]="{'active':viewMode =='WAS'}"><img src="/assets/teams-logo/png/WAS.png" alt="Washington Wizzards" /></li>
+          </ul>
+
+        </div>
+        <div class="column-2" [ngSwitch]="viewMode" *ngIf="teams?.length; else emptyBlock">
+          <ng-container *ngFor="let team of teams">
+            <div *ngSwitchCase="team.abbreviation">
+              <h2>{{ team.full_name }}</h2>
+              <p>lista zawodników - do uzupełnienia - generowanie dynamiczne</p>
+            </div>
+      </ng-container> 
+         
+        </div>
         <ng-template #emptyBlock>
-          The list is empty.
+          
         </ng-template>
+      </div>
+
       </div>
     </div>
   </div>

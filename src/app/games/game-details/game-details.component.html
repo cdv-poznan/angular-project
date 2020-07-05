@@ -1,10 +1,11 @@
 <div class="container">
   <div class="row">
     <div class="col-12">
-      <div *ngIf="game">
+      <div *ngIf="game" class="text-center">
         <h1>
           {{ game.visitor_team.full_name }} : {{ game.home_team.full_name }}
         </h1>
+        <hr>
         <h2>{{ game.date | date: 'yyyy-MM-dd' }}</h2>
         <div class="gameDetailBox">
           <div class="row">

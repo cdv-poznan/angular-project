@@ -1,5 +1,19 @@
 <div class="container">
   <div class="row">
+    <div class="col-12 text-center">
+      <form class="pure-form">
+        <label for="game-season">
+          <select name="game-season" id="game-season" 
+          #mySelect
+          (change)='onSeasonSelected(mySelect.value)'>       
+            <option value="">Wybierz sezon</option>
+              <option *ngFor="let season of seasons" [ngValue]="season">{{ season }} / {{ season + 1 }}</option>
+          </select>
+        </label>
+      </form>
+    </div>
+  </div>
+  <div class="row">
       <div class="col-12">
         <div *ngIf="games?.length; else emptyBlock">
           <ng-container *ngFor="let game of games">
@@ -26,7 +40,7 @@
 
         </div>
         <ng-template #emptyBlock>
-          The list is empty.
+          
           </ng-template>
       </div>
     </div>

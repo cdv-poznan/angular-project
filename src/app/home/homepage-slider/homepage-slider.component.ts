@@ -9,17 +9,17 @@ export class HomepageSliderComponent {
   slideImages = [
     `./assets/img/slider-nba-teams.jpg`,
     `./assets/img/slider-nba-players.jpg`,
-    `./assets/img/slider-nba-stats.jpg`,
+    `./assets/img/slider-nba-games.jpg`,
   ];
   slideLinks = [
     '/teams',
     '/players',
-    '/stats',
+    '/games',
   ];
   slideAlts = [
     'NBA Teams',
     'NBA Players',
-    'NBA Stats',
+    'NBA Games',
   ];
   
 }

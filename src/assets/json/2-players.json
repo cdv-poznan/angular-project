@@ -7,15 +7,7 @@
             "height_inches": 7,
             "last_name": "Brown",
             "position": "G",
-            "team": {
-                "id": 2,
-                "abbreviation": "BOS",
-                "city": "Boston",
-                "conference": "East",
-                "division": "Atlantic",
-                "full_name": "Boston Celtics",
-                "name": "Celtics"
-            },
+            "team": 2,
             "weight_pounds": 220
         },
 		{
@@ -25,15 +17,7 @@
             "height_inches": null,
             "last_name": "Edwards",
             "position": "G",
-            "team": {
-                "id": 2,
-                "abbreviation": "BOS",
-                "city": "Boston",
-                "conference": "East",
-                "division": "Atlantic",
-                "full_name": "Boston Celtics",
-                "name": "Celtics"
-            },
+            "team": 2,
             "weight_pounds": null
         },
 		{
@@ -43,15 +27,7 @@
             "height_inches": null,
             "last_name": "Fall",
             "position": "C",
-            "team": {
-                "id": 2,
-                "abbreviation": "BOS",
-                "city": "Boston",
-                "conference": "East",
-                "division": "Atlantic",
-                "full_name": "Boston Celtics",
-                "name": "Celtics"
-            },
+            "team": 2,
             "weight_pounds": null
         },
 		{
@@ -61,15 +37,7 @@
             "height_inches": null,
             "last_name": "Green",
             "position": "G-F",
-            "team": {
-                "id": 2,
-                "abbreviation": "BOS",
-                "city": "Boston",
-                "conference": "East",
-                "division": "Atlantic",
-                "full_name": "Boston Celtics",
-                "name": "Celtics"
-            },
+            "team": 2,
             "weight_pounds": null
         },
 		{
@@ -79,15 +47,7 @@
             "height_inches": 8,
             "last_name": "Hayward",
             "position": "F",
-            "team": {
-                "id": 2,
-                "abbreviation": "BOS",
-                "city": "Boston",
-                "conference": "East",
-                "division": "Atlantic",
-                "full_name": "Boston Celtics",
-                "name": "Celtics"
-            },
+            "team": 2,
             "weight_pounds": 225
         },
 		{
@@ -97,15 +57,7 @@
             "height_inches": null,
             "last_name": "Kanter",
             "position": "C",
-            "team": {
-                "id": 2,
-                "abbreviation": "BOS",
-                "city": "Boston",
-                "conference": "East",
-                "division": "Atlantic",
-                "full_name": "Boston Celtics",
-                "name": "Celtics"
-            },
+            "team": 2,
             "weight_pounds": null
         },
 		{
@@ -115,15 +67,7 @@
             "height_inches": null,
             "last_name": "Langford",
             "position": "G",
-            "team": {
-                "id": 2,
-                "abbreviation": "BOS",
-                "city": "Boston",
-                "conference": "East",
-                "division": "Atlantic",
-                "full_name": "Boston Celtics",
-                "name": "Celtics"
-            },
+            "team": 2,
             "weight_pounds": null
         },
 		{
@@ -133,15 +77,7 @@
             "height_inches": 7,
             "last_name": "Ojeleye",
             "position": "F",
-            "team": {
-                "id": 2,
-                "abbreviation": "BOS",
-                "city": "Boston",
-                "conference": "East",
-                "division": "Atlantic",
-                "full_name": "Boston Celtics",
-                "name": "Celtics"
-            },
+            "team": 2,
             "weight_pounds": 241
         },
 		{
@@ -151,15 +87,7 @@
             "height_inches": null,
             "last_name": "Poirier",
             "position": "C",
-            "team": {
-                "id": 2,
-                "abbreviation": "BOS",
-                "city": "Boston",
-                "conference": "East",
-                "division": "Atlantic",
-                "full_name": "Boston Celtics",
-                "name": "Celtics"
-            },
+            "team": 2,
             "weight_pounds": null
         },
 		{
@@ -169,15 +97,7 @@
             "height_inches": 4,
             "last_name": "Smart",
             "position": "G",
-            "team": {
-                "id": 2,
-                "abbreviation": "BOS",
-                "city": "Boston",
-                "conference": "East",
-                "division": "Atlantic",
-                "full_name": "Boston Celtics",
-                "name": "Celtics"
-            },
+            "team": 2,
             "weight_pounds": 220
         },
 		{
@@ -187,15 +107,7 @@
             "height_inches": 8,
             "last_name": "Tatum",
             "position": "F",
-            "team": {
-                "id": 2,
-                "abbreviation": "BOS",
-                "city": "Boston",
-                "conference": "East",
-                "division": "Atlantic",
-                "full_name": "Boston Celtics",
-                "name": "Celtics"
-            },
+            "team": 2,
             "weight_pounds": 208
         },
 		{
@@ -205,15 +117,7 @@
             "height_inches": 8,
             "last_name": "Theis",
             "position": "F",
-            "team": {
-                "id": 2,
-                "abbreviation": "BOS",
-                "city": "Boston",
-                "conference": "East",
-                "division": "Atlantic",
-                "full_name": "Boston Celtics",
-                "name": "Celtics"
-            },
+            "team": 2,
             "weight_pounds": 243
         },
 		{
@@ -223,15 +127,7 @@
             "height_inches": 1,
             "last_name": "Walker",
             "position": "G",
-            "team": {
-                "id": 2,
-                "abbreviation": "BOS",
-                "city": "Boston",
-                "conference": "East",
-                "division": "Atlantic",
-                "full_name": "Boston Celtics",
-                "name": "Celtics"
-            },
+            "team": 2,
             "weight_pounds": 184
         },
 		{
@@ -241,15 +137,7 @@
             "height_inches": 4,
             "last_name": "Wanamaker",
             "position": "G",
-            "team": {
-                "id": 2,
-                "abbreviation": "BOS",
-                "city": "Boston",
-                "conference": "East",
-                "division": "Atlantic",
-                "full_name": "Boston Celtics",
-                "name": "Celtics"
-            },
+            "team": 2,
             "weight_pounds": 210
         },
 		{
@@ -259,15 +147,7 @@
             "height_inches": null,
             "last_name": "Waters",
             "position": "G",
-            "team": {
-                "id": 2,
-                "abbreviation": "BOS",
-                "city": "Boston",
-                "conference": "East",
-                "division": "Atlantic",
-                "full_name": "Boston Celtics",
-                "name": "Celtics"
-            },
+            "team": 2,
             "weight_pounds": null
         },
 		{
@@ -277,15 +157,7 @@
             "height_inches": null,
             "last_name": "Williams",
             "position": "F",
-            "team": {
-                "id": 2,
-                "abbreviation": "BOS",
-                "city": "Boston",
-                "conference": "East",
-                "division": "Atlantic",
-                "full_name": "Boston Celtics",
-                "name": "Celtics"
-            },
+            "team": 2,
             "weight_pounds": null
         },
 		{
@@ -295,15 +167,7 @@
             "height_inches": 10,
             "last_name": "Williams",
             "position": "C-F",
-            "team": {
-                "id": 2,
-                "abbreviation": "BOS",
-                "city": "Boston",
-                "conference": "East",
-                "division": "Atlantic",
-                "full_name": "Boston Celtics",
-                "name": "Celtics"
-            },
+            "team": 2,
             "weight_pounds": 240
         }
 	]

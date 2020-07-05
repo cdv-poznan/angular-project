@@ -46,11 +46,11 @@ img {
 }
 
 a {
-  color: $color-violet;
+  color: $color-blue;
 }
 
 a:hover {
-  color: $color-yellow;
+  color: $color-pink;
   text-decoration: none;
 }
 
@@ -81,7 +81,7 @@ nav {
 }
 
 .homeIntro h3 {
-  color: $color-violet;
+  color: $color-blue;
   text-align: center;
   font-size: 40px;
   font-weight: 800;
@@ -89,7 +89,7 @@ nav {
 
 .homeLALink h3 {
   padding: 20px;
-  color: $color-violet;
+  color: $color-blue;
   text-align: center;
   font-size: 20px;
   font-weight: 800;
@@ -154,7 +154,7 @@ nav {
 }
 
 .teamBox h2 {
-  color: $color-violet;
+  color: $color-darkgray;
   font-weight: 800;
   font-size: 30px;
   margin: 10px 0;
@@ -192,7 +192,7 @@ nav {
 
 .gameLinkBox h2 {
   text-align: center;
-  color: $color-violet;
+  color: $color-blue;
   font-weight: 800;
   font-size: 20px;
   margin: 10px 0;
@@ -211,7 +211,7 @@ nav {
 }
 
 .gameDetailBox {
-  border-bottom: 1px solid $color-violet;
+  border-bottom: 1px solid $color-blue;
   text-align: center;
   padding-bottom: 50px;
 }
@@ -238,7 +238,7 @@ nav {
 }
 
 .playerBox h3 {
-  color: $color-violet;
+  color: $color-blue;
   font-weight: 800;
 }
 
@@ -340,7 +340,8 @@ nav {
 
 .playerInfo {
   padding: 50px;
-  border-bottom: 1px solid $color-violet;
+  padding-bottom: 0;
+  border-bottom: 1px solid $color-blue;
 }
 
 .playerInfo h3 {
@@ -358,7 +359,7 @@ nav {
 
 input,
 select {
-  border: 1px solid $color-violet;
+  border: 1px solid $color-blue;
   padding: 10px;
 }
 

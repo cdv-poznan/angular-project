@@ -11,6 +11,7 @@ import { Game } from '../../_interfaces/game';
 })
 export class GamesListComponent implements OnInit {
   public games: Game[];
+  public seasons: number[] = [];
 
   constructor(
     private gamesService: GamesService,
@@ -18,7 +19,14 @@ export class GamesListComponent implements OnInit {
   ) {}
 
   async ngOnInit(): Promise<void> {
-    this.games = await this.gamesService.getGamesList();
+    for(let i = 2019; i>= 1979; i--){
+      this.seasons.push(i);
+    }
+    this.games = await this.gamesService.getGamesBySeasonList(2019, 0, 100);
   }
+
+  async onSeasonSelected(value:number){
+    this.games = await this.gamesService.getGamesBySeasonList(value, 0, 100);
+}
 
 }

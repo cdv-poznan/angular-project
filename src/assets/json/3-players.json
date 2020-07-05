@@ -1,0 +1,166 @@
+{
+	"data":[
+		{
+            "id": 9,
+            "first_name": "Jarrett",
+            "height_feet": 6,
+            "height_inches": 11,
+            "last_name": "Allen",
+            "position": "C",
+            "team": 3,
+            "weight_pounds": 237
+        },
+		{
+            "id": 95,
+            "first_name": "Wilson",
+            "height_feet": 6,
+            "height_inches": 9,
+            "last_name": "Chandler",
+            "position": "F",
+            "team": 3,
+            "weight_pounds": 225
+        },
+		{
+            "id": 50661,
+            "first_name": "Chris",
+            "height_feet": null,
+            "height_inches": null,
+            "last_name": "Chiozza",
+            "position": "G",
+            "team": 3,
+            "weight_pounds": null
+        },
+		{
+            "id": 666508,
+            "first_name": "Nicolas",
+            "height_feet": null,
+            "height_inches": null,
+            "last_name": "Claxton",
+            "position": "F-C",
+            "team": 3,
+            "weight_pounds": null
+        },
+		{
+            "id": 130,
+            "first_name": "Spencer",
+            "height_feet": 6,
+            "height_inches": 6,
+            "last_name": "Dinwiddie",
+            "position": "G",
+            "team": 3,
+            "weight_pounds": 210
+        },
+		{
+            "id": 140,
+            "first_name": "Kevin",
+            "height_feet": 6,
+            "height_inches": 9,
+            "last_name": "Durant",
+            "position": "F",
+            "team": 3,
+            "weight_pounds": 240
+        },
+		{
+            "id": 197,
+            "first_name": "Joe",
+            "height_feet": 6,
+            "height_inches": 6,
+            "last_name": "Harris",
+            "position": "F-G",
+            "team": 3,
+            "weight_pounds": 218
+        },
+		{
+            "id": 228,
+            "first_name": "Kyrie",
+            "height_feet": 6,
+            "height_inches": 3,
+            "last_name": "Irving",
+            "position": "G",
+            "team": 3,
+            "weight_pounds": 193
+        },
+		{
+            "id": 250,
+            "first_name": "DeAndre",
+            "height_feet": 6,
+            "height_inches": 11,
+            "last_name": "Jordan",
+            "position": "C",
+            "team": 3,
+            "weight_pounds": 265
+        },
+		{
+            "id": 264,
+            "first_name": "Rodions",
+            "height_feet": 6,
+            "height_inches": 9,
+            "last_name": "Kurucs",
+            "position": "F",
+            "team": 3,
+            "weight_pounds": 210
+        },
+		{
+            "id": 277,
+            "first_name": "Caris",
+            "height_feet": 6,
+            "height_inches": 7,
+            "last_name": "LeVert",
+            "position": "G",
+            "team": 3,
+            "weight_pounds": 204
+        },
+		{
+            "id": 288,
+            "first_name": "Timothe",
+            "height_feet": 6,
+            "height_inches": 6,
+            "last_name": "Luwawu-Cabarrot",
+            "position": "G-F",
+            "team": 3,
+            "weight_pounds": 210
+        },
+		{
+            "id": 666750,
+            "first_name": "Jeremiah",
+            "height_feet": null,
+            "height_inches": null,
+            "last_name": "Martin",
+            "position": "G",
+            "team": 3,
+            "weight_pounds": null
+        },
+		{
+            "id": 336,
+            "first_name": "Dzanan",
+            "height_feet": 6,
+            "height_inches": 9,
+            "last_name": "Musa",
+            "position": "G-F",
+            "team": 3,
+            "weight_pounds": 208
+        },
+		{
+            "id": 383,
+            "first_name": "Taurean",
+            "height_feet": 6,
+            "height_inches": 8,
+            "last_name": "Prince",
+            "position": "F",
+            "team": 3,
+            "weight_pounds": 220
+        },
+		{
+            "id": 436,
+            "first_name": "Garrett",
+            "height_feet": 6,
+            "height_inches": 6,
+            "last_name": "Temple",
+            "position": "G-F",
+            "team": 3,
+            "weight_pounds": 195
+        }
+		
+		
+	]
+}

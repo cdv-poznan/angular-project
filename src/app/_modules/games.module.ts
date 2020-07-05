@@ -8,6 +8,8 @@ import { GameDetailsComponent } from '../games/game-details/game-details.compone
 
 import { GameDateToUrlPipe } from '../_pipes/game-date-to-url.pipe';
 
+import { FormsModule }   from '@angular/forms';
+
 @NgModule({
   declarations: [
     GamesComponent,
@@ -15,7 +17,7 @@ import { GameDateToUrlPipe } from '../_pipes/game-date-to-url.pipe';
     GameDetailsComponent,
     GameDateToUrlPipe
   ],
-  imports: [CommonModule, GamesRoutingModule],
+  imports: [CommonModule, GamesRoutingModule, FormsModule,],
   exports: [GameDateToUrlPipe]
 })
 export class GamesModule {}

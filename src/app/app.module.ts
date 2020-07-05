@@ -12,6 +12,9 @@ import { HeaderComponent } from './_shared/header/header.component';
 import { FooterComponent } from './_shared/footer/footer.component';
 import { HomepageSliderComponent } from './home/homepage-slider/homepage-slider.component';
 import { HomepageTeamsComponent } from './home/homepage-teams/homepage-teams.component';
+import { MatVideoModule } from 'mat-video';
+import { PlayerSearchComponent } from './players/player-search/player-search.component';
+
 
 // import { GameDateToUrlPipe } from './_pipes/game-date-to-url.pipe';
 
@@ -25,6 +28,7 @@ import { HomepageTeamsComponent } from './home/homepage-teams/homepage-teams.com
     HeaderComponent,
     FooterComponent,
     HomepageTeamsComponent,
+    PlayerSearchComponent,
     // GameDateToUrlPipe,
   ],
   imports: [
@@ -34,6 +38,8 @@ import { HomepageTeamsComponent } from './home/homepage-teams/homepage-teams.com
     BrowserAnimationsModule,
     NgbModule,
     FontAwesomeModule,
+    MatVideoModule,
+   
   ],
   // exports: [GameDateToUrlPipe],
   providers: [],

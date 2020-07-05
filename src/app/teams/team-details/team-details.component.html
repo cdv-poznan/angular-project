@@ -36,6 +36,30 @@
             <mat-tab label="Ostatnie mecze">
               <app-team-games></app-team-games>
             </mat-tab>
+            <mat-tab label="...więcej">
+              <div class="container text-center">
+              <div class="row">
+                <div class="col-4">Wszystko o drużynie</div>
+                <div class="col-8"><a target="_blank" href="https://www.nba.com/{{ team.name | lowercase }}/">https://www.nba.com/{{ team.name | lowercase }}/</a></div>
+              </div>
+              <div class="row">
+                <div class="col-4">Statystyki</div>
+                <div class="col-8"><a target="_blank" href="https://www.nba.com/{{ team.name | lowercase }}/stats/">https://www.nba.com/{{ team.name | lowercase }}/stats/</a></div>
+              </div>
+              <div class="row">
+                <div class="col-4">Video</div>
+                <div class="col-8"><a target="_blank" href="https://www.nba.com/{{ team.name | lowercase }}/video/">https://www.nba.com/{{ team.name | lowercase }}/video/</a></div>
+              </div>
+              <div class="row">
+                <div class="col-4">Zdjęcia</div>
+                <div class="col-8"><a target="_blank" href="https://www.nba.com/{{ team.name | lowercase }}/photos/">https://www.nba.com/{{ team.name | lowercase }}/photos/</a></div>
+              </div>
+              <div class="row">
+                <div class="col-4">Newsy</div>
+                <div class="col-8"><a target="_blank" href="https://www.nba.com/{{ team.name | lowercase }}/news/">https://www.nba.com/{{ team.name | lowercase }}/news/</a></div>
+              </div>
+            </div>
+            </mat-tab>
           </mat-tab-group>
           
         </div>
