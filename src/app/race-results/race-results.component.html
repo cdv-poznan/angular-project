@@ -1,0 +1,27 @@
+
+<div class="conteiner">
+    <div class="h1h2">
+        <h1>Zobacz który kierowca był najlepszy w danym sezonie</h1>
+        <h2>
+            Wyniki już od pierwszych zawodów, które odbyły się w 1950roku!
+        </h2>
+    </div>
+    <div class="one">
+        <button (click)="getPosts(getYear)">Zobacz</button>
+    <input type="number" min="1950" max="2019" #getYear placeholder="Wybierz rok">
+    </div>
+    <div class="two">
+        <ul>
+            <ng-container *ngFor="let result of raceResults; let i = index">
+                <ng-container *ngIf="i>2; then  residue; else podium">
+                </ng-container>
+                    <ng-template  #podium>
+                    <p class="everybody schedulePodium">{{result[0] +' '+result[2] + ' '+result[3] + ' Ilość punktów '+result[1] }}</p>
+                    </ng-template>
+                    <ng-template #residue>
+                    <p class="everybody scheduleResidue">{{result[0] +' '+result[2] + ' '+result[3] + ' Ilość punktów '+result[1] }}</p>
+                    </ng-template>
+            </ng-container>
+        </ul>
+    </div>
+</div>
