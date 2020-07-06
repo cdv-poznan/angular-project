@@ -12,19 +12,26 @@ import { CdkDragDrop, moveItemInArray, transferArrayItem } from '@angular/cdk/dr
 
 export class PlanItemComponent implements OnInit {
 
-
+  newPlan: string;
+  planList: Array<string> = [];
 
   ngOnInit() {
   }
 
-  Poniedzialek = [
+  addPlan() {
+    this.planList.push(this.newPlan);
+    console.log(this.planList);
+    this.newPlan = '';
+  }
+
+  poniedzialek = [
     'Get to work',
     'Pick up groceries',
     'Go home',
     'Fall asleep'
   ];
 
-  Wtorek = [
+  wtorek = [
     'Get up',
     'Brush teeth',
     'Take a shower',
@@ -32,7 +39,7 @@ export class PlanItemComponent implements OnInit {
     'Walk dog'
   ];
 
-  Sroda = [
+  sroda = [
     'Get up',
     'Brush teeth',
     'Take a shower',
@@ -40,7 +47,7 @@ export class PlanItemComponent implements OnInit {
     'Walk dog'
   ];
 
-  Czwartek = [
+  czwartek = [
     'Get up',
     'Brush teeth',
     'Take a shower',
@@ -48,7 +55,7 @@ export class PlanItemComponent implements OnInit {
     'Walk dog'
   ];
 
-  Piatek = [
+  piatek = [
     'Get up',
     'Brush teeth',
     'Take a shower',
@@ -65,6 +72,21 @@ export class PlanItemComponent implements OnInit {
   ];
 
   Niedziela = [
+    'Get up',
+    'Brush teeth',
+    'Take a shower',
+    'Check e-mail',
+    'Walk dog'
+  ];
+  
+  todo = [
+    'Get to work',
+    'Pick up groceries',
+    'Go home',
+    'Fall asleep'
+  ];
+
+  done = [
     'Get up',
     'Brush teeth',
     'Take a shower',

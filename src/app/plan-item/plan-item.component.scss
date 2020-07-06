@@ -30,19 +30,17 @@
 
         .board-columns {
             display: flex;
-            flex-grow: 1;
+            flex: 1 200px;
+
 
             .board-column {
                 display: flex;
                 flex-direction: column;
                 flex-grow: 1;
-                flex-basis: 0;
-                min-width: 300px;
-                margin: 50px;
+                min-width: 200px;
+                margin: 10px;
                 padding: 25px;
-
                 border-radius: 4px;
-
                 background: rgba(white, 0.5);
 
                 &:not(:first-child) {
