@@ -1,0 +1,37 @@
+.current {
+  padding: 50px;
+  font-size: 18px;
+
+  &__table {
+    border: 1px solid #000;
+    padding: 50px;
+    text-align: center;
+    background-image: url('https://images.unsplash.com/photo-1522930600316-3fbc21b657b4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1047&q=80');
+    background-size: cover;
+
+    h3 {
+      color: #fff;
+      font-size: 22px;
+      padding: 10px 0;
+      font-style: italic;
+    }
+
+    div {
+      padding: 10px 0;
+      color: #fff;
+
+      .value {
+        text-decoration: underline;
+        font-size: 22px;
+      }
+    }
+
+    :nth-child(2n){
+      background-color: rgba(0,0,0,0.7);
+    }
+
+    :nth-child(2n-1){
+      background-color: rgba(0,0,0,0.6);;
+    }
+  }
+}
