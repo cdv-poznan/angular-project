@@ -24,7 +24,6 @@ export class PlayerStatsComponent implements OnInit {
     const playerId: number = Number.parseInt(id, 10);
     if (!Number.isNaN(playerId)) {
       this.playerstats = await this.playersService.getPlayerActualStats(playerId);
-      console.log(playerId);
       if (this.playerstats === undefined) {
         this.errorMessage = 'No such team';
       }

@@ -35,7 +35,6 @@ export class PlayersService {
     const response = await this.httpClient
       .get<PlayersStatsResponse>(`${PlayersService.STATS_URL}/?player_ids[]=${id}&seasons[]=2019`)
       .toPromise();
-      console.log(`${PlayersService.STATS_URL}/?player_ids[]=${id}?&seasons[]=2019`);
     return response.data[0];
   }
 

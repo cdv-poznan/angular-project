@@ -27,7 +27,6 @@ export class GamesService {
       .get<GameDetailsResponse>(`${GamesService.GAMES_URL}/${id}`)
       .toPromise();
     return response;
-    // console.log(response.data);
   }
 
   public async getGamesSpecifiedList(gameSeasonToShow: number, gamePageToShow: number, gameTeamIDToShow: any, gamePerPageToShow: number): Promise<Game[]> {
@@ -50,8 +49,6 @@ export class GamesService {
    
     nbaAllGamesURL  = `${GamesService.GAMES_URL}${urlGameSeason}${urlParametersPage}${urlTeamIDs}${urlParametersPerPage}`;
    
-    console.log(urlGameSeason);
-
     const response = await this.httpClient
       .get<GamesListResponse>(nbaAllGamesURL)
       .toPromise();
@@ -67,8 +64,6 @@ export class GamesService {
     const response = await this.httpClient
       .get<GamesListResponse>(nbaAllGamesURL)
       .toPromise();
-
-      console.log(nbaAllGamesURL);
 
     return response.data;
   }

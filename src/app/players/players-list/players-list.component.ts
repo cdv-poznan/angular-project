@@ -37,7 +37,6 @@ export class PlayersListComponent implements OnInit {
     this.viewMode = teamAbbreviation;
     if (!Number.isNaN(teamId)) {
       this.teamplayers = await this.teamsService.getTeamPlayers(teamId);
-      console.log(teamId);
       if (this.teamplayers === undefined) {
         this.errorMessage = 'No such team';
       }

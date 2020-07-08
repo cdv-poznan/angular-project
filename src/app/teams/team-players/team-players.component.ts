@@ -25,7 +25,6 @@ export class TeamPlayersComponent implements OnInit {
     const teamId: number = Number.parseInt(id, 10);
     if (!Number.isNaN(teamId)) {
       this.teamplayers = await this.teamsService.getTeamPlayers(teamId);
-      console.log(teamId);
       if (this.teamplayers === undefined) {
         this.errorMessage = 'No such team';
       }
