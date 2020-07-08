@@ -31,11 +31,27 @@ export class GamesService {
   }
 
   public async getGamesSpecifiedList(gameSeasonToShow: number, gamePageToShow: number, gameTeamIDToShow: any, gamePerPageToShow: number): Promise<Game[]> {
-    const urlGameSeason = `?seasons[]=${gameSeasonToShow}`;
+    let urlGameSeason: string;
     const urlParametersPage = `&page=${gamePageToShow}`;
-    const urlTeamIDs = `&team_ids[]=${gameTeamIDToShow}`;
+    let urlTeamIDs: string;
     const urlParametersPerPage = `&per_page=${gamePerPageToShow}`;
-    const nbaAllGamesURL = `${GamesService.GAMES_URL}${urlGameSeason}${urlParametersPage}${urlTeamIDs}${urlParametersPerPage}`;
+    let nbaAllGamesURL = '';
+    if(gameSeasonToShow != 0){
+      urlGameSeason = `?seasons[]=${gameSeasonToShow}`;
+    } else {
+      urlGameSeason = `?seasons[]=2019`;
+    }
+    
+    if(gameTeamIDToShow != 0){
+      urlTeamIDs = `&team_ids[]=${gameTeamIDToShow}`; 
+    } else {
+      urlTeamIDs = ``;
+    }
+   
+    nbaAllGamesURL  = `${GamesService.GAMES_URL}${urlGameSeason}${urlParametersPage}${urlTeamIDs}${urlParametersPerPage}`;
+   
+    console.log(urlGameSeason);
+
     const response = await this.httpClient
       .get<GamesListResponse>(nbaAllGamesURL)
       .toPromise();
@@ -51,6 +67,8 @@ export class GamesService {
     const response = await this.httpClient
       .get<GamesListResponse>(nbaAllGamesURL)
       .toPromise();
+
+      console.log(nbaAllGamesURL);
 
     return response.data;
   }

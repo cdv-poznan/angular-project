@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { GamesService } from '../../_services/games.service';
+import { TeamsService } from '../../_services/teams.service';
 import { LoggingService } from '../../_services/logging.service';
 import { Game } from '../../_interfaces/game';
+import { Team } from '../../_interfaces/team';
 
 @Component({
   selector: 'app-games-list',
@@ -11,10 +13,12 @@ import { Game } from '../../_interfaces/game';
 })
 export class GamesListComponent implements OnInit {
   public games: Game[];
+  public teams: Team[];
   public seasons: number[] = [];
 
   constructor(
     private gamesService: GamesService,
+    private teamsService: TeamsService,
     private loggingService: LoggingService,
   ) {}
 
@@ -22,11 +26,12 @@ export class GamesListComponent implements OnInit {
     for(let i = 2019; i>= 1979; i--){
       this.seasons.push(i);
     }
-    this.games = await this.gamesService.getGamesBySeasonList(2019, 0, 100);
+    this.teams = await this.teamsService.getTeamsList();
+    this.games = await this.gamesService.getGamesSpecifiedList(2019, 0, 0, 100);
   }
 
-  async onSeasonSelected(value:number){
-    this.games = await this.gamesService.getGamesBySeasonList(value, 0, 100);
-}
+  async onSeasonTeamSelected(season:number = 0, team:number = 0){
+    this.games = await this.gamesService.getGamesSpecifiedList(season, 0, team, 100);
+  }
 
 }
