@@ -1,6 +1,6 @@
 # URL Projektu online
 
-[CDVAngular.ipdev.pl] (http://cdvangular.ipdev.pl/)
+[CDVAngular.ipdev.pl](http://cdvangular.ipdev.pl/)
 
 # AngularProject
 
