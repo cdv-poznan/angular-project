@@ -1,30 +1,67 @@
 <div class="container">
   <div class="row">
-    <div class="col-12">
-      <ul *ngIf="players?.length; else emptyBlock">
-        <ng-container *ngFor="let player of players">
+        <div class="col-12">
+          <h1 class="page-title">NBA PLAYERS</h1>
+      <mat-tab-group mat-align-tabs="center">
+        <mat-tab label="Aktualny sezon">
+          <ul *ngIf="players?.length; else emptyBlock">
+            <ng-container *ngFor="let player of players">
+    
+              <div class="playerBoxShort align-items-center row">
+                  <div class="col-12 col-md-4">
+                  <a routerLink="/players/{{ player.id }}"><img src="/assets/players-img/small/{{ player.id }}-{{ player.first_name }}-{{ player.last_name }}.png" class="img-responsive" /></a>
+                  <!-- <a routerLink="/players/{{ player.id }}"><img src="/assets/players-img/small/{{ player.id }}-{{ player.first_name }}-{{ player.last_name }}.png" class="img-responsive" /></a> -->
+    
+                  </div>          
+                  <div class="col-10 col-md-6 text-left">
+                  
+                            <h2>{{ player.first_name }} {{ player.last_name }}</h2>
+    
+                            <hr>
+                  Drużyna: <a routerLink="/teams/{{ player.team.id }}">{{ player.team.full_name }}</a><br>Pozycja: {{ player.position }}</div>
+                  <div class="col-2 col-md-2"><a routerLink="/players/{{ player.id }}">>></a></div>
+                   </div>
+    
+            </ng-container>
+          </ul>
+    
+          <ng-template #emptyBlock>
+           
+          </ng-template>
+        </mat-tab>       
+        <mat-tab label="Wyszukaj zawodnika">          
+          <div class="row">
+            <div class="col-sm-3">
+              <form>
+                <label for="players-search">
+                  <input type="text" name="players-search" id="players-search" #playerSearch (keyup)="onSearchPlayer(playerSearch.value)" placeholder="Wyszukaj...">
+                </label>
+              </form>
+            </div>
+            <div class="col-sm-5">
+              <div *ngIf="searchedPlayers?.length; else emptyBlock">
+                <ng-container *ngFor="let searchedplayer of searchedPlayers">
+    
+                  <div class="playerBoxShort">
+                                <h2><a routerLink="/players/{{ searchedplayer.id }}">{{ searchedplayer.first_name }} {{ searchedplayer.last_name }}</a></h2>
+        
+                                <hr>
+                      Drużyna: <a routerLink="/teams/{{ searchedplayer.team.id }}">{{ searchedplayer.team.full_name }}</a><br>Pozycja: {{ searchedplayer.position }}</div>
 
-          <div class="playerBoxShort align-items-center row">
-              <div class="col-12 col-md-4">
-              <a routerLink="/players/{{ player.id }}"><img src="/assets/players-img/small/{{ player.id }}-{{ player.first_name }}-{{ player.last_name }}.png" class="img-responsive" /></a>
-              <!-- <a routerLink="/players/{{ player.id }}"><img src="/assets/players-img/small/{{ player.id }}-{{ player.first_name }}-{{ player.last_name }}.png" class="img-responsive" /></a> -->
+                </ng-container>
+      
+              </div>
 
-              </div>          
-              <div class="col-10 col-md-6 text-left">
-              
-                        <h2>{{ player.first_name }} {{ player.last_name }}</h2>
 
-                        <hr>
-              Drużyna: <a routerLink="/teams/{{ player.team.id }}">{{ player.team.full_name }}</a><br>Pozycja: {{ player.position }}</div>
-              <div class="col-2 col-md-2"><a routerLink="/players/{{ player.id }}">>></a></div>
-               </div>
+            </div>
+          </div>
 
-        </ng-container>
-      </ul>
+        </mat-tab>
 
-      <ng-template #emptyBlock>
-        The list is empty.
-      </ng-template>
+      </mat-tab-group>
+
+
+      
     </div>
   </div>
 </div>

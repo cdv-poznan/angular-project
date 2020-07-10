@@ -66,6 +66,28 @@ h1 {
   padding-top: 50px;
 }
 
+h1.page-title {
+  color: $color-blue;
+  text-align: center;
+  font-size: 30px;
+  margin: 10px;
+  font-weight: 800;
+  border-bottom:2px solid #fff;
+  padding-bottom: 10px;
+  @include desktop {
+    font-size: 40px;
+    margin: 20px;
+  }
+  @include xlarge {
+    font-size: 50px;
+    margin: 30px;
+  }
+  @include xxlarge {
+    font-size: 60px;
+    margin: 30px;
+  }
+}
+
 .hidden {
   display: none;
 }
@@ -177,7 +199,7 @@ nav {
 }
 
 .gameBox {
-  border-bottom: $border-gray;
+  border-bottom: $border-white;
   text-align: center;
 }
 
@@ -228,7 +250,7 @@ nav {
 .playerBox {
   margin: 10px 0;
   padding: 20px;
-  border-bottom: $border-gray;
+  border-bottom: $border-white;
   text-align: center;
 }
 

@@ -1,15 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { GamesService } from '../../_services/games.service';
-import { TeamsService } from '../../_services/teams.service';
-import { LoggingService } from '../../_services/logging.service';
 import { Game } from '../../_interfaces/game';
+import { TeamsService } from '../../_services/teams.service';
 import { Team } from '../../_interfaces/team';
 
 @Component({
   selector: 'app-games-list',
   templateUrl: './games-list.component.html',
   styleUrls: ['./games-list.component.scss'],
-  providers: [GamesService, LoggingService],
+  providers: [GamesService],
 })
 export class GamesListComponent implements OnInit {
   public games: Game[];
@@ -18,8 +17,7 @@ export class GamesListComponent implements OnInit {
 
   constructor(
     private gamesService: GamesService,
-    private teamsService: TeamsService,
-    private loggingService: LoggingService,
+    private teamsService: TeamsService
   ) {}
 
   async ngOnInit(): Promise<void> {

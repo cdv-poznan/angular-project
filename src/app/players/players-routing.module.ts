@@ -10,8 +10,7 @@ const routes: Routes = [
   },
   {    
     path: ':id',
-    component: PlayerDetailsComponent,
-    
+    component: PlayerDetailsComponent,    
   },
 ];
 

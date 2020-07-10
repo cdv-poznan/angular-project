@@ -3,7 +3,6 @@ import { Injectable } from '@angular/core';
 import { Player } from '../_interfaces/player';
 import { PlayerStats } from '../_interfaces/player-stats';
 import { PlayersListResponse } from '../_interfaces/players-list-response';
-import { PlayerDetailsResponse } from '../_interfaces/player-details-response';
 import { PlayersStatsResponse } from '../_interfaces/player-stats-response';
 
 @Injectable({
@@ -36,6 +35,17 @@ export class PlayersService {
       .get<PlayersStatsResponse>(`${PlayersService.STATS_URL}/?player_ids[]=${id}&seasons[]=2019`)
       .toPromise();
     return response.data[0];
+  }
+
+  public async getPlayerFromSearch(playerSearchToShow: string): Promise<Player[]> {
+    const urlParametersSearch = `?search=${playerSearchToShow}`;    
+    const response = await this.httpClient
+      .get<PlayersListResponse>(`${PlayersService.API_URL}/${urlParametersSearch}`)
+      .toPromise();
+
+    console.log(response.data);
+
+    return response.data;
   }
 
 }

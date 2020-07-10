@@ -12,12 +12,7 @@ import { HeaderComponent } from './_shared/header/header.component';
 import { FooterComponent } from './_shared/footer/footer.component';
 import { HomepageSliderComponent } from './home/homepage-slider/homepage-slider.component';
 import { HomepageTeamsComponent } from './home/homepage-teams/homepage-teams.component';
-import { MatVideoModule } from 'mat-video';
 import { PlayerSearchComponent } from './players/player-search/player-search.component';
-
-
-// import { GameDateToUrlPipe } from './_pipes/game-date-to-url.pipe';
-
 
 @NgModule({
   declarations: [
@@ -36,11 +31,8 @@ import { PlayerSearchComponent } from './players/player-search/player-search.com
     AppRoutingModule,
     BrowserAnimationsModule,
     NgbModule,
-    FontAwesomeModule,
-    MatVideoModule,
-   
+    FontAwesomeModule,   
   ],
-  // exports: [GameDateToUrlPipe],
   providers: [],
   bootstrap: [AppComponent],
 })

@@ -2,7 +2,7 @@
 	"data":[
 	{
             "id": 42,
-            "first_name": "DeAndre",
+            "first_name": "DeAndre'",
             "height_feet": 6,
             "height_inches": 6,
             "last_name": "Bembry",
@@ -460,7 +460,15 @@
             "height_inches": 4,
             "last_name": "Dellavedova",
             "position": "G",
-            "team": 6,
+            "team": {
+                "id": 6,
+                "abbreviation": "CLE",
+                "city": "Cleveland",
+                "conference": "East",
+                "division": "Central",
+                "full_name": "Cleveland Cavaliers",
+                "name": "Cavaliers"
+            },
             "weight_pounds": 200
         },
 		{
@@ -470,7 +478,15 @@
             "height_inches": 11,
             "last_name": "Drummond",
             "position": "C",
-            "team": 6,
+            "team": {
+                "id": 6,
+                "abbreviation": "CLE",
+                "city": "Cleveland",
+                "conference": "East",
+                "division": "Central",
+                "full_name": "Cleveland Cavaliers",
+                "name": "Cavaliers"
+            },
             "weight_pounds": 279
         },
 		{
@@ -480,7 +496,15 @@
             "height_inches": 6,
             "last_name": "Exum",
             "position": "G",
-            "team": 6,
+            "team": {
+                "id": 6,
+                "abbreviation": "CLE",
+                "city": "Cleveland",
+                "conference": "East",
+                "division": "Central",
+                "full_name": "Cleveland Cavaliers",
+                "name": "Cavaliers"
+            },
             "weight_pounds": 190
         },
 		{
@@ -490,7 +514,15 @@
             "height_inches": null,
             "last_name": "Garland",
             "position": "G",
-            "team": 6,
+            "team": {
+                "id": 6,
+                "abbreviation": "CLE",
+                "city": "Cleveland",
+                "conference": "East",
+                "division": "Central",
+                "full_name": "Cleveland Cavaliers",
+                "name": "Cavaliers"
+            },
             "weight_pounds": null
         },
 		{
@@ -498,9 +530,17 @@
             "first_name": "Kevin",
             "height_feet": null,
             "height_inches": null,
-            "last_name": "Porter",
+            "last_name": "Porter Jr.",
             "position": "G",
-            "team": 6,
+            "team": {
+                "id": 6,
+                "abbreviation": "CLE",
+                "city": "Cleveland",
+                "conference": "East",
+                "division": "Central",
+                "full_name": "Cleveland Cavaliers",
+                "name": "Cavaliers"
+            },
             "weight_pounds": null
         },
 		
@@ -511,7 +551,15 @@
             "height_inches": 7,
             "last_name": "Doncic",
             "position": "F-G",
-            "team": 7,
+            "team": {
+                "id": 7,
+                "abbreviation": "DAL",
+                "city": "Dallas",
+                "conference": "West",
+                "division": "Southwest",
+                "full_name": "Dallas Mavericks",
+                "name": "Mavericks"
+            },
             "weight_pounds": 218
         },
 		{
@@ -521,7 +569,15 @@
             "height_inches": 3,
             "last_name": "Porzingis",
             "position": "F-C",
-            "team": 7,
+            "team": {
+                "id": 7,
+                "abbreviation": "DAL",
+                "city": "Dallas",
+                "conference": "West",
+                "division": "Southwest",
+                "full_name": "Dallas Mavericks",
+                "name": "Mavericks"
+            },
             "weight_pounds": 240
         },
 		{
@@ -531,7 +587,15 @@
             "height_inches": 11,
             "last_name": "Powell",
             "position": "F-C",
-            "team": 7,
+            "team": {
+                "id": 7,
+                "abbreviation": "DAL",
+                "city": "Dallas",
+                "conference": "West",
+                "division": "Southwest",
+                "full_name": "Dallas Mavericks",
+                "name": "Mavericks"
+            },
             "weight_pounds": 240
         },
 		{
@@ -541,7 +605,15 @@
             "height_inches": 3,
             "last_name": "Brunson",
             "position": "G",
-            "team": 7,
+            "team": {
+                "id": 7,
+                "abbreviation": "DAL",
+                "city": "Dallas",
+                "conference": "West",
+                "division": "Southwest",
+                "full_name": "Dallas Mavericks",
+                "name": "Mavericks"
+            },
             "weight_pounds": 190
         },
 		{
@@ -549,9 +621,17 @@
             "first_name": "Tim",
             "height_feet": 6,
             "height_inches": 6,
-            "last_name": "Hardaway",
+            "last_name": "Hardaway Jr.",
             "position": "G",
-            "team": 7,
+            "team": {
+                "id": 7,
+                "abbreviation": "DAL",
+                "city": "Dallas",
+                "conference": "West",
+                "division": "Southwest",
+                "full_name": "Dallas Mavericks",
+                "name": "Mavericks"
+            },
             "weight_pounds": 205
         },
 		
@@ -562,7 +642,15 @@
             "height_inches": 6,
             "last_name": "Barton",
             "position": "G",
-            "team": 8,
+            "team": {
+                "id": 8,
+                "abbreviation": "DEN",
+                "city": "Denver",
+                "conference": "West",
+                "division": "Northwest",
+                "full_name": "Denver Nuggets",
+                "name": "Nuggets"
+            },
             "weight_pounds": 190
         },
 		{
@@ -572,7 +660,15 @@
             "height_inches": 9,
             "last_name": "Bates-Diop",
             "position": "F",
-            "team": 8,
+            "team": {
+                "id": 8,
+                "abbreviation": "DEN",
+                "city": "Denver",
+                "conference": "West",
+                "division": "Northwest",
+                "full_name": "Denver Nuggets",
+                "name": "Nuggets"
+            },
             "weight_pounds": 229
         },
 		 {
@@ -582,7 +678,15 @@
             "height_inches": null,
             "last_name": "Cancar",
             "position": "F",
-            "team": 8,
+            "team": {
+                "id": 8,
+                "abbreviation": "DEN",
+                "city": "Denver",
+                "conference": "West",
+                "division": "Northwest",
+                "full_name": "Denver Nuggets",
+                "name": "Nuggets"
+            },
             "weight_pounds": null
         },
 		{
@@ -592,7 +696,15 @@
             "height_inches": 7,
             "last_name": "Craig",
             "position": "F",
-            "team": 8,
+            "team": {
+                "id": 8,
+                "abbreviation": "DEN",
+                "city": "Denver",
+                "conference": "West",
+                "division": "Northwest",
+                "full_name": "Denver Nuggets",
+                "name": "Nuggets"
+            },
             "weight_pounds": 215
         },
 		{
@@ -602,7 +714,15 @@
             "height_inches": 4,
             "last_name": "Daniels",
             "position": "G",
-            "team": 8,
+            "team": {
+                "id": 8,
+                "abbreviation": "DEN",
+                "city": "Denver",
+                "conference": "West",
+                "division": "Northwest",
+                "full_name": "Denver Nuggets",
+                "name": "Nuggets"
+            },
             "weight_pounds": 205
         },
 		
@@ -613,7 +733,15 @@
             "height_inches": null,
             "last_name": "Bone",
             "position": "G",
-            "team": 9,
+            "team": {
+                "id": 9,
+                "abbreviation": "DET",
+                "city": "Detroit",
+                "conference": "East",
+                "division": "Central",
+                "full_name": "Detroit Pistons",
+                "name": "Pistons"
+            },
             "weight_pounds": null
         },
 		{
@@ -623,7 +751,15 @@
             "height_inches": 5,
             "last_name": "Brown",
             "position": "G",
-            "team": 9,
+            "team": {
+                "id": 9,
+                "abbreviation": "DET",
+                "city": "Detroit",
+                "conference": "East",
+                "division": "Central",
+                "full_name": "Detroit Pistons",
+                "name": "Pistons"
+            },
             "weight_pounds": 202
         },
 		{
@@ -633,7 +769,15 @@
             "height_inches": null,
             "last_name": "Doumbouya",
             "position": "F",
-            "team": 9,
+            "team": {
+                "id": 9,
+                "abbreviation": "DET",
+                "city": "Detroit",
+                "conference": "East",
+                "division": "Central",
+                "full_name": "Detroit Pistons",
+                "name": "Pistons"
+            },
             "weight_pounds": null
         },
 		{
@@ -643,7 +787,15 @@
             "height_inches": 2,
             "last_name": "Galloway",
             "position": "G",
-            "team": 9,
+            "team": {
+                "id": 9,
+                "abbreviation": "DET",
+                "city": "Detroit",
+                "conference": "East",
+                "division": "Central",
+                "full_name": "Detroit Pistons",
+                "name": "Pistons"
+            },
             "weight_pounds": 200
         },
 		
@@ -654,7 +806,15 @@
             "height_inches": null,
             "last_name": "Bowman",
             "position": "G",
-            "team": 10,
+            "team": {
+                "id": 10,
+                "abbreviation": "GSW",
+                "city": "Golden State",
+                "conference": "West",
+                "division": "Pacific",
+                "full_name": "Golden State Warriors",
+                "name": "Warriors"
+            },
             "weight_pounds": null
         },
 		{
@@ -664,7 +824,15 @@
             "height_inches": 10,
             "last_name": "Chriss",
             "position": "F",
-            "team": 10,
+            "team": {
+                "id": 10,
+                "abbreviation": "GSW",
+                "city": "Golden State",
+                "conference": "West",
+                "division": "Pacific",
+                "full_name": "Golden State Warriors",
+                "name": "Warriors"
+            },
             "weight_pounds": 240
         },
 		 {
@@ -674,7 +842,15 @@
             "height_inches": 3,
             "last_name": "Curry",
             "position": "G",
-            "team": 10,
+            "team": {
+                "id": 10,
+                "abbreviation": "GSW",
+                "city": "Golden State",
+                "conference": "West",
+                "division": "Pacific",
+                "full_name": "Golden State Warriors",
+                "name": "Warriors"
+            },
             "weight_pounds": 190
         },
 		{
@@ -684,7 +860,15 @@
             "height_inches": 7,
             "last_name": "Green",
             "position": "F",
-            "team": 10,
+            "team": {
+                "id": 10,
+                "abbreviation": "GSW",
+                "city": "Golden State",
+                "conference": "West",
+                "division": "Pacific",
+                "full_name": "Golden State Warriors",
+                "name": "Warriors"
+            },
             "weight_pounds": 230
         },
 		{
@@ -694,7 +878,15 @@
             "height_inches": 6,
             "last_name": "Lee",
             "position": "G",
-            "team": 10,
+            "team": {
+                "id": 10,
+                "abbreviation": "GSW",
+                "city": "Golden State",
+                "conference": "West",
+                "division": "Pacific",
+                "full_name": "Golden State Warriors",
+                "name": "Warriors"
+            },
             "weight_pounds": 210
         },
 		
@@ -705,7 +897,15 @@
             "height_inches": 9,
             "last_name": "Caboclo",
             "position": "",
-            "team": 11,
+            "team": {
+                "id": 11,
+                "abbreviation": "HOU",
+                "city": "Houston",
+                "conference": "West",
+                "division": "Southwest",
+                "full_name": "Houston Rockets",
+                "name": "Rockets"
+            },
             "weight_pounds": 218
         },
 		{
@@ -715,7 +915,15 @@
             "height_inches": 8,
             "last_name": "Carroll",
             "position": "F",
-            "team": 11,
+            "team": {
+                "id": 11,
+                "abbreviation": "HOU",
+                "city": "Houston",
+                "conference": "West",
+                "division": "Southwest",
+                "full_name": "Houston Rockets",
+                "name": "Rockets"
+            },
             "weight_pounds": 215
         },
 		{
@@ -725,7 +933,15 @@
             "height_inches": 1,
             "last_name": "Chandler",
             "position": "C",
-            "team": 11,
+            "team": {
+                "id": 11,
+                "abbreviation": "HOU",
+                "city": "Houston",
+                "conference": "West",
+                "division": "Southwest",
+                "full_name": "Houston Rockets",
+                "name": "Rockets"
+            },
             "weight_pounds": 240
         },
 		{
@@ -735,7 +951,15 @@
             "height_inches": null,
             "last_name": "Clemons",
             "position": "G",
-            "team": 11,
+            "team": {
+                "id": 11,
+                "abbreviation": "HOU",
+                "city": "Houston",
+                "conference": "West",
+                "division": "Southwest",
+                "full_name": "Houston Rockets",
+                "name": "Rockets"
+            },
             "weight_pounds": null
         },
 		{
@@ -745,7 +969,15 @@
             "height_inches": 9,
             "last_name": "Covington",
             "position": "F",
-            "team": 11,
+            "team": {
+                "id": 11,
+                "abbreviation": "HOU",
+                "city": "Houston",
+                "conference": "West",
+                "division": "Southwest",
+                "full_name": "Houston Rockets",
+                "name": "Rockets"
+            },
             "weight_pounds": 225
         },
 		
@@ -756,7 +988,15 @@
             "height_inches": null,
             "last_name": "Bitadze",
             "position": "C",
-            "team": 12,
+            "team": {
+                "id": 12,
+                "abbreviation": "IND",
+                "city": "Indiana",
+                "conference": "East",
+                "division": "Central",
+                "full_name": "Indiana Pacers",
+                "name": "Pacers"
+            },
             "weight_pounds": null
         },
 		{
@@ -766,7 +1006,15 @@
             "height_inches": 5,
             "last_name": "Brogdon",
             "position": "G",
-            "team": 12,
+            "team": {
+                "id": 12,
+                "abbreviation": "IND",
+                "city": "Indiana",
+                "conference": "East",
+                "division": "Central",
+                "full_name": "Indiana Pacers",
+                "name": "Pacers"
+            },
             "weight_pounds": 229
         },
 		{
@@ -776,7 +1024,15 @@
             "height_inches": 6,
             "last_name": "Holiday",
             "position": "F-G",
-            "team": 12,
+            "team": {
+                "id": 12,
+                "abbreviation": "IND",
+                "city": "Indiana",
+                "conference": "East",
+                "division": "Central",
+                "full_name": "Indiana Pacers",
+                "name": "Pacers"
+            },
             "weight_pounds": 181
         },
 		{
@@ -786,7 +1042,15 @@
             "height_inches": 1,
             "last_name": "Holiday",
             "position": "G",
-            "team": 12,
+            "team": {
+                "id": 12,
+                "abbreviation": "IND",
+                "city": "Indiana",
+                "conference": "East",
+                "division": "Central",
+                "full_name": "Indiana Pacers",
+                "name": "Pacers"
+            },
             "weight_pounds": 185
         },
 		{
@@ -796,7 +1060,15 @@
             "height_inches": null,
             "last_name": "Bowen II",
             "position": "F",
-            "team": 12,
+            "team": {
+                "id": 12,
+                "abbreviation": "IND",
+                "city": "Indiana",
+                "conference": "East",
+                "division": "Central",
+                "full_name": "Indiana Pacers",
+                "name": "Pacers"
+            },
             "weight_pounds": null
         },
 		
@@ -807,7 +1079,15 @@
             "height_inches": 1,
             "last_name": "Beverley",
             "position": "G",
-            "team": 13,
+            "team": {
+                "id": 13,
+                "abbreviation": "LAC",
+                "city": "LA",
+                "conference": "West",
+                "division": "Pacific",
+                "full_name": "LA Clippers",
+                "name": "Clippers"
+            },
             "weight_pounds": 185
         },
 		{
@@ -817,7 +1097,15 @@
             "height_inches": null,
             "last_name": "Coffey",
             "position": "G",
-            "team": 13,
+            "team": {
+                "id": 13,
+                "abbreviation": "LAC",
+                "city": "LA",
+                "conference": "West",
+                "division": "Pacific",
+                "full_name": "LA Clippers",
+                "name": "Clippers"
+            },
             "weight_pounds": null
         },
 		{
@@ -827,7 +1115,15 @@
             "height_inches": 9,
             "last_name": "George",
             "position": "F",
-            "team": 13,
+            "team": {
+                "id": 13,
+                "abbreviation": "LAC",
+                "city": "LA",
+                "conference": "West",
+                "division": "Pacific",
+                "full_name": "LA Clippers",
+                "name": "Clippers"
+            },
             "weight_pounds": 220
         },
 		{
@@ -837,7 +1133,15 @@
             "height_inches": 9,
             "last_name": "Green",
             "position": "F",
-            "team": 13,
+            "team": {
+                "id": 13,
+                "abbreviation": "LAC",
+                "city": "LA",
+                "conference": "West",
+                "division": "Pacific",
+                "full_name": "LA Clippers",
+                "name": "Clippers"
+            },
             "weight_pounds": 227
         },
 		{
@@ -847,7 +1151,15 @@
             "height_inches": 8,
             "last_name": "Harrell",
             "position": "F-C",
-            "team": 13,
+            "team": {
+                "id": 13,
+                "abbreviation": "LAC",
+                "city": "LA",
+                "conference": "West",
+                "division": "Pacific",
+                "full_name": "LA Clippers",
+                "name": "Clippers"
+            },
             "weight_pounds": 240
         },
 		
@@ -858,7 +1170,15 @@
             "height_inches": 10,
             "last_name": "Antetokounmpo",
             "position": "F",
-            "team": 14,
+            "team": {
+                "id": 14,
+                "abbreviation": "LAL",
+                "city": "Los Angeles",
+                "conference": "West",
+                "division": "Pacific",
+                "full_name": "Los Angeles Lakers",
+                "name": "Lakers"
+            },
             "weight_pounds": 200
         },
 		{
@@ -868,7 +1188,15 @@
             "height_inches": 2,
             "last_name": "Bradley",
             "position": "G",
-            "team": 14,
+            "team": {
+                "id": 14,
+                "abbreviation": "LAL",
+                "city": "Los Angeles",
+                "conference": "West",
+                "division": "Pacific",
+                "full_name": "Los Angeles Lakers",
+                "name": "Lakers"
+            },
             "weight_pounds": 180
         },
 		{
@@ -878,7 +1206,15 @@
             "height_inches": null,
             "last_name": "Cacok",
             "position": "F-C",
-            "team": 14,
+            "team": {
+                "id": 14,
+                "abbreviation": "LAL",
+                "city": "Los Angeles",
+                "conference": "West",
+                "division": "Pacific",
+                "full_name": "Los Angeles Lakers",
+                "name": "Lakers"
+            },
             "weight_pounds": null
         },
 		{
@@ -888,7 +1224,15 @@
             "height_inches": 5,
             "last_name": "Caldwell-Pope",
             "position": "G",
-            "team": 14,
+            "team": {
+                "id": 14,
+                "abbreviation": "LAL",
+                "city": "Los Angeles",
+                "conference": "West",
+                "division": "Pacific",
+                "full_name": "Los Angeles Lakers",
+                "name": "Lakers"
+            },
             "weight_pounds": 205
         },
 		{
@@ -898,7 +1242,15 @@
             "height_inches": 5,
             "last_name": "Caruso",
             "position": "G",
-            "team": 14,
+            "team": {
+                "id": 14,
+                "abbreviation": "LAL",
+                "city": "Los Angeles",
+                "conference": "West",
+                "division": "Pacific",
+                "full_name": "Los Angeles Lakers",
+                "name": "Lakers"
+            },
             "weight_pounds": 186
         },
 		
@@ -909,7 +1261,15 @@
             "height_inches": null,
             "last_name": "Morant",
             "position": "G",
-            "team": 15,
+            "team": {
+                "id": 15,
+                "abbreviation": "MEM",
+                "city": "Memphis",
+                "conference": "West",
+                "division": "Southwest",
+                "full_name": "Memphis Grizzlies",
+                "name": "Grizzlies"
+            },
             "weight_pounds": null
         },
 		{
@@ -919,7 +1279,15 @@
             "height_inches": 11,
             "last_name": "Jackson Jr.",
             "position": "F-C",
-            "team": 15,
+            "team": {
+                "id": 15,
+                "abbreviation": "MEM",
+                "city": "Memphis",
+                "conference": "West",
+                "division": "Southwest",
+                "full_name": "Memphis Grizzlies",
+                "name": "Grizzlies"
+            },
             "weight_pounds": 242
         },
 		{
@@ -929,7 +1297,15 @@
             "height_inches": 6,
             "last_name": "Brooks",
             "position": "G-F",
-            "team": 15,
+            "team": {
+                "id": 15,
+                "abbreviation": "MEM",
+                "city": "Memphis",
+                "conference": "West",
+                "division": "Southwest",
+                "full_name": "Memphis Grizzlies",
+                "name": "Grizzlies"
+            },
             "weight_pounds": 220
         },
 		{
@@ -939,7 +1315,15 @@
             "height_inches": 0,
             "last_name": "Valanciunas",
             "position": "C",
-            "team": 15,
+            "team": {
+                "id": 15,
+                "abbreviation": "MEM",
+                "city": "Memphis",
+                "conference": "West",
+                "division": "Southwest",
+                "full_name": "Memphis Grizzlies",
+                "name": "Grizzlies"
+            },
             "weight_pounds": 265
         },
 		{
@@ -949,7 +1333,15 @@
             "height_inches": null,
             "last_name": "Clarke",
             "position": "F",
-            "team": 15,
+            "team": {
+                "id": 15,
+                "abbreviation": "MEM",
+                "city": "Memphis",
+                "conference": "West",
+                "division": "Southwest",
+                "full_name": "Memphis Grizzlies",
+                "name": "Grizzlies"
+            },
             "weight_pounds": null
         },
 		{
@@ -959,7 +1351,15 @@
             "height_inches": 8,
             "last_name": "Butler",
             "position": "G-F",
-            "team": 16,
+            "team": {
+                "id": 16,
+                "abbreviation": "MIA",
+                "city": "Miami",
+                "conference": "East",
+                "division": "Southeast",
+                "full_name": "Miami Heat",
+                "name": "Heat"
+            },
             "weight_pounds": 232
         },
 		{
@@ -969,7 +1369,15 @@
             "height_inches": 10,
             "last_name": "Adebayo",
             "position": "C-F",
-            "team": 16,
+            "team": {
+                "id": 16,
+                "abbreviation": "MIA",
+                "city": "Miami",
+                "conference": "East",
+                "division": "Southeast",
+                "full_name": "Miami Heat",
+                "name": "Heat"
+            },
             "weight_pounds": 255
         },
 		{
@@ -979,7 +1387,15 @@
             "height_inches": 3,
             "last_name": "Dragic",
             "position": "G",
-            "team": 16,
+            "team": {
+                "id": 16,
+                "abbreviation": "MIA",
+                "city": "Miami",
+                "conference": "East",
+                "division": "Southeast",
+                "full_name": "Miami Heat",
+                "name": "Heat"
+            },
             "weight_pounds": 190
         },
 		{
@@ -989,7 +1405,15 @@
             "height_inches": null,
             "last_name": "Nunn",
             "position": "G",
-            "team": 16,
+            "team": {
+                "id": 16,
+                "abbreviation": "MIA",
+                "city": "Miami",
+                "conference": "East",
+                "division": "Southeast",
+                "full_name": "Miami Heat",
+                "name": "Heat"
+            },
             "weight_pounds": null
         },
 		{
@@ -999,7 +1423,15 @@
             "height_inches": 8,
             "last_name": "Robinson",
             "position": "F",
-            "team": 16,
+            "team": {
+                "id": 16,
+                "abbreviation": "MIA",
+                "city": "Miami",
+                "conference": "East",
+                "division": "Southeast",
+                "full_name": "Miami Heat",
+                "name": "Heat"
+            },
             "weight_pounds": 210
         },
 		{
@@ -1009,7 +1441,15 @@
             "height_inches": 11,
             "last_name": "Antetokounmpo",
             "position": "F",
-            "team": 17,
+            "team": {
+                "id": 17,
+                "abbreviation": "MIL",
+                "city": "Milwaukee",
+                "conference": "East",
+                "division": "Central",
+                "full_name": "Milwaukee Bucks",
+                "name": "Bucks"
+            },
             "weight_pounds": 242
         },
 		{
@@ -1019,7 +1459,15 @@
             "height_inches": 8,
             "last_name": "Middleton",
             "position": "F",
-            "team": 17,
+            "team": {
+                "id": 17,
+                "abbreviation": "MIL",
+                "city": "Milwaukee",
+                "conference": "East",
+                "division": "Central",
+                "full_name": "Milwaukee Bucks",
+                "name": "Bucks"
+            },
             "weight_pounds": 222
         },
 		{
@@ -1029,7 +1477,15 @@
             "height_inches": 1,
             "last_name": "Bledsoe",
             "position": "G",
-            "team": 17,
+            "team": {
+                "id": 17,
+                "abbreviation": "MIL",
+                "city": "Milwaukee",
+                "conference": "East",
+                "division": "Central",
+                "full_name": "Milwaukee Bucks",
+                "name": "Bucks"
+            },
             "weight_pounds": 205
         },
 		{
@@ -1039,7 +1495,15 @@
             "height_inches": 0,
             "last_name": "Lopez",
             "position": "C",
-            "team": 17,
+            "team": {
+                "id": 17,
+                "abbreviation": "MIL",
+                "city": "Milwaukee",
+                "conference": "East",
+                "division": "Central",
+                "full_name": "Milwaukee Bucks",
+                "name": "Bucks"
+            },
             "weight_pounds": 270
         },
 		{
@@ -1049,7 +1513,15 @@
             "height_inches": 3,
             "last_name": "Hill",
             "position": "G",
-            "team": 17,
+            "team": {
+                "id": 17,
+                "abbreviation": "MIL",
+                "city": "Milwaukee",
+                "conference": "East",
+                "division": "Central",
+                "full_name": "Milwaukee Bucks",
+                "name": "Bucks"
+            },
             "weight_pounds": 188
         },
 		{
@@ -1059,7 +1531,15 @@
             "height_inches": 0,
             "last_name": "Towns",
             "position": "C",
-            "team": 18,
+            "team": {
+                "id": 18,
+                "abbreviation": "MIN",
+                "city": "Minnesota",
+                "conference": "West",
+                "division": "Northwest",
+                "full_name": "Minnesota Timberwolves",
+                "name": "Timberwolves"
+            },
             "weight_pounds": 248
         },
 		{
@@ -1069,7 +1549,15 @@
             "height_inches": 5,
             "last_name": "Russell",
             "position": "G",
-            "team": 18,
+            "team": {
+                "id": 18,
+                "abbreviation": "MIN",
+                "city": "Minnesota",
+                "conference": "West",
+                "division": "Northwest",
+                "full_name": "Minnesota Timberwolves",
+                "name": "Timberwolves"
+            },
             "weight_pounds": 198
         },
 		{
@@ -1079,7 +1567,15 @@
             "height_inches": 5,
             "last_name": "Beasley",
             "position": "G",
-            "team": 18,
+            "team": {
+                "id": 18,
+                "abbreviation": "MIN",
+                "city": "Minnesota",
+                "conference": "West",
+                "division": "Northwest",
+                "full_name": "Minnesota Timberwolves",
+                "name": "Timberwolves"
+            },
             "weight_pounds": 195
         },
 		{
@@ -1089,7 +1585,15 @@
             "height_inches": null,
             "last_name": "Culver",
             "position": "G",
-            "team": 18,
+            "team": {
+                "id": 18,
+                "abbreviation": "MIN",
+                "city": "Minnesota",
+                "conference": "West",
+                "division": "Northwest",
+                "full_name": "Minnesota Timberwolves",
+                "name": "Timberwolves"
+            },
             "weight_pounds": null
         },
 		{
@@ -1099,7 +1603,15 @@
             "height_inches": 9,
             "last_name": "Layman",
             "position": "F",
-            "team": 18,
+            "team": {
+                "id": 18,
+                "abbreviation": "MIN",
+                "city": "Minnesota",
+                "conference": "West",
+                "division": "Northwest",
+                "full_name": "Minnesota Timberwolves",
+                "name": "Timberwolves"
+            },
             "weight_pounds": 215
         },
 		{
@@ -1109,7 +1621,15 @@
             "height_inches": 9,
             "last_name": "Ingram",
             "position": "F",
-            "team": 19,
+            "team": {
+                "id": 19,
+                "abbreviation": "NOP",
+                "city": "New Orleans",
+                "conference": "West",
+                "division": "Southwest",
+                "full_name": "New Orleans Pelicans",
+                "name": "Pelicans"
+            },
             "weight_pounds": 190
         },
 		{
@@ -1119,7 +1639,15 @@
             "height_inches": null,
             "last_name": "Williamson",
             "position": "F",
-            "team": 19,
+            "team": {
+                "id": 19,
+                "abbreviation": "NOP",
+                "city": "New Orleans",
+                "conference": "West",
+                "division": "Southwest",
+                "full_name": "New Orleans Pelicans",
+                "name": "Pelicans"
+            },
             "weight_pounds": null
         },
 		{
@@ -1129,7 +1657,15 @@
             "height_inches": 4,
             "last_name": "Holiday",
             "position": "G",
-            "team": 19,
+            "team": {
+                "id": 19,
+                "abbreviation": "NOP",
+                "city": "New Orleans",
+                "conference": "West",
+                "division": "Southwest",
+                "full_name": "New Orleans Pelicans",
+                "name": "Pelicans"
+            },
             "weight_pounds": 205
         },
 		{
@@ -1139,7 +1675,15 @@
             "height_inches": 4,
             "last_name": "Redick",
             "position": "G",
-            "team": 19,
+            "team": {
+                "id": 19,
+                "abbreviation": "NOP",
+                "city": "New Orleans",
+                "conference": "West",
+                "division": "Southwest",
+                "full_name": "New Orleans Pelicans",
+                "name": "Pelicans"
+            },
             "weight_pounds": 200
         },
 		{
@@ -1149,7 +1693,15 @@
             "height_inches": 6,
             "last_name": "Ball",
             "position": "G",
-            "team": 19,
+            "team": {
+                "id": 19,
+                "abbreviation": "NOP",
+                "city": "New Orleans",
+                "conference": "West",
+                "division": "Southwest",
+                "full_name": "New Orleans Pelicans",
+                "name": "Pelicans"
+            },
             "weight_pounds": 190
         },
 		{
@@ -1159,7 +1711,15 @@
             "height_inches": 9,
             "last_name": "Randle",
             "position": "F",
-            "team": 20,
+            "team": {
+                "id": 20,
+                "abbreviation": "NYK",
+                "city": "New York",
+                "conference": "East",
+                "division": "Atlantic",
+                "full_name": "New York Knicks",
+                "name": "Knicks"
+            },
             "weight_pounds": 250
         },
 		{
@@ -1169,7 +1729,15 @@
             "height_inches": null,
             "last_name": "Barrett",
             "position": "F-G",
-            "team": 20,
+            "team": {
+                "id": 20,
+                "abbreviation": "NYK",
+                "city": "New York",
+                "conference": "East",
+                "division": "Atlantic",
+                "full_name": "New York Knicks",
+                "name": "Knicks"
+            },
             "weight_pounds": null
         },
 		{
@@ -1179,7 +1747,15 @@
             "height_inches": 11,
             "last_name": "Portis",
             "position": "F",
-            "team": 20,
+            "team": {
+                "id": 20,
+                "abbreviation": "NYK",
+                "city": "New York",
+                "conference": "East",
+                "division": "Atlantic",
+                "full_name": "New York Knicks",
+                "name": "Knicks"
+            },
             "weight_pounds": 250
         },
 		{
@@ -1189,7 +1765,15 @@
             "height_inches": 4,
             "last_name": "Payton",
             "position": "G",
-            "team": 20,
+            "team": {
+                "id": 20,
+                "abbreviation": "NYK",
+                "city": "New York",
+                "conference": "East",
+                "division": "Atlantic",
+                "full_name": "New York Knicks",
+                "name": "Knicks"
+            },
             "weight_pounds": 185
         },
 		{
@@ -1199,7 +1783,15 @@
             "height_inches": 1,
             "last_name": "Robinson",
             "position": "C",
-            "team": 20,
+            "team": {
+                "id": 20,
+                "abbreviation": "NYK",
+                "city": "New York",
+                "conference": "East",
+                "division": "Atlantic",
+                "full_name": "New York Knicks",
+                "name": "Knicks"
+            },
             "weight_pounds": 240
         },
 		{
@@ -1209,7 +1801,15 @@
             "height_inches": 6,
             "last_name": "Gilgeous-Alexander",
             "position": "G",
-            "team": 21,
+            "team": {
+                "id": 21,
+                "abbreviation": "OKC",
+                "city": "Oklahoma City",
+                "conference": "West",
+                "division": "Northwest",
+                "full_name": "Oklahoma City Thunder",
+                "name": "Thunder"
+            },
             "weight_pounds": 181
         },
 		{
@@ -1219,7 +1819,15 @@
             "height_inches": 10,
             "last_name": "Gallinari",
             "position": "F",
-            "team": 21,
+            "team": {
+                "id": 21,
+                "abbreviation": "OKC",
+                "city": "Oklahoma City",
+                "conference": "West",
+                "division": "Northwest",
+                "full_name": "Oklahoma City Thunder",
+                "name": "Thunder"
+            },
             "weight_pounds": 225
         },
 		{
@@ -1229,7 +1837,15 @@
             "height_inches": 1,
             "last_name": "Schroder",
             "position": "G",
-            "team": 21,
+            "team": {
+                "id": 21,
+                "abbreviation": "OKC",
+                "city": "Oklahoma City",
+                "conference": "West",
+                "division": "Northwest",
+                "full_name": "Oklahoma City Thunder",
+                "name": "Thunder"
+            },
             "weight_pounds": 172
         },
 		{
@@ -1239,7 +1855,15 @@
             "height_inches": 0,
             "last_name": "Paul",
             "position": "G",
-            "team": 21,
+            "team": {
+                "id": 21,
+                "abbreviation": "OKC",
+                "city": "Oklahoma City",
+                "conference": "West",
+                "division": "Northwest",
+                "full_name": "Oklahoma City Thunder",
+                "name": "Thunder"
+            },
             "weight_pounds": 175
         },
 		{
@@ -1249,7 +1873,15 @@
             "height_inches": 0,
             "last_name": "Adams",
             "position": "C",
-            "team": 21,
+            "team": {
+                "id": 21,
+                "abbreviation": "OKC",
+                "city": "Oklahoma City",
+                "conference": "West",
+                "division": "Northwest",
+                "full_name": "Oklahoma City Thunder",
+                "name": "Thunder"
+            },
             "weight_pounds": 265
         },
 		{
@@ -1259,7 +1891,15 @@
             "height_inches": 0,
             "last_name": "Vucevic",
             "position": "C",
-            "team": 22,
+            "team": {
+                "id": 22,
+                "abbreviation": "ORL",
+                "city": "Orlando",
+                "conference": "East",
+                "division": "Southeast",
+                "full_name": "Orlando Magic",
+                "name": "Magic"
+            },
             "weight_pounds": 260
         },
 		{
@@ -1269,7 +1909,15 @@
             "height_inches": 7,
             "last_name": "Fournier",
             "position": "G-F",
-            "team": 22,
+            "team": {
+                "id": 22,
+                "abbreviation": "ORL",
+                "city": "Orlando",
+                "conference": "East",
+                "division": "Southeast",
+                "full_name": "Orlando Magic",
+                "name": "Magic"
+            },
             "weight_pounds": 205
         },
 		{
@@ -1279,7 +1927,15 @@
             "height_inches": 7,
             "last_name": "Ross",
             "position": "G-F",
-            "team": 22,
+            "team": {
+                "id": 22,
+                "abbreviation": "ORL",
+                "city": "Orlando",
+                "conference": "East",
+                "division": "Southeast",
+                "full_name": "Orlando Magic",
+                "name": "Magic"
+            },
             "weight_pounds": 206
         },
 		{
@@ -1289,7 +1945,15 @@
             "height_inches": 9,
             "last_name": "Gordon",
             "position": "F",
-            "team": 22,
+            "team": {
+                "id": 22,
+                "abbreviation": "ORL",
+                "city": "Orlando",
+                "conference": "East",
+                "division": "Southeast",
+                "full_name": "Orlando Magic",
+                "name": "Magic"
+            },
             "weight_pounds": 220
         },
 		{
@@ -1299,7 +1963,15 @@
             "height_inches": 4,
             "last_name": "Fultz",
             "position": "G",
-            "team": 22,
+            "team": {
+                "id": 22,
+                "abbreviation": "ORL",
+                "city": "Orlando",
+                "conference": "East",
+                "division": "Southeast",
+                "full_name": "Orlando Magic",
+                "name": "Magic"
+            },
             "weight_pounds": 200
         },
 		{
@@ -1309,7 +1981,15 @@
             "height_inches": 0,
             "last_name": "Embiid",
             "position": "F-C",
-            "team": 23,
+            "team": {
+                "id": 23,
+                "abbreviation": "PHI",
+                "city": "Philadelphia",
+                "conference": "East",
+                "division": "Atlantic",
+                "full_name": "Philadelphia 76ers",
+                "name": "76ers"
+            },
             "weight_pounds": 250
         },
 		{
@@ -1319,7 +1999,15 @@
             "height_inches": 9,
             "last_name": "Harris",
             "position": "F",
-            "team": 23,
+            "team": {
+                "id": 23,
+                "abbreviation": "PHI",
+                "city": "Philadelphia",
+                "conference": "East",
+                "division": "Atlantic",
+                "full_name": "Philadelphia 76ers",
+                "name": "76ers"
+            },
             "weight_pounds": 235
         },
 		{
@@ -1329,7 +2017,15 @@
             "height_inches": 10,
             "last_name": "Simmons",
             "position": "G-F",
-            "team": 23,
+            "team": {
+                "id": 23,
+                "abbreviation": "PHI",
+                "city": "Philadelphia",
+                "conference": "East",
+                "division": "Atlantic",
+                "full_name": "Philadelphia 76ers",
+                "name": "76ers"
+            },
             "weight_pounds": 230
         },
 		{
@@ -1339,7 +2035,15 @@
             "height_inches": 6,
             "last_name": "Burks",
             "position": "G",
-            "team": 23,
+            "team": {
+                "id": 23,
+                "abbreviation": "PHI",
+                "city": "Philadelphia",
+                "conference": "East",
+                "division": "Atlantic",
+                "full_name": "Philadelphia 76ers",
+                "name": "76ers"
+            },
             "weight_pounds": 214
         },
 		{
@@ -1349,7 +2053,15 @@
             "height_inches": 6,
             "last_name": "Richardson",
             "position": "G-F",
-            "team": 23,
+            "team": {
+                "id": 23,
+                "abbreviation": "PHI",
+                "city": "Philadelphia",
+                "conference": "East",
+                "division": "Atlantic",
+                "full_name": "Philadelphia 76ers",
+                "name": "76ers"
+            },
             "weight_pounds": 200
         },
 		{
@@ -1359,7 +2071,15 @@
             "height_inches": 6,
             "last_name": "Booker",
             "position": "G",
-            "team": 24,
+            "team": {
+                "id": 24,
+                "abbreviation": "PHX",
+                "city": "Phoenix",
+                "conference": "West",
+                "division": "Pacific",
+                "full_name": "Phoenix Suns",
+                "name": "Suns"
+            },
             "weight_pounds": 210
         },
 		{
@@ -1369,7 +2089,15 @@
             "height_inches": 1,
             "last_name": "Ayton",
             "position": "C",
-            "team": 24,
+            "team": {
+                "id": 24,
+                "abbreviation": "PHX",
+                "city": "Phoenix",
+                "conference": "West",
+                "division": "Pacific",
+                "full_name": "Phoenix Suns",
+                "name": "Suns"
+            },
             "weight_pounds": 250
         },
 		{
@@ -1379,7 +2107,15 @@
             "height_inches": 7,
             "last_name": "Oubre Jr.",
             "position": "F",
-            "team": 24,
+            "team": {
+                "id": 24,
+                "abbreviation": "PHX",
+                "city": "Phoenix",
+                "conference": "West",
+                "division": "Pacific",
+                "full_name": "Phoenix Suns",
+                "name": "Suns"
+            },
             "weight_pounds": 205
         },
 		{
@@ -1389,7 +2125,15 @@
             "height_inches": 4,
             "last_name": "Rubio",
             "position": "G",
-            "team": 24,
+            "team": {
+                "id": 24,
+                "abbreviation": "PHX",
+                "city": "Phoenix",
+                "conference": "West",
+                "division": "Pacific",
+                "full_name": "Phoenix Suns",
+                "name": "Suns"
+            },
             "weight_pounds": 190
         },
 		{
@@ -1399,7 +2143,15 @@
             "height_inches": 10,
             "last_name": "Baynes",
             "position": "C-F",
-            "team": 24,
+            "team": {
+                "id": 24,
+                "abbreviation": "PHX",
+                "city": "Phoenix",
+                "conference": "West",
+                "division": "Pacific",
+                "full_name": "Phoenix Suns",
+                "name": "Suns"
+            },
             "weight_pounds": 260
         },
 		{
@@ -1409,7 +2161,15 @@
             "height_inches": 3,
             "last_name": "Lillard",
             "position": "G",
-            "team": 25,
+            "team": {
+                "id": 25,
+                "abbreviation": "POR",
+                "city": "Portland",
+                "conference": "West",
+                "division": "Northwest",
+                "full_name": "Portland Trail Blazers",
+                "name": "Trail Blazers"
+            },
             "weight_pounds": 195
         },
 		{
@@ -1419,7 +2179,15 @@
             "height_inches": 3,
             "last_name": "McCollum",
             "position": "G",
-            "team": 25,
+            "team": {
+                "id": 25,
+                "abbreviation": "POR",
+                "city": "Portland",
+                "conference": "West",
+                "division": "Northwest",
+                "full_name": "Portland Trail Blazers",
+                "name": "Trail Blazers"
+            },
             "weight_pounds": 190
         },
 		{
@@ -1429,7 +2197,15 @@
             "height_inches": 0,
             "last_name": "Whiteside",
             "position": "C",
-            "team": 25,
+            "team": {
+                "id": 25,
+                "abbreviation": "POR",
+                "city": "Portland",
+                "conference": "West",
+                "division": "Northwest",
+                "full_name": "Portland Trail Blazers",
+                "name": "Trail Blazers"
+            },
             "weight_pounds": 265
         },
 		{
@@ -1439,7 +2215,15 @@
             "height_inches": null,
             "last_name": "Anthony",
             "position": "F",
-            "team": 25,
+            "team": {
+                "id": 25,
+                "abbreviation": "POR",
+                "city": "Portland",
+                "conference": "West",
+                "division": "Northwest",
+                "full_name": "Portland Trail Blazers",
+                "name": "Trail Blazers"
+            },
             "weight_pounds": null
         },
 		{
@@ -1449,7 +2233,15 @@
             "height_inches": 8,
             "last_name": "Hood",
             "position": "G",
-            "team": 25,
+            "team": {
+                "id": 25,
+                "abbreviation": "POR",
+                "city": "Portland",
+                "conference": "West",
+                "division": "Northwest",
+                "full_name": "Portland Trail Blazers",
+                "name": "Trail Blazers"
+            },
             "weight_pounds": 206
         },
 		{
@@ -1459,7 +2251,15 @@
             "height_inches": 3,
             "last_name": "Fox",
             "position": "G",
-            "team": 26,
+            "team": {
+                "id": 26,
+                "abbreviation": "SAC",
+                "city": "Sacramento",
+                "conference": "West",
+                "division": "Pacific",
+                "full_name": "Sacramento Kings",
+                "name": "Kings"
+            },
             "weight_pounds": 175
         },
 		{
@@ -1469,7 +2269,15 @@
             "height_inches": 4,
             "last_name": "Hield",
             "position": "G",
-            "team": 26,
+            "team": {
+                "id": 26,
+                "abbreviation": "SAC",
+                "city": "Sacramento",
+                "conference": "West",
+                "division": "Pacific",
+                "full_name": "Sacramento Kings",
+                "name": "Kings"
+            },
             "weight_pounds": 214
         },
 		{
@@ -1479,7 +2287,15 @@
             "height_inches": 8,
             "last_name": "Barnes",
             "position": "F",
-            "team": 26,
+            "team": {
+                "id": 26,
+                "abbreviation": "SAC",
+                "city": "Sacramento",
+                "conference": "West",
+                "division": "Pacific",
+                "full_name": "Sacramento Kings",
+                "name": "Kings"
+            },
             "weight_pounds": 225
         },
 		{
@@ -1489,7 +2305,15 @@
             "height_inches": 8,
             "last_name": "Parker",
             "position": "F",
-            "team": 26,
+            "team": {
+                "id": 26,
+                "abbreviation": "SAC",
+                "city": "Sacramento",
+                "conference": "West",
+                "division": "Pacific",
+                "full_name": "Sacramento Kings",
+                "name": "Kings"
+            },
             "weight_pounds": 245
         },
 		{
@@ -1499,7 +2323,15 @@
             "height_inches": 6,
             "last_name": "Bogdanovic",
             "position": "G",
-            "team": 26,
+            "team": {
+                "id": 26,
+                "abbreviation": "SAC",
+                "city": "Sacramento",
+                "conference": "West",
+                "division": "Pacific",
+                "full_name": "Sacramento Kings",
+                "name": "Kings"
+            },
             "weight_pounds": 205
         },
 		{
@@ -1509,7 +2341,15 @@
             "height_inches": 7,
             "last_name": "DeRozan",
             "position": "G",
-            "team": 27,
+            "team": {
+                "id": 27,
+                "abbreviation": "SAS",
+                "city": "San Antonio",
+                "conference": "West",
+                "division": "Southwest",
+                "full_name": "San Antonio Spurs",
+                "name": "Spurs"
+            },
             "weight_pounds": 220
         },
 		{
@@ -1519,7 +2359,15 @@
             "height_inches": 11,
             "last_name": "Aldridge",
             "position": "F",
-            "team": 27,
+            "team": {
+                "id": 27,
+                "abbreviation": "SAS",
+                "city": "San Antonio",
+                "conference": "West",
+                "division": "Southwest",
+                "full_name": "San Antonio Spurs",
+                "name": "Spurs"
+            },
             "weight_pounds": 260
         },
 		{
@@ -1529,7 +2377,15 @@
             "height_inches": 0,
             "last_name": "Mills",
             "position": "G",
-            "team": 27,
+            "team": {
+                "id": 27,
+                "abbreviation": "SAS",
+                "city": "San Antonio",
+                "conference": "West",
+                "division": "Southwest",
+                "full_name": "San Antonio Spurs",
+                "name": "Spurs"
+            },
             "weight_pounds": 180
         },
 		{
@@ -1539,7 +2395,15 @@
             "height_inches": 3,
             "last_name": "Forbes",
             "position": "G",
-            "team": 27,
+            "team": {
+                "id": 27,
+                "abbreviation": "SAS",
+                "city": "San Antonio",
+                "conference": "West",
+                "division": "Southwest",
+                "full_name": "San Antonio Spurs",
+                "name": "Spurs"
+            },
             "weight_pounds": 190
         },
 		{
@@ -1549,7 +2413,15 @@
             "height_inches": 5,
             "last_name": "Murray",
             "position": "G",
-            "team": 27,
+            "team": {
+                "id": 27,
+                "abbreviation": "SAS",
+                "city": "San Antonio",
+                "conference": "West",
+                "division": "Southwest",
+                "full_name": "San Antonio Spurs",
+                "name": "Spurs"
+            },
             "weight_pounds": 170
         },
 		{
@@ -1559,7 +2431,15 @@
             "height_inches": 9,
             "last_name": "Siakam",
             "position": "F",
-            "team": 28,
+            "team": {
+                "id": 28,
+                "abbreviation": "TOR",
+                "city": "Toronto",
+                "conference": "East",
+                "division": "Atlantic",
+                "full_name": "Toronto Raptors",
+                "name": "Raptors"
+            },
             "weight_pounds": 230
         },
 		{
@@ -1569,7 +2449,15 @@
             "height_inches": 1,
             "last_name": "Lowry",
             "position": "G",
-            "team": 28,
+            "team": {
+                "id": 28,
+                "abbreviation": "TOR",
+                "city": "Toronto",
+                "conference": "East",
+                "division": "Atlantic",
+                "full_name": "Toronto Raptors",
+                "name": "Raptors"
+            },
             "weight_pounds": 196
         },
 		{
@@ -1579,7 +2467,15 @@
             "height_inches": 0,
             "last_name": "VanVleet",
             "position": "G",
-            "team": 28,
+            "team": {
+                "id": 28,
+                "abbreviation": "TOR",
+                "city": "Toronto",
+                "conference": "East",
+                "division": "Atlantic",
+                "full_name": "Toronto Raptors",
+                "name": "Raptors"
+            },
             "weight_pounds": 195
         },
 		{
@@ -1589,7 +2485,15 @@
             "height_inches": 4,
             "last_name": "Powell",
             "position": "F-G",
-            "team": 28,
+            "team": {
+                "id": 28,
+                "abbreviation": "TOR",
+                "city": "Toronto",
+                "conference": "East",
+                "division": "Atlantic",
+                "full_name": "Toronto Raptors",
+                "name": "Raptors"
+            },
             "weight_pounds": 215
         },
 		{
@@ -1599,7 +2503,15 @@
             "height_inches": 10,
             "last_name": "Ibaka",
             "position": "F-C",
-            "team": 28,
+            "team": {
+                "id": 28,
+                "abbreviation": "TOR",
+                "city": "Toronto",
+                "conference": "East",
+                "division": "Atlantic",
+                "full_name": "Toronto Raptors",
+                "name": "Raptors"
+            },
             "weight_pounds": 235
         },
 		{
@@ -1609,7 +2521,15 @@
             "height_inches": 3,
             "last_name": "Mitchell",
             "position": "G",
-            "team": 29,
+            "team": {
+                "id": 29,
+                "abbreviation": "UTA",
+                "city": "Utah",
+                "conference": "West",
+                "division": "Northwest",
+                "full_name": "Utah Jazz",
+                "name": "Jazz"
+            },
             "weight_pounds": 215
         },
 		{
@@ -1619,7 +2539,15 @@
             "height_inches": 8,
             "last_name": "Bogdanovic",
             "position": "F",
-            "team": 29,
+            "team": {
+                "id": 29,
+                "abbreviation": "UTA",
+                "city": "Utah",
+                "conference": "West",
+                "division": "Northwest",
+                "full_name": "Utah Jazz",
+                "name": "Jazz"
+            },
             "weight_pounds": 216
         },
 		{
@@ -1629,7 +2557,15 @@
             "height_inches": 1,
             "last_name": "Gobert",
             "position": "C",
-            "team": 29,
+            "team": {
+                "id": 29,
+                "abbreviation": "UTA",
+                "city": "Utah",
+                "conference": "West",
+                "division": "Northwest",
+                "full_name": "Utah Jazz",
+                "name": "Jazz"
+            },
             "weight_pounds": 245
         },
 		{
@@ -1639,7 +2575,15 @@
             "height_inches": 5,
             "last_name": "Clarkson",
             "position": "G",
-            "team": 29,
+            "team": {
+                "id": 29,
+                "abbreviation": "UTA",
+                "city": "Utah",
+                "conference": "West",
+                "division": "Northwest",
+                "full_name": "Utah Jazz",
+                "name": "Jazz"
+            },
             "weight_pounds": 194
         },
 		{
@@ -1649,7 +2593,15 @@
             "height_inches": 1,
             "last_name": "Conley",
             "position": "G",
-            "team": 29,
+            "team": {
+                "id": 29,
+                "abbreviation": "UTA",
+                "city": "Utah",
+                "conference": "West",
+                "division": "Northwest",
+                "full_name": "Utah Jazz",
+                "name": "Jazz"
+            },
             "weight_pounds": 175
         },
 		{
@@ -1659,7 +2611,15 @@
             "height_inches": 5,
             "last_name": "Beal",
             "position": "G",
-            "team": 30,
+            "team": {
+                "id": 30,
+                "abbreviation": "WAS",
+                "city": "Washington",
+                "conference": "East",
+                "division": "Southeast",
+                "full_name": "Washington Wizards",
+                "name": "Wizards"
+            },
             "weight_pounds": 207
         },
 		{
@@ -1669,7 +2629,15 @@
             "height_inches": 10,
             "last_name": "Bertans",
             "position": "F",
-            "team": 30,
+            "team": {
+                "id": 30,
+                "abbreviation": "WAS",
+                "city": "Washington",
+                "conference": "East",
+                "division": "Southeast",
+                "full_name": "Washington Wizards",
+                "name": "Wizards"
+            },
             "weight_pounds": 225
         },
 		{
@@ -1679,7 +2647,15 @@
             "height_inches": 8,
             "last_name": "Bonga",
             "position": "G",
-            "team": 30,
+            "team": {
+                "id": 30,
+                "abbreviation": "WAS",
+                "city": "Washington",
+                "conference": "East",
+                "division": "Southeast",
+                "full_name": "Washington Wizards",
+                "name": "Wizards"
+            },
             "weight_pounds": 180
         },
 		{
@@ -1689,7 +2665,15 @@
             "height_inches": 11,
             "last_name": "Bryant",
             "position": "C",
-            "team": 30,
+            "team": {
+                "id": 30,
+                "abbreviation": "WAS",
+                "city": "Washington",
+                "conference": "East",
+                "division": "Southeast",
+                "full_name": "Washington Wizards",
+                "name": "Wizards"
+            },
             "weight_pounds": 248
         },
 		{
@@ -1699,7 +2683,15 @@
             "height_inches": null,
             "last_name": "Hachimura",
             "position": "F",
-            "team": 30,
+            "team": {
+                "id": 30,
+                "abbreviation": "WAS",
+                "city": "Washington",
+                "conference": "East",
+                "division": "Southeast",
+                "full_name": "Washington Wizards",
+                "name": "Wizards"
+            },
             "weight_pounds": null
         }
 		

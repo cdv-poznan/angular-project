@@ -8,12 +8,9 @@ const routes: Routes = [
     path: '',
     component: TeamsListComponent,
   },
-  {
-    
+  {    
         path: ':id',
-        component: TeamDetailsComponent,
- 
-   
+        component: TeamDetailsComponent,   
   },
 ];
 

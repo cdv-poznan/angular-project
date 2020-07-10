@@ -23,6 +23,9 @@ export class GameDetailsComponent implements OnInit {
     const gameId: number = Number.parseInt(id, 10);
     if (!Number.isNaN(gameId)) {
       this.game = await this.gamesService.getGameDetails(gameId);
+
+      console.log(this.game);
+
       if (this.game === undefined) {
         this.errorMessage = 'No such team';
       }

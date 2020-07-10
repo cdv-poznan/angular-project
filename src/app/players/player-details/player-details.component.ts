@@ -1,14 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { PlayersService } from '../../_services/players.service';
-import { LoggingService } from '../../_services/logging.service';
 import { Player } from '../../_interfaces/player';
 
 @Component({
   selector: 'app-player-detail',
   templateUrl: './player-details.component.html',
   styleUrls: ['./player-details.component.scss'],
-  providers: [PlayersService, LoggingService],
+  providers: [PlayersService],
 })
 
 export class PlayerDetailsComponent implements OnInit {
@@ -18,7 +17,6 @@ export class PlayerDetailsComponent implements OnInit {
   constructor(
     private activatedRoute: ActivatedRoute,
     private playersService: PlayersService,
-    private loggingService: LoggingService,
   ) {}
 
   async ngOnInit(): Promise<void> {

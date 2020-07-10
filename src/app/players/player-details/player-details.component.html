@@ -2,7 +2,7 @@
     <div class="row">
       <div class="col-12">
           <div *ngIf="player">
-
+            <h1 class="page-title">{{ player.first_name }} {{ player.last_name }}</h1>
           
 
   <div class="playerIntroBox align-items-center col-12">
@@ -17,7 +17,6 @@
               </div>
               <div class="col-8">
                 <div class="row">
-                  <h1>{{ player.first_name }} {{ player.last_name }}</h1>
                   <div class="col-12">
                     Drużyna: <b><a routerLink="/teams/{{ player.team.id }}">{{ player.team.full_name }}</a></b>
                   </div>

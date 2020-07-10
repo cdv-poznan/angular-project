@@ -15,6 +15,5 @@ export interface Player {
         name: string
     },
     weight_pounds: number,
-    }
-  
+    }  
     

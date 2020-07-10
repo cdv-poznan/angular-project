@@ -17,6 +17,7 @@ export class PlayersListComponent implements OnInit {
   public teamplayers: TeamPlayers[];
   public errorMessage: string;
   public viewMode: string = 'ATL';
+  public searchedPlayers: Player[];
 
   constructor(
     private playersService: PlayersService,
@@ -44,4 +45,9 @@ export class PlayersListComponent implements OnInit {
       this.errorMessage = 'Not a valid team ID';
     }
   }
+
+  async onSearchPlayer(playerToSearch){
+    this.searchedPlayers = await this.playersService.getPlayerFromSearch(playerToSearch);
+  }
+
 }

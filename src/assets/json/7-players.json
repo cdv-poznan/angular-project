@@ -45,7 +45,7 @@
             "first_name": "Tim",
             "height_feet": 6,
             "height_inches": 6,
-            "last_name": "Hardaway",
+            "last_name": "Hardaway Jr.",
             "position": "G",
             "team": 7,
             "weight_pounds": 205
@@ -122,7 +122,7 @@
         },
 		{
             "id": 29,
-            "first_name": "JJ",
+            "first_name": "J.J.",
             "height_feet": 6,
             "height_inches": 0,
             "last_name": "Barea",
