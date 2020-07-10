@@ -35,7 +35,7 @@
                 <div class="col">
                   <span>{{ game.date | date: 'yyyy-MM-dd' }}</span><br>
                   <strong>{{ game.visitor_team_score }} : {{ game.home_team_score }} </strong><br>
-                  <a href="/games/{{ game.id }}">Szczegóły</a>
+                  <a routerLink="/games/{{ game.id }}">Szczegóły</a>
                 </div>
                 <div class="col-2 col-lg-1">
                   <img src="/assets/teams-logo/png/{{ game.home_team.abbreviation }}.png" alt="">
