@@ -9,9 +9,10 @@ import { AngularFireModule } from '@angular/fire';
 import { FormsModule } from '@angular/forms';
 import { environment } from 'src/environments/environment';
 import { HttpClientModule } from '@angular/common/http';
+import { TagComponent } from './tag/tag.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, AboutComponent, BookmarksComponent],
+  declarations: [AppComponent, HomeComponent, AboutComponent, BookmarksComponent, TagComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

@@ -4,11 +4,16 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { AngularFireAuthGuard } from '@angular/fire/auth-guard';
 import { BookmarksComponent } from './bookmarks/bookmarks.component';
+import { TagComponent } from './tag/tag.component';
 
 const routes: Routes = [
   {
     path: 'home',
     component: HomeComponent,
+  },
+  {
+    path: 'tag/:name',
+    component: TagComponent,
   },
   {
     path: 'about',
