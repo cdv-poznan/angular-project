@@ -1,0 +1,56 @@
+{
+	"data":[
+		{
+            "id": 227,
+            "first_name": "Brandon",
+            "height_feet": 6,
+            "height_inches": 9,
+            "last_name": "Ingram",
+            "position": "F",
+            "team": 19,
+            "weight_pounds": 190
+        },
+		{
+            "id": 666969,
+            "first_name": "Zion",
+            "height_feet": null,
+            "height_inches": null,
+            "last_name": "Williamson",
+            "position": "F",
+            "team": 19,
+            "weight_pounds": null
+        },
+		{
+            "id": 214,
+            "first_name": "Jrue",
+            "height_feet": 6,
+            "height_inches": 4,
+            "last_name": "Holiday",
+            "position": "G",
+            "team": 19,
+            "weight_pounds": 205
+        },
+		{
+            "id": 389,
+            "first_name": "JJ",
+            "height_feet": 6,
+            "height_inches": 4,
+            "last_name": "Redick",
+            "position": "G",
+            "team": 19,
+            "weight_pounds": 200
+        },
+		{
+            "id": 27,
+            "first_name": "Lonzo",
+            "height_feet": 6,
+            "height_inches": 6,
+            "last_name": "Ball",
+            "position": "G",
+            "team": 19,
+            "weight_pounds": 190
+        }
+		
+		
+	]
+}

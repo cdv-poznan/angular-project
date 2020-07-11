@@ -1,0 +1,55 @@
+{
+	"data":[
+		{
+            "id": 322,
+            "first_name": "Donovan",
+            "height_feet": 6,
+            "height_inches": 3,
+            "last_name": "Mitchell",
+            "position": "G",
+            "team": 29,
+            "weight_pounds": 215
+        },
+		{
+            "id": 54,
+            "first_name": "Bojan",
+            "height_feet": 6,
+            "height_inches": 8,
+            "last_name": "Bogdanovic",
+            "position": "F",
+            "team": 29,
+            "weight_pounds": 216
+        },
+		{
+            "id": 176,
+            "first_name": "Rudy",
+            "height_feet": 7,
+            "height_inches": 1,
+            "last_name": "Gobert",
+            "position": "C",
+            "team": 29,
+            "weight_pounds": 245
+        },
+		{
+            "id": 100,
+            "first_name": "Jordan",
+            "height_feet": 6,
+            "height_inches": 5,
+            "last_name": "Clarkson",
+            "position": "G",
+            "team": 29,
+            "weight_pounds": 194
+        },
+		{
+            "id": 104,
+            "first_name": "Mike",
+            "height_feet": 6,
+            "height_inches": 1,
+            "last_name": "Conley",
+            "position": "G",
+            "team": 29,
+            "weight_pounds": 175
+        }
+		
+	]
+}

@@ -1,0 +1,55 @@
+{
+	"data":[
+		{
+            "id": 460,
+            "first_name": "Nikola",
+            "height_feet": 7,
+            "height_inches": 0,
+            "last_name": "Vucevic",
+            "position": "C",
+            "team": 22,
+            "weight_pounds": 260
+        },
+		{
+            "id": 160,
+            "first_name": "Evan",
+            "height_feet": 6,
+            "height_inches": 7,
+            "last_name": "Fournier",
+            "position": "G-F",
+            "team": 22,
+            "weight_pounds": 205
+        },
+		{
+            "id": 402,
+            "first_name": "Terrence",
+            "height_feet": 6,
+            "height_inches": 7,
+            "last_name": "Ross",
+            "position": "G-F",
+            "team": 22,
+            "weight_pounds": 206
+        },
+		{
+            "id": 177,
+            "first_name": "Aaron",
+            "height_feet": 6,
+            "height_inches": 9,
+            "last_name": "Gordon",
+            "position": "F",
+            "team": 22,
+            "weight_pounds": 220
+        },
+		{
+            "id": 165,
+            "first_name": "Markelle",
+            "height_feet": 6,
+            "height_inches": 4,
+            "last_name": "Fultz",
+            "position": "G",
+            "team": 22,
+            "weight_pounds": 200
+        }
+		
+	]
+}

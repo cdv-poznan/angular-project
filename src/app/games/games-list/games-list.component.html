@@ -1,0 +1,54 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12 text-center">
+      <h1 class="page-title">NBA GAMES</h1>
+      <form class="pure-form">
+        <label for="game-season">
+          <select name="game-season" id="game-season" 
+          #seasonSelect
+          (change)='onSeasonTeamSelected(seasonSelect.value, teamSelect.value)'>       
+            <option value="0">Wybierz sezon</option>
+              <option *ngFor="let season of seasons" value="{{ season }}">{{ season }} / {{ season + 1 }}</option>
+          </select>
+          <select name="game-teams" id="game-teams" 
+          #teamSelect
+          (change)='onSeasonTeamSelected(seasonSelect.value, teamSelect.value)'>       
+            <option value="0">Wybierz drużynę</option>
+              <option *ngFor="let team of teams" value="{{ team.id }}">{{ team.name }}</option>
+          </select>
+        </label>
+      </form>
+    </div>
+  </div>
+  <div class="row">
+      <div class="col-12">
+        <div *ngIf="games?.length; else emptyBlock">
+          <ng-container *ngFor="let game of games">
+            <div class="gameBox">
+              <div class="row d-flex align-items-center">
+                <div class="col d-none d-md-block">
+                  {{ game.visitor_team.full_name }}
+                </div>
+                <div class="col-2 col-lg-1">
+                  <img src="/assets/teams-logo/png/{{ game.visitor_team.abbreviation }}.png" alt="">
+                </div>
+                <div class="col">
+                  <span>{{ game.date | date: 'yyyy-MM-dd' }}</span><br>
+                  <strong>{{ game.visitor_team_score }} : {{ game.home_team_score }} </strong><br>
+                  <a routerLink="/games/{{ game.id }}">Szczegóły</a>
+                </div>
+                <div class="col-2 col-lg-1">
+                  <img src="/assets/teams-logo/png/{{ game.home_team.abbreviation }}.png" alt="">
+                </div>
+                <div class="col d-none d-md-block">{{ game.home_team.full_name }}</div>
+              </div>
+            </div>
+          </ng-container>
+
+        </div>
+        <ng-template #emptyBlock>
+          
+          </ng-template>
+      </div>
+    </div>
+</div>

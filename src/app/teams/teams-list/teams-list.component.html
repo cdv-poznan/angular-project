@@ -1,0 +1,56 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h1 class="page-title">NBA TEAMS</h1>
+      <div *ngIf="teams?.length; else emptyBlock">
+        <ng-container *ngFor="let team of teams">
+          <div class="teamBox">
+            <div class="row d-flex align-items-center">
+              <div class="col-12 col-md-4">
+                <a routerLink="/teams/{{ team.id }}"
+                  ><img
+                    src="/assets/teams-logo/png/{{ team.abbreviation }}.png"
+                    alt="{{ team.name }}"
+                  />
+                </a>
+              </div>
+              <div class="col-12 col-md-6">
+                <a routerLink="/teams/{{ team.id }}"
+                  ><h2>{{ team.full_name }}</h2>
+                  </a>
+                <div class="row d-flex">
+                  <div class="col-6">Miasto:</div>
+                  <div class="col-6"><h3>{{ team.city }}</h3></div>
+                </div>
+                <div class="row">
+                  <div class="col-6">Konferencja:</div>
+                  <div class="col-6"><h3>{{ team.conference }}</h3></div>
+                </div>
+                <div class="row">
+                  <div class="col-6">Dywizja:</div>
+                  <div class="col-6"><h3>{{ team.division }}</h3></div>
+                </div>
+              </div>
+              <div
+                class="col-12 col-md-2 gameDetailsBox d-flex align-items-center justify-content-center"
+              >
+                <a
+                  href="https://www.nba.com/teams/{{ team.name | lowercase }}"
+                  target="blank"
+                  title="NBA - Team Page"
+                  ><i class="fas fa-info-circle fa-3x"></i
+                ></a>
+              </div>
+            </div>
+            <!-- {{ team.abbreviation }} - {{ team.id }} - {{ team.name }} -->
+          </div>
+          
+        </ng-container>
+      </div>
+
+      <ng-template #emptyBlock>
+        
+      </ng-template>
+    </div>
+  </div>
+</div>

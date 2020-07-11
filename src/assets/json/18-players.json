@@ -1,0 +1,59 @@
+{
+	"data":[
+		{
+            "id": 447,
+            "first_name": "Karl-Anthony",
+            "height_feet": 7,
+            "height_inches": 0,
+            "last_name": "Towns",
+            "position": "C",
+            "team": 18,
+            "weight_pounds": 248
+        },
+		{
+            "id": 405,
+            "first_name": "D'Angelo",
+            "height_feet": 6,
+            "height_inches": 5,
+            "last_name": "Russell",
+            "position": "G",
+            "team": 18,
+            "weight_pounds": 198
+        },
+		{
+            "id": 38,
+            "first_name": "Malik",
+            "height_feet": 6,
+            "height_inches": 5,
+            "last_name": "Beasley",
+            "position": "G",
+            "team": 18,
+            "weight_pounds": 195
+        },
+		{
+            "id": 666523,
+            "first_name": "Jarrett",
+            "height_feet": null,
+            "height_inches": null,
+            "last_name": "Culver",
+            "position": "G",
+            "team": 18,
+            "weight_pounds": null
+        },
+		{
+            "id": 269,
+            "first_name": "Jake",
+            "height_feet": 6,
+            "height_inches": 9,
+            "last_name": "Layman",
+            "position": "F",
+            "team": 18,
+            "weight_pounds": 215
+        }
+		
+		
+		
+		
+		
+	]
+}

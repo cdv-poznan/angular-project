@@ -1,0 +1,57 @@
+{
+	"data":[
+		{
+            "id": 416,
+            "first_name": "Pascal",
+            "height_feet": 6,
+            "height_inches": 9,
+            "last_name": "Siakam",
+            "position": "F",
+            "team": 28,
+            "weight_pounds": 230
+        },
+		{
+            "id": 286,
+            "first_name": "Kyle",
+            "height_feet": 6,
+            "height_inches": 1,
+            "last_name": "Lowry",
+            "position": "G",
+            "team": 28,
+            "weight_pounds": 196
+        },
+		{
+            "id": 458,
+            "first_name": "Fred",
+            "height_feet": 6,
+            "height_inches": 0,
+            "last_name": "VanVleet",
+            "position": "G",
+            "team": 28,
+            "weight_pounds": 195
+        },
+		{
+            "id": 380,
+            "first_name": "Norman",
+            "height_feet": 6,
+            "height_inches": 4,
+            "last_name": "Powell",
+            "position": "F-G",
+            "team": 28,
+            "weight_pounds": 215
+        },
+		{
+            "id": 223,
+            "first_name": "Serge",
+            "height_feet": 6,
+            "height_inches": 10,
+            "last_name": "Ibaka",
+            "position": "F-C",
+            "team": 28,
+            "weight_pounds": 235
+        }
+		
+		
+		
+	]
+}

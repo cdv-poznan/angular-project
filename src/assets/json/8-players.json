@@ -1,0 +1,156 @@
+{
+	"data":[
+		{
+            "id": 31,
+            "first_name": "Will",
+            "height_feet": 6,
+            "height_inches": 6,
+            "last_name": "Barton",
+            "position": "G",
+            "team": 8,
+            "weight_pounds": 190
+        },
+		{
+            "id": 32,
+            "first_name": "Keita",
+            "height_feet": 6,
+            "height_inches": 9,
+            "last_name": "Bates-Diop",
+            "position": "F",
+            "team": 8,
+            "weight_pounds": 229
+        },
+		 {
+            "id": 666489,
+            "first_name": "Vlatko",
+            "height_feet": null,
+            "height_inches": null,
+            "last_name": "Cancar",
+            "position": "F",
+            "team": 8,
+            "weight_pounds": null
+        },
+		{
+            "id": 110,
+            "first_name": "Torrey",
+            "height_feet": 6,
+            "height_inches": 7,
+            "last_name": "Craig",
+            "position": "F",
+            "team": 8,
+            "weight_pounds": 215
+        },
+		{
+            "id": 116,
+            "first_name": "Troy",
+            "height_feet": 6,
+            "height_inches": 4,
+            "last_name": "Daniels",
+            "position": "G",
+            "team": 8,
+            "weight_pounds": 205
+        },
+		{
+            "id": 135,
+            "first_name": "PJ",
+            "height_feet": 6,
+            "height_inches": 6,
+            "last_name": "Dozier",
+            "position": "G-F",
+            "team": 8,
+            "weight_pounds": 205
+        },
+		{
+            "id": 182,
+            "first_name": "Jerami",
+            "height_feet": 6,
+            "height_inches": 9,
+            "last_name": "Grant",
+            "position": "F",
+            "team": 8,
+            "weight_pounds": 220
+        },
+		{
+            "id": 196,
+            "first_name": "Gary",
+            "height_feet": 6,
+            "height_inches": 4,
+            "last_name": "Harris",
+            "position": "G",
+            "team": 8,
+            "weight_pounds": 210
+        },
+		{
+            "id": 246,
+            "first_name": "Nikola",
+            "height_feet": 7,
+            "height_inches": 0,
+            "last_name": "Jokic",
+            "position": "C",
+            "team": 8,
+            "weight_pounds": 250
+        },
+		{
+            "id": 375,
+            "first_name": "Michael",
+            "height_feet": 6,
+            "height_inches": 10,
+            "last_name": "Porter Jr.",
+            "position": "F",
+            "team": 8,
+            "weight_pounds": 210
+        },
+		{
+            "id": 318,
+            "first_name": "Paul",
+            "height_feet": 6,
+            "height_inches": 8,
+            "last_name": "Millsap",
+            "position": "F",
+            "team": 8,
+            "weight_pounds": 246
+        },
+		{
+            "id": 330,
+            "first_name": "Monte",
+            "height_feet": 6,
+            "height_inches": 3,
+            "last_name": "Morris",
+            "position": "G",
+            "team": 8,
+            "weight_pounds": 175
+        },
+		{
+            "id": 335,
+            "first_name": "Jamal",
+            "height_feet": 6,
+            "height_inches": 4,
+            "last_name": "Murray",
+            "position": "G",
+            "team": 8,
+            "weight_pounds": 207
+        },
+		{
+            "id": 371,
+            "first_name": "Mason",
+            "height_feet": 6,
+            "height_inches": 11,
+            "last_name": "Plumlee",
+            "position": "F-C",
+            "team": 8,
+            "weight_pounds": 235
+        },
+		{
+            "id": 459,
+            "first_name": "Noah",
+            "height_feet": 6,
+            "height_inches": 9,
+            "last_name": "Vonleh",
+            "position": "F",
+            "team": 8,
+            "weight_pounds": 250
+        }
+		
+		
+	]
+}

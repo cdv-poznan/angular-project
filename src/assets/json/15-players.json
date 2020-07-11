@@ -1,0 +1,58 @@
+{
+	"data":[
+		{
+            "id": 666786,
+            "first_name": "Ja",
+            "height_feet": null,
+            "height_inches": null,
+            "last_name": "Morant",
+            "position": "G",
+            "team": 15,
+            "weight_pounds": null
+        },
+		{
+            "id": 231,
+            "first_name": "Jaren",
+            "height_feet": 6,
+            "height_inches": 11,
+            "last_name": "Jackson Jr.",
+            "position": "F-C",
+            "team": 15,
+            "weight_pounds": 242
+        },
+		{
+            "id": 66,
+            "first_name": "Dillon",
+            "height_feet": 6,
+            "height_inches": 6,
+            "last_name": "Brooks",
+            "position": "G-F",
+            "team": 15,
+            "weight_pounds": 220
+        },
+		{
+            "id": 455,
+            "first_name": "Jonas",
+            "height_feet": 7,
+            "height_inches": 0,
+            "last_name": "Valanciunas",
+            "position": "C",
+            "team": 15,
+            "weight_pounds": 265
+        },
+		{
+            "id": 666505,
+            "first_name": "Brandon",
+            "height_feet": null,
+            "height_inches": null,
+            "last_name": "Clarke",
+            "position": "F",
+            "team": 15,
+            "weight_pounds": null
+        }
+		
+		
+		
+		
+	]
+}

@@ -1,0 +1,57 @@
+{
+	"data":[
+		{
+            "id": 278,
+            "first_name": "Damian",
+            "height_feet": 6,
+            "height_inches": 3,
+            "last_name": "Lillard",
+            "position": "G",
+            "team": 25,
+            "weight_pounds": 195
+        },
+		{
+            "id": 303,
+            "first_name": "CJ",
+            "height_feet": 6,
+            "height_inches": 3,
+            "last_name": "McCollum",
+            "position": "G",
+            "team": 25,
+            "weight_pounds": 190
+        },
+		{
+            "id": 474,
+            "first_name": "Hassan",
+            "height_feet": 7,
+            "height_inches": 0,
+            "last_name": "Whiteside",
+            "position": "C",
+            "team": 25,
+            "weight_pounds": 265
+        },
+		{
+            "id": 17,
+            "first_name": "Carmelo",
+            "height_feet": null,
+            "height_inches": null,
+            "last_name": "Anthony",
+            "position": "F",
+            "team": 25,
+            "weight_pounds": null
+        },
+		{
+            "id": 218,
+            "first_name": "Rodney",
+            "height_feet": 6,
+            "height_inches": 8,
+            "last_name": "Hood",
+            "position": "G",
+            "team": 25,
+            "weight_pounds": 206
+        }
+		
+		
+		
+	]
+}

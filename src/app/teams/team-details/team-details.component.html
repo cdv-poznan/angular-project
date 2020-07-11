@@ -1,0 +1,74 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <div *ngIf="team">
+        <h1 class="page-title">{{ team.full_name }}</h1>
+        <div class="teamBox">
+          <div class="row d-flex align-items-center">
+            <div class="col-12 col-md-4">
+              <img
+                  src="/assets/teams-logo/png/{{ team.abbreviation }}.png"
+                  alt="{{ team.name }}"
+                  class="img-responsive mx-auto d-block"
+                />
+            </div>
+            <div class="col-12 col-md-8">
+              <div class="row d-flex">
+                <div class="col-6">Miasto:</div>
+                <div class="col-6"><h3>{{ team.city }}</h3></div>
+              </div>
+              <div class="row">
+                <div class="col-6">Konferencja:</div>
+                <div class="col-6"><h3>{{ team.conference }}</h3></div>
+              </div>
+              <div class="row">
+                <div class="col-6">Dywizja:</div>
+                <div class="col-6"><h3>{{ team.division }}</h3></div>
+              </div>
+            </div>
+          </div>
+          <!-- {{ team.abbreviation }} - {{ team.id }} - {{ team.name }} -->
+          <hr>
+          <mat-tab-group mat-align-tabs="center">
+            <mat-tab label="Zawodnicy">
+              <app-team-players></app-team-players>
+            </mat-tab>       
+            <mat-tab label="Ostatnie mecze">
+              <app-team-games></app-team-games>
+            </mat-tab>
+            <mat-tab label="...więcej">
+              <div class="container text-center">
+              <div class="row gameBox">
+                <div class="col-4">Wszystko o drużynie</div>
+                <div class="col-8"><a target="_blank" href="https://www.nba.com/{{ team.name | lowercase }}/">https://www.nba.com/{{ team.name | lowercase }}/</a></div>
+              </div>
+              <div class="row gameBox">
+                <div class="col-4">Statystyki</div>
+                <div class="col-8"><a target="_blank" href="https://www.nba.com/{{ team.name | lowercase }}/stats/">https://www.nba.com/{{ team.name | lowercase }}/stats/</a></div>
+              </div>
+              <div class="row gameBox">
+                <div class="col-4">Video</div>
+                <div class="col-8"><a target="_blank" href="https://www.nba.com/{{ team.name | lowercase }}/video/">https://www.nba.com/{{ team.name | lowercase }}/video/</a></div>
+              </div>
+              <div class="row gameBox">
+                <div class="col-4">Zdjęcia</div>
+                <div class="col-8"><a target="_blank" href="https://www.nba.com/{{ team.name | lowercase }}/photos/">https://www.nba.com/{{ team.name | lowercase }}/photos/</a></div>
+              </div>
+              <div class="row gameBox">
+                <div class="col-4">Newsy</div>
+                <div class="col-8"><a target="_blank" href="https://www.nba.com/{{ team.name | lowercase }}/news/">https://www.nba.com/{{ team.name | lowercase }}/news/</a></div>
+              </div>
+            </div>
+            </mat-tab>
+          </mat-tab-group>
+          
+        </div>
+    </div>
+    
+    <div *ngIf="errorMessage">
+      <p>{{ errorMessage }}</p>
+    </div>
+      </div>
+    </div>
+  </div>
+

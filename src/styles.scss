@@ -1,1 +1,398 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+
+@import 'variables.scss';
+
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: $color-blue;
+}
+
+a:hover {
+  color: $color-pink;
+  text-decoration: none;
+}
+
+#app {
+  padding: 30px;
+}
+
+body {
+  background: $color-white;
+}
+
+h1 {
+  padding-top: 50px;
+}
+
+h1.page-title {
+  color: $color-blue;
+  text-align: center;
+  font-size: 30px;
+  margin: 10px;
+  font-weight: 800;
+  border-bottom:2px solid #fff;
+  padding-bottom: 10px;
+  @include desktop {
+    font-size: 40px;
+    margin: 20px;
+  }
+  @include xlarge {
+    font-size: 50px;
+    margin: 30px;
+  }
+  @include xxlarge {
+    font-size: 60px;
+    margin: 30px;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+nav {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.homeIntro {
+  text-align: center;
+  border-bottom: $border-white;
+  padding-bottom: 50px;
+}
+
+.homeIntro h3 {
+  color: $color-blue;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.homeLALink h3 {
+  padding: 20px;
+  color: $color-blue;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 800;
+  @include desktop {
+    font-size: 40px;
+    padding: 40px;
+  }
+}
+
+.home h2 {
+  color: $color-totalwhite;
+  text-align: center;
+  font-size: 60px;
+  margin: 10px;
+  font-weight: 800;
+  @include desktop {
+    font-size: 80px;
+    margin: 20px;
+  }
+  @include xlarge {
+    font-size: 100px;
+    margin: 30px;
+  }
+  @include xxlarge {
+    font-size: 120px;
+    margin: 30px;
+  }
+}
+
+.home img {
+  width: 100%;
+}
+
+.teamBox {
+  margin: 10px 0;
+  padding: 10px 0;
+  border-bottom: $border-white;
+}
+
+.teamBox h1,
+.view h1 {
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 30px;
+  margin: 10px 0;
+  @include desktop {
+    font-size: 40px;
+    margin: 20px 0;
+  }
+  @include xlarge {
+    font-size: 60px;
+    margin: 30px 0;
+  }
+  @include xxlarge {
+    font-size: 60px;
+    margin: 30px 0;
+  }
+}
+
+.teamBox .row {
+  margin: 10px 0;
+}
+
+.teamBox h2 {
+  color: $color-darkgray;
+  font-weight: 800;
+  font-size: 30px;
+  margin: 10px 0;
+  @include desktop {
+    font-size: 30px;
+    margin: 10px 0;
+  }
+  @include xlarge {
+    font-size: 40px;
+    margin: 20px 0;
+  }
+  @include xxlarge {
+    font-size: 60px;
+    margin: 30px 0;
+  }
+}
+.teamBox h3 {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.gameBox {
+  border-bottom: $border-white;
+  text-align: center;
+}
+
+.gameBox strong {
+  font-size: 30px;
+}
+
+.gameBox span {
+  font-size: 14px;
+  color: $color-gray;
+}
+
+.gameLinkBox h2 {
+  text-align: center;
+  color: $color-blue;
+  font-weight: 800;
+  font-size: 20px;
+  margin: 10px 0;
+  @include desktop {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  @include xlarge {
+    font-size: 30px;
+    margin: 20px 0;
+  }
+  @include xxlarge {
+    font-size: 40px;
+    margin: 30px 0;
+  }
+}
+
+.gameDetailBox {
+  border-bottom: 1px solid $color-blue;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.gameDetailBox strong {
+  font-size: 60px;
+}
+
+.gameDetailBox span {
+  font-size: 14px;
+  color: $color-gray;
+}
+
+.playerBox {
+  margin: 10px 0;
+  padding: 20px;
+  border-bottom: $border-white;
+  text-align: center;
+}
+
+.playerBox img {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.playerBox h3 {
+  color: $color-blue;
+  font-weight: 800;
+}
+
+.playerBoxFull {
+  padding: 20px;
+  border-bottom: $border-white;
+}
+
+.playerBoxFull h2 {
+  color: $color-totalwhite;
+  font-weight: 800;
+  font-size: 20px;
+  margin: 10px 0;
+  @include desktop {
+    font-size: 40px;
+    margin: 20px 0;
+  }
+  @include xlarge {
+    font-size: 40px;
+    margin: 30px 0;
+  }
+  @include xxlarge {
+    font-size: 40px;
+    margin: 30px 0;
+  }
+}
+
+.playerBoxShort {
+  border-bottom: $border-white;
+}
+
+.playerBoxShort h2 {
+  font-weight: 800;
+  font-size: 30px;
+  margin: 10px 0;
+  @include desktop {
+    font-size: 30px;
+    margin: 10px 0;
+  }
+  @include xlarge {
+    font-size: 40px;
+    margin: 20px 0;
+  }
+  @include xxlarge {
+    font-size: 40px;
+    margin: 30px 0;
+  }
+}
+
+.playerDetailsBox,
+.gameDetailsBox {
+  padding-top: 20px;
+  @include desktop {
+    border-left: none;
+    border-top: $border-white;
+  }
+  @include xlarge {
+    border-left: $border-white;
+    border-top: none;
+  }
+  @include xxlarge {
+    border-left: $border-white;
+    border-top: none;
+  }
+}
+
+.playerStats {
+  padding: 50px 0;
+}
+
+.playerStats h2,
+.gameStats h2 {
+  color: $color-totalwhite;
+  text-align: center;
+  font-weight: 800;
+  font-size: 40px;
+  margin: 10px;
+  @include desktop {
+    font-size: 40px;
+    margin: 20px;
+  }
+  @include xlarge {
+    font-size: 60px;
+    margin: 30px;
+  }
+  @include xxlarge {
+    font-size: 80px;
+    margin: 30px;
+  }
+}
+
+.playerStatsTable,
+.gameStatsTable {
+  text-align: center;
+  font-size: 12px;
+}
+
+
+
+.playerInfo {
+  padding: 50px;
+  padding-bottom: 0;
+  border-bottom: 1px solid $color-blue;
+}
+
+.playerInfo h3 {
+  font-size: 20px;
+  @include desktop {
+    font-size: 30px;
+  }
+  @include xlarge {
+    font-size: 40px;
+  }
+  @include xxlarge {
+    font-size: 50px;
+  }
+}
+
+input,
+select {
+  border: 1px solid $color-blue;
+  padding: 10px;
+}
+
+.mat-tab-body-wrapper {
+  padding: 30px 0;
+}
+
+.mat-tab-label {
+  margin: 30px;
+}
+
+.mat-tab-label .mat-tab-label-content {
+  font-size: 30px;
+}

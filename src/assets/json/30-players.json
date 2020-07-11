@@ -1,0 +1,166 @@
+{
+	"data":[
+		{
+            "id": 37,
+            "first_name": "Bradley",
+            "height_feet": 6,
+            "height_inches": 5,
+            "last_name": "Beal",
+            "position": "G",
+            "team": 30,
+            "weight_pounds": 207
+        },
+		{
+            "id": 44,
+            "first_name": "Davis",
+            "height_feet": 6,
+            "height_inches": 10,
+            "last_name": "Bertans",
+            "position": "F",
+            "team": 30,
+            "weight_pounds": 225
+        },
+		{
+            "id": 56,
+            "first_name": "Isaac",
+            "height_feet": 6,
+            "height_inches": 8,
+            "last_name": "Bonga",
+            "position": "G",
+            "team": 30,
+            "weight_pounds": 180
+        },
+		{
+            "id": 74,
+            "first_name": "Thomas",
+            "height_feet": 6,
+            "height_inches": 11,
+            "last_name": "Bryant",
+            "position": "C",
+            "team": 30,
+            "weight_pounds": 248
+        },
+		{
+            "id": 666609,
+            "first_name": "Rui",
+            "height_feet": null,
+            "height_inches": null,
+            "last_name": "Hachimura",
+            "position": "F",
+            "team": 30,
+            "weight_pounds": null
+        },
+		{
+            "id": 2189,
+            "first_name": "Gary",
+            "height_feet": null,
+            "height_inches": null,
+            "last_name": "Payton II",
+            "position": "",
+            "team": 30,
+            "weight_pounds": null
+        },
+		{
+            "id": 68,
+            "first_name": "Troy",
+            "height_feet": 6,
+            "height_inches": 7,
+            "last_name": "Brown Jr.",
+            "position": "F",
+            "team": 30,
+            "weight_pounds": 215
+        },
+		{
+            "id": 294,
+            "first_name": "Ian",
+            "height_feet": 6,
+            "height_inches": 11,
+            "last_name": "Mahinmi",
+            "position": "C",
+            "team": 30,
+            "weight_pounds": 262
+        },
+		{
+            "id": 666754,
+            "first_name": "Garrison",
+            "height_feet": null,
+            "height_inches": null,
+            "last_name": "Mathews",
+            "position": "G",
+            "team": 30,
+            "weight_pounds": null
+        },
+		{
+            "id": 341,
+            "first_name": "Shabazz",
+            "height_feet": 6,
+            "height_inches": 1,
+            "last_name": "Napier",
+            "position": "G",
+            "team": 30,
+            "weight_pounds": 180
+        },
+		{
+            "id": 1358055,
+            "first_name": "Anzejs",
+            "height_feet": null,
+            "height_inches": null,
+            "last_name": "Pasecniks",
+            "position": "C",
+            "team": 30,
+            "weight_pounds": null
+        },
+		{
+            "id": 398,
+            "first_name": "Jerome",
+            "height_feet": 6,
+            "height_inches": 5,
+            "last_name": "Robinson",
+            "position": "G",
+            "team": 30,
+            "weight_pounds": 190
+        },
+		{
+            "id": 666885,
+            "first_name": "Admiral",
+            "height_feet": null,
+            "height_inches": null,
+            "last_name": "Schofield",
+            "position": "F",
+            "team": 30,
+            "weight_pounds": null
+        },
+		{
+            "id": 422,
+            "first_name": "Ish",
+            "height_feet": 6,
+            "height_inches": 0,
+            "last_name": "Smith",
+            "position": "G",
+            "team": 30,
+            "weight_pounds": 175
+        },
+		{
+            "id": 462,
+            "first_name": "Moritz",
+            "height_feet": 6,
+            "height_inches": 11,
+            "last_name": "Wagner",
+            "position": "C",
+            "team": 30,
+            "weight_pounds": 245
+        },
+		{
+            "id": 479,
+            "first_name": "Johnathan",
+            "height_feet": 6,
+            "height_inches": 9,
+            "last_name": "Williams",
+            "position": "F",
+            "team": 30,
+            "weight_pounds": 228
+        }
+		
+		
+	]
+}

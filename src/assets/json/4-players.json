@@ -1,0 +1,136 @@
+{
+	"data":[
+		{
+            "id": 23,
+            "first_name": "Dwayne",
+            "height_feet": 6,
+            "height_inches": 7,
+            "last_name": "Bacon",
+            "position": "G-F",
+            "team": 4,
+            "weight_pounds": 221
+        },
+		{
+            "id": 33,
+            "first_name": "Nicolas",
+            "height_feet": 6,
+            "height_inches": 8,
+            "last_name": "Batum",
+            "position": "F-G",
+            "team": 4,
+            "weight_pounds": 200
+        },
+		{
+            "id": 48,
+            "first_name": "Bismack",
+            "height_feet": 6,
+            "height_inches": 9,
+            "last_name": "Biyombo",
+            "position": "C",
+            "team": 4,
+            "weight_pounds": 255
+        },
+		{
+            "id": 62,
+            "first_name": "Miles",
+            "height_feet": 6,
+            "height_inches": 7,
+            "last_name": "Bridges",
+            "position": "F",
+            "team": 4,
+            "weight_pounds": 225
+        },
+		{
+            "id": 180,
+            "first_name": "Devonte'",
+            "height_feet": 6,
+            "height_inches": 2,
+            "last_name": "Graham",
+            "position": "G",
+            "team": 4,
+            "weight_pounds": 185
+        },
+		{
+            "id": 207,
+            "first_name": "Willy",
+            "height_feet": 6,
+            "height_inches": 11,
+            "last_name": "Hernangomez",
+            "position": "C",
+            "team": 4,
+            "weight_pounds": 240
+        },
+		{
+            "id": 666747,
+            "first_name": "Caleb",
+            "height_feet": null,
+            "height_inches": null,
+            "last_name": "Martin",
+            "position": "F",
+            "team": 4,
+            "weight_pounds": null
+        },
+		{
+            "id": 666748,
+            "first_name": "Cody",
+            "height_feet": null,
+            "height_inches": null,
+            "last_name": "Martin",
+            "position": "F",
+            "team": 4,
+            "weight_pounds": null
+        },
+		{
+            "id": 666762,
+            "first_name": "Jalen",
+            "height_feet": null,
+            "height_inches": null,
+            "last_name": "McDaniels",
+            "position": "F",
+            "team": 4,
+            "weight_pounds": null
+        },
+		{
+            "id": 324,
+            "first_name": "Malik",
+            "height_feet": 6,
+            "height_inches": 3,
+            "last_name": "Monk",
+            "position": "G",
+            "team": 4,
+            "weight_pounds": 200
+        },
+		{
+            "id": 403,
+            "first_name": "Terry",
+            "height_feet": 6,
+            "height_inches": 1,
+            "last_name": "Rozier",
+            "position": "G",
+            "team": 4,
+            "weight_pounds": 190
+        },
+		{
+            "id": 666950,
+            "first_name": "P.J.",
+            "height_feet": null,
+            "height_inches": null,
+            "last_name": "Washington",
+            "position": "F",
+            "team": 4,
+            "weight_pounds": null
+        },
+		{
+            "id": 491,
+            "first_name": "Cody",
+            "height_feet": 7,
+            "height_inches": 0,
+            "last_name": "Zeller",
+            "position": "C",
+            "team": 4,
+            "weight_pounds": 240
+        }
+		
+		
+	]
+}

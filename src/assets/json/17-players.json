@@ -1,0 +1,59 @@
+{
+	"data":[
+		{
+            "id": 15,
+            "first_name": "Giannis",
+            "height_feet": 6,
+            "height_inches": 11,
+            "last_name": "Antetokounmpo",
+            "position": "F",
+            "team": 17,
+            "weight_pounds": 242
+        },
+		{
+            "id": 315,
+            "first_name": "Khris",
+            "height_feet": 6,
+            "height_inches": 8,
+            "last_name": "Middleton",
+            "position": "F",
+            "team": 17,
+            "weight_pounds": 222
+        },
+		{
+            "id": 51,
+            "first_name": "Eric",
+            "height_feet": 6,
+            "height_inches": 1,
+            "last_name": "Bledsoe",
+            "position": "G",
+            "team": 17,
+            "weight_pounds": 205
+        },
+		{
+            "id": 283,
+            "first_name": "Brook",
+            "height_feet": 7,
+            "height_inches": 0,
+            "last_name": "Lopez",
+            "position": "C",
+            "team": 17,
+            "weight_pounds": 270
+        },
+		{
+            "id": 211,
+            "first_name": "George",
+            "height_feet": 6,
+            "height_inches": 3,
+            "last_name": "Hill",
+            "position": "G",
+            "team": 17,
+            "weight_pounds": 188
+        }
+		
+		
+		
+		
+		
+	]
+}

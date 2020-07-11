@@ -1,0 +1,21 @@
+@import '../../../variables.scss';
+
+h2 {
+    color: $color-totalwhite;
+    text-align: center;
+    font-size: 60px;
+    margin: 10px;
+    font-weight: 800;
+    @include desktop {
+      font-size: 80px;
+      margin: 20px;
+    }
+    @include xlarge {
+      font-size: 100px;
+      margin: 30px;
+    }
+    @include xxlarge {
+      font-size: 120px;
+      margin: 30px;
+    }
+  }

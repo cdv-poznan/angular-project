@@ -1,0 +1,166 @@
+{
+	"data":[
+		{
+            "id": 666454,
+            "first_name": "Jordan",
+            "height_feet": null,
+            "height_inches": null,
+            "last_name": "Bone",
+            "position": "G",
+            "team": 9,
+            "weight_pounds": null
+        },
+		{
+            "id": 69,
+            "first_name": "Bruce",
+            "height_feet": 6,
+            "height_inches": 5,
+            "last_name": "Brown",
+            "position": "G",
+            "team": 9,
+            "weight_pounds": 202
+        },
+		{
+            "id": 666543,
+            "first_name": "Sekou",
+            "height_feet": null,
+            "height_inches": null,
+            "last_name": "Doumbouya",
+            "position": "F",
+            "team": 9,
+            "weight_pounds": null
+        },
+		{
+            "id": 168,
+            "first_name": "Langston",
+            "height_feet": 6,
+            "height_inches": 2,
+            "last_name": "Galloway",
+            "position": "G",
+            "team": 9,
+            "weight_pounds": 200
+        },
+		{
+            "id": 189,
+            "first_name": "Blake",
+            "height_feet": 6,
+            "height_inches": 10,
+            "last_name": "Griffin",
+            "position": "F",
+            "team": 9,
+            "weight_pounds": 250
+        },
+		{
+		    "id": 205,
+            "first_name": "John",
+            "height_feet": 6,
+            "height_inches": 11,
+            "last_name": "Henson",
+            "position": "F",
+            "team": 9,
+            "weight_pounds": 219
+        },
+		{
+            "id": 254,
+            "first_name": "Luke",
+            "height_feet": 6,
+            "height_inches": 5,
+            "last_name": "Kennard",
+            "position": "G",
+            "team": 9,
+            "weight_pounds": 206
+        },
+		{
+            "id": 666698,
+            "first_name": "Louis",
+            "height_feet": null,
+            "height_inches": null,
+            "last_name": "King",
+            "position": "F",
+            "team": 9,
+            "weight_pounds": null
+        },
+		{
+            "id": 258,
+            "first_name": "Brandon",
+            "height_feet": 6,
+            "height_inches": 3,
+            "last_name": "Knight",
+            "position": "G",
+            "team": 9,
+            "weight_pounds": 195
+        },
+		{
+            "id": 295,
+            "first_name": "Thon",
+            "height_feet": 7,
+            "height_inches": 1,
+            "last_name": "Maker",
+            "position": "F",
+            "team": 9,
+            "weight_pounds": 221
+        },
+		{
+            "id": 310,
+            "first_name": "Jordan",
+            "height_feet": 6,
+            "height_inches": 5,
+            "last_name": "McRae",
+            "position": "G",
+            "team": 9,
+            "weight_pounds": 179
+        },
+		{
+            "id": 338,
+            "first_name": "Svi",
+            "height_feet": 6,
+            "height_inches": 8,
+            "last_name": "Mykhailiuk",
+            "position": "G",
+            "team": 9,
+            "weight_pounds": 205
+        },
+		{
+            "id": 401,
+            "first_name": "Derrick",
+            "height_feet": 6,
+            "height_inches": 3,
+            "last_name": "Rose",
+            "position": "G",
+            "team": 9,
+            "weight_pounds": 200
+        },
+		{
+            "id": 426,
+            "first_name": "Tony",
+            "height_feet": 6,
+            "height_inches": 7,
+            "last_name": "Snell",
+            "position": "G",
+            "team": 9,
+            "weight_pounds": 213
+        },
+		{
+            "id": 441,
+            "first_name": "Khyri",
+            "height_feet": 6,
+            "height_inches": 3,
+            "last_name": "Thomas",
+            "position": "G",
+            "team": 9,
+            "weight_pounds": 210
+        }
+		,{
+            "id": 486,
+            "first_name": "Christian",
+            "height_feet": 6,
+            "height_inches": 10,
+            "last_name": "Wood",
+            "position": "F",
+            "team": 9,
+            "weight_pounds": 214
+        }
+		
+		
+	]
+}

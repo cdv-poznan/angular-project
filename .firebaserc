@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "cdv-angular-project-nba-portal": {
+      "hosting": {
+        "angular-project": [
+          "cdv-angular-project-nba-portal"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "cdv-angular-project-nba-portal"
+  }
+}

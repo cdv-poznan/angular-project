@@ -1,0 +1,167 @@
+{
+	"data":[
+		{
+            "id": 45,
+            "first_name": "Patrick",
+            "height_feet": 6,
+            "height_inches": 1,
+            "last_name": "Beverley",
+            "position": "G",
+            "team": 13,
+            "weight_pounds": 185
+        },
+		{
+            "id": 666511,
+            "first_name": "Amir",
+            "height_feet": null,
+            "height_inches": null,
+            "last_name": "Coffey",
+            "position": "G",
+            "team": 13,
+            "weight_pounds": null
+        },
+		{
+            "id": 172,
+            "first_name": "Paul",
+            "height_feet": 6,
+            "height_inches": 9,
+            "last_name": "George",
+            "position": "F",
+            "team": 13,
+            "weight_pounds": 220
+        },
+		{
+            "id": 187,
+            "first_name": "JaMychal",
+            "height_feet": 6,
+            "height_inches": 9,
+            "last_name": "Green",
+            "position": "F",
+            "team": 13,
+            "weight_pounds": 227
+        },
+		{
+            "id": 194,
+            "first_name": "Montrezl",
+            "height_feet": 6,
+            "height_inches": 8,
+            "last_name": "Harrell",
+            "position": "F-C",
+            "team": 13,
+            "weight_pounds": 240
+        },
+		{
+            "id": 236,
+            "first_name": "Reggie",
+            "height_feet": 6,
+            "height_inches": 3,
+            "last_name": "Jackson",
+            "position": "G",
+            "team": 13,
+            "weight_pounds": 208
+        },
+		{
+            "id": 666692,
+            "first_name": "Mfiondu",
+            "height_feet": null,
+            "height_inches": null,
+            "last_name": "Kabengele",
+            "position": "F",
+            "team": 13,
+            "weight_pounds": null
+        },
+		{
+            "id": 274,
+            "first_name": "Kawhi",
+            "height_feet": 6,
+            "height_inches": 7,
+            "last_name": "Leonard",
+            "position": "F",
+            "team": 13,
+            "weight_pounds": 230
+        },
+		{
+            "id": 666743,
+            "first_name": "Terance",
+            "height_feet": null,
+            "height_inches": null,
+            "last_name": "Mann",
+            "position": "G",
+            "team": 13,
+            "weight_pounds": null
+        },
+		{
+            "id": 307,
+            "first_name": "Rodney",
+            "height_feet": 6,
+            "height_inches": 4,
+            "last_name": "McGruder",
+            "position": "F-G",
+            "team": 13,
+            "weight_pounds": 200
+        },
+		{
+            "id": 331,
+            "first_name": "Johnathan",
+            "height_feet": 6,
+            "height_inches": 10,
+            "last_name": "Motley",
+            "position": "F",
+            "team": 13,
+            "weight_pounds": 230
+        },
+		{
+            "id": 365,
+            "first_name": "Patrick",
+            "height_feet": 6,
+            "height_inches": 9,
+            "last_name": "Patterson",
+            "position": "F",
+            "team": 13,
+            "weight_pounds": 230
+        },
+		{
+            "id": 414,
+            "first_name": "Landry",
+            "height_feet": 6,
+            "height_inches": 5,
+            "last_name": "Shamet",
+            "position": "G",
+            "team": 13,
+            "weight_pounds": 188
+        },
+		{
+            "id": 328,
+            "first_name": "Marcus",
+            "height_feet": 6,
+            "height_inches": 9,
+            "last_name": "Morris",
+            "position": "F",
+            "team": 13,
+            "weight_pounds": 235
+        },
+		{
+            "id": 481,
+            "first_name": "Lou",
+            "height_feet": 6,
+            "height_inches": 1,
+            "last_name": "Williams",
+            "position": "G",
+            "team": 13,
+            "weight_pounds": 175
+        },
+		{
+            "id": 493,
+            "first_name": "Ivica",
+            "height_feet": 7,
+            "height_inches": 1,
+            "last_name": "Zubac",
+            "position": "C",
+            "team": 13,
+            "weight_pounds": 240
+        }
+		
+		
+		
+	]
+}
