@@ -5,6 +5,7 @@ import { AboutComponent } from './about/about.component';
 import { AngularFireAuthGuard } from '@angular/fire/auth-guard';
 import { BookmarksComponent } from './bookmarks/bookmarks.component';
 import { TagComponent } from './tag/tag.component';
+import { VideoDetailsComponent } from './video-details/video-details.component';
 
 const routes: Routes = [
   {
@@ -14,6 +15,10 @@ const routes: Routes = [
   {
     path: 'tag/:name',
     component: TagComponent,
+  },
+  {
+    path: 'video-details/:id',
+    component: VideoDetailsComponent,
   },
   {
     path: 'about',

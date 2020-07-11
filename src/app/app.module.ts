@@ -10,9 +10,10 @@ import { FormsModule } from '@angular/forms';
 import { environment } from 'src/environments/environment';
 import { HttpClientModule } from '@angular/common/http';
 import { TagComponent } from './tag/tag.component';
+import { VideoDetailsComponent } from './video-details/video-details.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, AboutComponent, BookmarksComponent, TagComponent],
+  declarations: [AppComponent, HomeComponent, AboutComponent, BookmarksComponent, TagComponent, VideoDetailsComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
