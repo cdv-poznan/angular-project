@@ -1,6 +1,6 @@
 @import '~@angular/material/theming';
 @include mat-core();
-@import './src/app/_variables.scss';
+// @import './src/app/_variables.scss';
 
 $my-app-primary: mat-palette($mat-blue-grey);
 $my-app-accent:  mat-palette($mat-purple);

@@ -47,26 +47,30 @@ export class ConfiguratorTshirtComponent implements OnInit {
   }
 
   onFileChanged(event) {
-    const file = event.target.files[0];
     const reader = new FileReader();
+    const file = event.target.files[0];
     reader.onload = (loadEvent: any) => {
+      const addNewImage = () => {
+        const imgObj = new Image();
+        imgObj.src = loadEvent.target.result as string;
+        imgObj.onload = () => {
+            const userImage = new fabric.Image(imgObj, {
+              left: 130,
+              top: 100,
+            });
+            userImage.scaleToWidth(Number(this.canvas.getWidth()) - 240);
+            this.canvas.add(userImage);
+          };
+      };
       if (this.checkIfElementAdded('image')) {
         this.canvas.getObjects().forEach((item) => {
           if (item.type === 'image') {
-            item._element.src = loadEvent.target.result as string;
+            this.canvas.remove(item);
+            addNewImage();
           }
-          this.canvas.renderAll();
         });
       } else {
-        const imgObj = new Image();
-        imgObj.src = loadEvent.target.result as string;
-        const userImage = new fabric.Image(imgObj, {
-          left: 130,
-          top: 100,
-        });
-        userImage.scaleToWidth(this.canvas.getWidth() - 240);
-        this.canvas.add(userImage);
-        this.canvas.renderAll();
+        addNewImage();
       }
     };
     reader.readAsDataURL(file);
