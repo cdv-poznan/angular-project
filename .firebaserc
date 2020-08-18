@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "t-shirt-configurator": {
+      "hosting": {
+        "angular-project": [
+          "t-shirt-configurator"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "t-shirt-configurator"
+  }
+}

@@ -87,7 +87,6 @@ export class ConfiguratorTshirtComponent implements OnInit {
       this.canvas.getObjects().forEach((item) => {
         if (item.type === 'i-text') {
           item.text = this.tshirtText;
-          this.canvas.renderAll();
           item.fill = this.textColor;
         }
       });
@@ -100,7 +99,9 @@ export class ConfiguratorTshirtComponent implements OnInit {
       });
       this.canvas.add(userText);
       this.canvas.moveTo(userText, 10);
+      this.canvas.setActiveObject(userText);
     }
+    this.canvas.renderAll();
   }
 
   onTextColorChange() {
