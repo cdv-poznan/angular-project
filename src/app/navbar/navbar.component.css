@@ -1,0 +1,18 @@
+.header {
+    background-color: #2196F3;
+    height: 100px;
+    line-height: 100px;
+    min-width: 320px;
+}
+.title {
+    text-transform: uppercase;
+    font-size: 36px;
+    width: 100%;
+}
+
+
+@media (max-width: 450px) {
+    .title {
+        font-size: 16px;
+    }
+}

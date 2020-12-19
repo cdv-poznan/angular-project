@@ -1,0 +1,25 @@
+.btnPlus {
+    background-color: #5cb73e;
+}
+
+.btnMinus {
+    background-color: #ce0c12;
+}
+.btnAdd {
+    background-color: red;
+    width: 60px;
+    height: 60px;
+    transition: 0.3s;
+}
+.material-icons {
+    height: 100%;
+}
+.btnAdd:hover {
+    transform: scale(1.1);
+}
+.btn {
+    transition: 0.3s;
+}
+.btn:hover {
+    transform: scale(1.1);
+}
