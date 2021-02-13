@@ -1,0 +1,37 @@
+img{
+    border: black solid 5px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+*:focus {
+    outline: 0 !important;
+}
+
+// h1{
+//     background-color: rgb(62, 52, 208);
+//     color: white;
+//     text-align: center;
+//     margin: -10px;
+//     padding: 25px;
+// }
+
+.container1{
+    float: left;
+}
+
+.container2{
+    float: right;
+}
+
+nb-menu .menu-item .menu-icon.svg-inline--fa {
+    font-size: 10rem;
+}
+
+nb-icon{
+    margin: 1em;
+    width:10em;
+    height: 10em;
+    cursor: pointer;
+}

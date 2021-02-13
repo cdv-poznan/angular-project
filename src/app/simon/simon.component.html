@@ -1,0 +1,31 @@
+<div class="controlBoard">
+    <div>
+        <button nbButton outline status="info" (click)="startRound(true)">Start</button>
+    </div>
+    
+    <div class="messageBoard">
+        <h3>Round: {{gameState.round + 1}}</h3>
+    </div>
+</div>
+
+<div class="simonPlate">
+    <div class="left">
+        <button #green class="simonBtn" data-color="green" id="green" (click)="playOnClick('green')"></button>
+        <audio #greenAudio id="greenAudio" data-color="green" src="assets/audio/green.wav"></audio>
+
+        <button #yellow class="simonBtn" data-color="yellow" id="yellow" (click)="playOnClick('yellow')"></button>
+        <audio #yellowAudio id="yellowAudio" data-color="yellow" src="assets/audio/yellow.wav"></audio>
+    </div>
+
+    <div class="right">
+        <button #red class="simonBtn" id="red" data-color="red" (click)="playOnClick('red')"></button>
+        <audio #redAudio id="redAudio" data-color="red" src="assets/audio/red.wav"></audio>
+
+        <button #blue class="simonBtn" data-color="blue" id="blue" (click)="playOnClick('blue')"></button>
+        <audio #blueAudio id="blueAudio" data-color="blue" src="assets/audio/blue.wav"></audio>
+    </div>
+
+    <div class="messageBoard2">
+        <h3>{{message}}</h3>
+    </div>
+</div>

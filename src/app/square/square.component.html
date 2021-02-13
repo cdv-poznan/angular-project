@@ -1,0 +1,3 @@
+<button nbButton *ngIf="!value">{{ value }}</button>
+<button nbButton status="warning" *ngIf="value == 'X'">{{ value }}</button>
+<button nbButton status="danger" *ngIf="value == 'O'">{{ value }}</button>

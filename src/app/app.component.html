@@ -1,1 +1,51 @@
-<router-outlet></router-outlet>
+<nb-layout>
+
+  <nb-layout-header fixed>
+    <!-- Insert header here -->
+
+    <div>
+      <h1>
+        <a routerLink="">Home</a>
+      </h1>
+    </div>
+
+    <div [className]="'right'">
+      <div *ngIf="user$ | async as user; else showLogin">
+        <button nbButton outline status="warning" (click)="logout()">
+          Log out {{ user.email }}
+        </button>
+      </div>
+
+      <ng-template #showLogin>
+        <button nbButton outline status="info" (click)="login()">
+          Sign in with Google
+        </button>
+      </ng-template>
+
+    </div>
+  </nb-layout-header>
+
+  <!-- <ng-snake></ng-snake>
+  <script src="https://gogakoreli.github.io/angular-snake-web-component/snake-web-component.js"
+    type="module">
+  </script> -->
+  <nb-sidebar tag="left">
+    <a routerLink="board">TIC TAC TOE</a>
+    <br>
+    <br>
+    <a routerLink="rps">ROCK PAPER SCISSORS</a>
+    <br>
+    <br>
+    <a routerLink="simon">SIMON</a>
+  </nb-sidebar>
+
+  <nb-layout-column>
+    <router-outlet></router-outlet>
+  </nb-layout-column>
+
+  <!-- <nb-layout-footer fixed>
+  </nb-layout-footer> -->
+
+
+
+</nb-layout>

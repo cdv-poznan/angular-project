@@ -1,0 +1,30 @@
+<div >
+    <nb-icon icon="square-outline" (click)="turn('rock')"></nb-icon>
+    <nb-icon icon="file-outline" (click)="turn('paper')"></nb-icon>
+    <nb-icon icon="scissors" (click)="turn('scissors')"></nb-icon>
+</div>
+
+<div >
+    <h3>Your score is:
+        <!-- <div {{ score }}></div> -->
+        {{scoreValue}}
+    </h3>
+    <h3>Your pick:
+        {{playersPick}}
+    </h3>
+    <h3>Computer's pick:
+       {{computersPick}}
+    </h3>
+    <h3>Result:
+        {{result}}
+    </h3>
+<!-- <input type="image" id="b1" src="/src/assets/rock.png" value="rock" onclick="turn('rock')"/>
+<input type="image" id="b2" src="/src/assets/rock.png" value="paper" onclick="turn('paper')"/>
+<input type="image" id="b3" src="/src/assets/scissors.png" value="scissors" onclick="turn('scissors')"/> -->
+<!-- <input type="image" id="b1" src="/src/assets/img/example.png" value="rock" />
+<input type="image" id="b2" src="/src/app/rps/paper.png" value="paper" />
+<input type="image" id="b3" src="/src/assets/scissors.png" value="scissors"/>
+</div> -->
+</div>
+
+

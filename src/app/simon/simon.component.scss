@@ -1,0 +1,49 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.simonBtn {
+    border-radius: 20px;
+    height: 100px;
+    line-height: 100px;
+    width: 100px;
+    padding: 60px;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border-width: 0px;
+    margin: 5px;
+}
+
+.controlBoard{
+    display: inline-block;
+}
+
+.left{
+    display: block;
+}
+
+.right{
+    display: block;
+}
+
+#green {
+    background-color: rgb(67, 175, 133);
+}
+
+#red{
+    background-color: rgb(229, 81, 80);
+}
+
+#yellow{
+    background-color: rgb(244, 201, 83);
+}
+
+#blue{
+    background-color: rgb(48, 116, 158);
+}
+
+.blinked{
+    opacity: .5;
+    
+}

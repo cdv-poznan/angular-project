@@ -1,0 +1,36 @@
+@import '~@nebular/theme/styles/theming';
+@import '~@nebular/theme/styles/themes/default';
+
+$nb-enable-css-custom-properties: true;
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+*:focus {
+    outline: 0 !important;
+}
+
+.right{
+    margin-left: auto;
+}
+
+a, a:hover, a:active, a:focus, a img, object, embed {
+    outline: none;
+    color: white;
+    outline: 0 !important;
+    text-decoration: none;
+}
+
+// nb-sidebar{
+//     // background-image: url(src/assets/player.jpg);
+// }
+
+nb-layout-column{
+    background-image: url(src/assets/player.jpg);
+    background-size: cover;
+    width: 160px;
+    height: 720px;
+    resize: both;
+    overflow: scroll;
+}
