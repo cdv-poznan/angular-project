@@ -1,1 +1,17 @@
-<router-outlet></router-outlet>
+
+<!-- <button class="btn btn-primary" (click)="onEvent('just-text', 'testowy tekst')">nacisnij</button> -->
+<div class="container-fluid">
+    <router-outlet></router-outlet>
+    <nav>
+        <ul class="pagination pagination-lg">
+          <li class="page-item">
+            <a class="page-link" routerLink="/" tabindex="-1">Kreator</a>
+          </li>
+          <li class="page-item" [class.disabled]="!characterCreationStatus">
+              <a  class="page-link" routerLink="/characters-list">Wyniki</a></li>
+          <li class="page-item" [class.disabled]="!otherCharactersStatus">
+              <a class="page-link" routerLink="/contact-details">Kontakt</a></li>
+        </ul>
+      </nav>
+</div>
+<app-mysza></app-mysza>

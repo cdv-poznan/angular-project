@@ -1,0 +1,102 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <p>Kreator postaci</p>
+        </div>
+    </div>
+<div class="container">
+    <div class="row">
+    <form #f="ngForm" (ngSubmit)="onSubmit(f.form.controls.characterIndustry.valid, f.form.controls.characterGender.valid)">
+
+  <!-- płeć -->
+            <div id="gender-group" class="form-group">
+                <p>Płeć</p>
+                <div class="form-check form-check-inline" *ngFor="let gender of genderList">
+                        <input class="form-check-input"
+                        type="radio"
+                        name="characterGender"
+                        id={{gender}}
+                        value="{{gender}}"
+                        required
+                        ngModel
+                        #gender="ngModel"
+                        (change)="onGenderChange($event)"
+                        >
+                        <label for="{{gender}}"class="form-check-label">{{gender}}</label>
+                </div>
+                <small class="text-muted" *ngIf="f.submitted && !f.form.controls.characterGender.valid">Wybierz płeć</small>
+            </div>
+        
+       
+
+          <!-- cechy postaci  -->
+        <div class="container-fluid form-group row" id="features-group">
+            <div class="form-group row" id="features-group">
+                <p class="col-sm">Cechy postaci</p>
+                <div class="container">
+                    <div class="row">
+                        <input type="number" id="feature-points" disabled value="{{featurePoints}}"class="form-control col-sm-1">
+                        <label for="feature-points" class="col-sm form-check label">Punkty do wykorzystania</label>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row" *ngFor="let feature of characterFeatures">
+                        <input 
+                        class="col-sm-2 form-control" 
+                        id="{{feature.feature}}" 
+                        name="{{feature.feature}}" 
+                        type="number" 
+                        min="0" 
+                        max="10" 
+                        step="1" 
+                        (change)="onFeatureChange($event)"
+                        [ngModel]="feature.intensity"
+                        >
+                        <label class="col-sm form-check-label" for="{{feature.feature}}">{{feature.feature}}</label> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- branża  -->
+        <div class="row" >
+            <div class="form-group">
+                <p>Branża</p>
+                <select 
+                (change)="onIndustryChange($event)"
+                class="form-control" 
+                id="characterIndustry"
+                name="characterIndustry"
+                ngModel
+                #industry="ngModel" 
+                required>
+                    <option value="budowlanka">Budowlanka i remonty</option>
+                    <option value="marketing">Marketing i reklama</option>
+                    <option value="it">IT</option>
+                    <option value="rolnictwo">Rolnictwo</option>
+                    <option value="handel">Handel i usługi</option>
+                </select>
+                <small class="text-muted" *ngIf="f.submitted && !f.form.controls.characterIndustry.valid">Wybierz branżę</small>
+            </div>
+        </div>
+
+          <!-- umiejętności  -->
+        <div class="container-fluid">
+            <div class="form-group" id="skills-group" *ngFor="let skills of listOfSkills" >
+                <div *ngIf="skills.name === industry.control.value" ngModelGroup="skillsGroup">
+                    <p>Umiejętności specjalne:</p>
+                    <div class="form-check form-check-inline" *ngFor="let skill of skills.skills">
+                        <input (change)="onSkillChanged($event)" class="form-check-input skill-checkbox" type="checkbox"
+                            id="{{skill}}" value="{{skill}}" name={{skill}} ngModel>
+                        <label class="form-check-label" for="{{skill}}">{{skill}}</label>
+                    </div>
+                   <small class="text-muted" *ngIf="f.submitted && checkedSkillsLimit>checkedSkillsList.length">Wybierz dokładnie 3</small>
+                </div>
+            </div>
+        </div>
+        <button id="submitButton" class="btn btn-primary submit" type="submit">Potwierdź</button>
+    </form>
+    
+</div>
+</div>
+</div>
