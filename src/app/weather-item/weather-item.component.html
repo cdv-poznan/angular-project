@@ -1,0 +1,15 @@
+<input type="text" class="search-box" placeholder="Wpisz miasto..." name="city" [(ngModel)]="newCity" [ngModelOptions]="{standalone: true}" />
+<div class="today">
+  <div class="location">
+    <div class="city">{{newCity}}</div>
+    <button class="btn btn-success" (click)="add()">Zapisz</button>
+    <!-- <div class="date">{{WeatherData.isDay}}</div> -->
+  </div>
+  <div class="current">
+    <div class="temp">{{WeatherData.temp_celcius}}°<span>c</span></div>
+    <div class="weather">{{WeatherData.icon}}</div>
+    <div class="hi-low">{{WeatherData.temp_max}}°c / {{WeatherData.temp_min}}°c</div>
+    <div class="hi-low">Wilgotność: {{WeatherData.main.humidity}}%</div>
+    <div class="hi-low">Temperatura wyczuwalna: {{WeatherData.temp_feels_like}}°c</div>
+  </div>
+</div>

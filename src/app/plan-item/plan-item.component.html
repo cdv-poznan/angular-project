@@ -1,0 +1,121 @@
+    <div class="board">
+
+        <div class="board-bar">
+            <p class="board-name">Plan Wycieczki</p>
+            <form>
+                <input type="text" class="form-control" placeholder="Jakie Plany" [(ngModel)]="newPlan" [ngModelOptions]="{standalone: true}">
+                <button type="submit"  (click)="addPlan()" >Dodaj przedmiot</button>
+            </form>
+
+        </div>
+
+        <div class="board-wrapper">
+
+            <div class="board-columns" cdkDropListGroup>
+                <div class="board-column">
+
+                    <div class="column-title">
+                        Poniedziałek
+                    </div>
+
+                    <div class="tasks-container" 
+                    cdkDropList
+                    #poniedzilekList="cdkDropList"
+                    [cdkDropListData]="poniedzialek"
+                    [cdkDropListConnectedTo]="[wtorekList, srodaList, czwartekList, piatekList]"
+                    (cdkDropListDropped)="drop($event)">
+                        <div class="task" *ngFor="let item of poniedzialek" cdkDrag>
+                            {{ item }}
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="board-columns" cdkDropListGroup>
+                <div class="board-column" >
+
+                    <div class="column-title">
+                        Wtorek
+                    </div>
+
+                    <div class="tasks-container" 
+                    cdkDropList
+                    #wtorekList="cdkDropList"
+                    [cdkDropListData]="wtorek"
+                    [cdkDropListConnectedTo]="[poniedzilekList, srodaList, czwartekList, piatekList]"
+                    (cdkDropListDropped)="drop($event)">
+                        <div class="task" *ngFor="let item of wtorek" cdkDrag>
+                            {{ item }}
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="board-columns" cdkDropListGroup>
+                <div class="board-column" >
+
+                    <div class="column-title">
+                        Środa
+                    </div>
+
+                    <div class="tasks-container" 
+                    cdkDropList
+                    #srodaList="cdkDropList"
+                    [cdkDropListData]="sroda"
+                    [cdkDropListConnectedTo]="[poniedzilekList, wtorekList, srodaList, czwartekList, piatekList]"
+                    (cdkDropListDropped)="drop($event)">
+                        <div class="task" *ngFor="let item of sroda" cdkDrag>
+                            {{ item }}
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="board-columns" cdkDropListGroup>
+                <div class="board-column" >
+
+                    <div class="column-title">
+                        Czwartek
+                    </div>
+
+                    <div class="tasks-container" 
+                    cdkDropList
+                    #czwartekList="cdkDropList"
+                    [cdkDropListData]="czwartek"
+                    [cdkDropListConnectedTo]="[poniedzilekList, wtorekList, srodaList, piatekList]"
+                    (cdkDropListDropped)="drop($event)">
+                        <div class="task" *ngFor="let item of czwartek" cdkDrag>
+                            {{ item }}
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="board-columns" cdkDropListGroup>
+                <div class="board-column" >
+
+                    <div class="column-title">
+                        Piątek
+                    </div>
+
+                    <div class="tasks-container" 
+                    cdkDropList
+                    #piatekList="cdkDropList"
+                    [cdkDropListData]="piatek"
+                    [cdkDropListConnectedTo]="[poniedzilekList, wtorekList, srodaList, czwartekList]"
+                    (cdkDropListDropped)="drop($event)">
+                        <div class="task" *ngFor="let item of piatek" cdkDrag>
+                            {{ item }}
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
