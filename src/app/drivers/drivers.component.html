@@ -1,0 +1,26 @@
+
+<div class="conteiner">
+    <div class="h1h2">
+        <h1>Zobacz jak sobie radzi jedyny Polski kierowca w Formule 1 </h1>
+
+    </div>
+    <div class="one">
+    <label for="singleSelect"> Wybierz rok</label>
+    <select #getYear>
+      <option value="2006">2006</option>
+      <option value="2007">2007</option>
+      <option value="2008">2008</option>
+      <option value="2009">2009</option>
+      <option value="2010">2010</option>
+      <option value="2019">2019</option>
+    </select>
+    <button (click)="getPosts(getYear)">Zobacz</button>
+    </div>
+    <div class="two">
+        <ul>
+            <ng-container *ngFor="let result of raceResults">
+                <p>{{result[0] + " Miejsce " + result[1]+ " punkty " +result[2]+ ' średnia prętkość ' + result[3]+result[4] + ' nazwa zespołu ' +result[6]}}</p>
+        </ng-container>
+        </ul>
+    </div>
+</div>

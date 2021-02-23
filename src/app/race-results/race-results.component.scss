@@ -1,0 +1,117 @@
+div.conteiner{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../../assets/img/playerWins.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0px 15px 15px blac
+}
+div.h1h2{
+    position: absolute;
+    left: 50%;
+    top: 12%;
+    transform: translateX(-50%);
+    background-color: white;
+    padding: 5px;
+    color: white;
+    background-color: black;
+    opacity: 0.8;
+}
+div.h1h2 h1{
+    margin:0;
+    font-size: 16px;
+    z-index: 2;
+    text-align: center;
+    letter-spacing: .3px;
+}
+div.h1h2 h2{
+    margin:0;
+    font-size: 16px;
+    z-index: 2;
+    letter-spacing: .3px;
+}
+.one{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index:2;
+    width: 15%;
+    button{
+        font-size:16px;
+        margin-right: 5px;
+    }
+    input {
+        font-size: 16px;
+        width: 50%;
+    }
+}
+
+.two ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: space-around;
+    flex-flow: wrap;
+    top:35%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    background-image: url(../../assets/img/medal.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    margin: 0;
+    box-sizing: border-box;
+}
+.two ul:nth-child(even){
+    background-color: rgba(0, 0, 0, .5);
+}
+.everybody{
+    font-size: 24px;
+    margin: 0;
+    padding: 10px;
+    text-align: left;
+    border-left: 1px solid #0071fd;;
+    margin-top: 1px;
+}
+.everybody:nth-last-of-type(odd){
+    background-color: rgba(0, 0, 0, .3);
+}
+.everybody:nth-last-of-type(even){
+    background-color: rgba(0, 0, 0, .5);
+}
+.schedulePodium:nth-of-type(1){
+    color: gold;
+    border-left: 1px solid gold;
+    border-bottom: 1px solid gold;
+    box-shadow: 0px 5px 5px gold;
+    background-color: rgba(0, 0, 0, .8);
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+.schedulePodium:nth-of-type(2){
+    color: silver;
+    border-left: 1px solid silver;
+    border-bottom: 1px solid silver;
+    box-shadow: 0px 5px 5px silver;
+    background-color: rgba(0, 0, 0, .8);
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+.schedulePodium:nth-of-type(3){
+    color: brown;
+    border-left: 1px solid brown;
+    border-bottom: 1px solid brown;
+    box-shadow: 0px 5px 5px brown;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    background-color: rgba(0, 0, 0, .8);
+}
+.scheduleResidue {
+    font-size: 18px;
+    width: 30%;
+}

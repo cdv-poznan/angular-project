@@ -1,0 +1,23 @@
+<div class="conteiner">
+    <div class="h1h2">
+        <h1>Zobacz, które zespoły wygrywały w formule 1</h1>
+        <h2>
+            Historyczne wyniki zaczynają się od 1958 roku
+        </h2>
+    </div>
+    <div class="one">
+        <button (click)="getPosts(getYear)">Zobacz</button>
+        <input type="number" min="1958" max="2019" #getYear placeholder="Wybierz rok">
+
+    </div>
+    <div class="wins">
+
+    </div>
+    <div class="two">
+        <ul>
+            <ng-container *ngFor="let result of raceResults">
+                <p class="schedule">{{result[0] +' '+result[2] +' Ilość punktów '+result[1] }}</p>
+            </ng-container>
+        </ul>
+    </div>
+</div>

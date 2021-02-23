@@ -1,0 +1,26 @@
+.colors{
+    position: absolute;
+    z-index: 2;
+    padding: 3% 5%;
+    justify-content: space-between;
+}
+
+.colors nav {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.colors nav a{
+    border-bottom: 1px solid red;
+}
+.colors nav a:hover{
+    border-bottom: none;
+    transition:.5s ease
+}
+
+.colors nav a:hover{
+    background-color: red;
+    color:  white;
+    transition:.3s ease
+}

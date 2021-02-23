@@ -1,1 +1,31 @@
-<router-outlet></router-outlet>
+<mat-toolbar class="colors">
+    <span>
+
+      <img src="../assets/img/flag.png" alt="" width="100px">
+    </span>
+
+    <nav>
+      <a mat-flat-button routerLink="home">
+        {{'
+        Start'}}
+
+      </a>
+      <a mat-flat-button routerLink="race-results">
+        {{'
+        Klasyfiacja generalna Kierowców'}}
+
+      </a>
+      <a mat-flat-button routerLink="race-schedule">
+      {{'Klasyfiacja generalna Zespołów'}}
+      </a>
+      <a mat-flat-button routerLink="drivers">
+      {{'Kubica' }}
+
+      </a>
+    </nav>
+    <span>
+      <img src="../assets/img/flag.png" alt="" width="100px">
+    </span>
+  </mat-toolbar>
+
+  <router-outlet></router-outlet>
